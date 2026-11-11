@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#122F52"/><g fill="#87AEDF"><circle cx="50" cy="38" r="10"/><circle cx="61" cy="46" r="10"/><circle cx="57" cy="59" r="10"/><circle cx="43" cy="59" r="10"/><circle cx="39" cy="46" r="10"/></g><circle cx="50" cy="50" r="5" fill="#F8CB27"/></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>CEU attestation — AbleLiving</title>
+  <link rel="stylesheet" href="ds/tokens/colors.css">
+  <link rel="stylesheet" href="ds/tokens/fonts.css">
+  <link rel="stylesheet" href="ds/tokens/typography.css">
+  <link rel="stylesheet" href="ds/tokens/spacing.css">
+  <link rel="stylesheet" href="ds/tokens/base.css">
+  <link rel="stylesheet" href="ds/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
+  <script src="ds/_ds_bundle.js"></script>
+  <style>
+    :root { --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
+    body { margin: 0; background: var(--paper); }
+    * { font-variant-ligatures: no-common-ligatures no-discretionary-ligatures; font-feature-settings: 'liga' 0, 'dlig' 0; font-variation-settings: 'WONK' 0; }
+    a { color: var(--leaf); }
+    a:hover { color: var(--navy); }
+    @media print { [data-print-hide] { display: none !important; } body { background: #fff; } }
+  </style>
+  <style>summary::-webkit-details-marker { display: none; }</style>
+  <script>document.addEventListener('click', function (e) { document.querySelectorAll('details[data-nav][open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); }); });</script>
+  <style>@media (max-width: 760px) { [data-nav-full] { display: none !important; } [data-nav-mobile] { display: block !important; } }</style>
+</helmet>
+<div style="min-height: 100vh; background: var(--paper); font-family: var(--font-sans); color: var(--ink); display: flex; flex-direction: column;">
+  <nav data-print-hide="" style="background: #fff; border-bottom: 1px solid var(--line); font-family: var(--font-sans); position: relative; z-index: 20;">
+    <div style="max-width: 980px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px 28px; flex-wrap: wrap;">
+      <a href="{{ nav.home }}" style="display: block;"><img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 170px; height: auto; display: block;"></a>
+      <div data-nav-full="" style="display: flex; align-items: center; justify-content: flex-end; gap: 8px 26px; flex-wrap: wrap; flex: 1 1 auto;">
+        <details data-nav="1" style="position: relative;">
+          <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Partnership<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
+          <div style="position: absolute; top: 100%; left: -12px; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; min-width: 230px; display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+            <a href="{{ nav.partnership }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How we partner</a>
+            <a href="{{ nav.demo }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partnership overview</a>
+            <a href="{{ nav.become }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Become a partner</a>
+            <a href="{{ nav.onboard }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Onboarding checklist</a>
+            <a href="{{ nav.become }}#faq" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partner FAQ</a>
+          </div>
+        </details>
+        <details data-nav="1" style="position: relative;">
+          <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 800; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Training<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
+          <div style="position: absolute; top: 100%; left: -12px; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; min-width: 250px; display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+            <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Learn</span>
+            <a href="{{ nav.training }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Training modules</a>
+            <a href="{{ nav.topics }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Required topics</a>
+            <a href="{{ nav.ceu }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU library</a>
+            <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Attest</span>
+            <a href="{{ nav.howto }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How to attest</a>
+            <a href="{{ nav.attest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Start initial attestation</a>
+            <a href="{{ nav.ceuAttest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU attestation</a>
+          </div>
+        </details>
+        <a href="{{ nav.forms }}" style="font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none; padding: 8px 0;" style-hover="color: var(--leaf);">Forms</a>
+        <a href="{{ nav.contact }}" style="font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none; padding: 8px 0;" style-hover="color: var(--leaf);">Contact</a>
+        <a href="{{ nav.become }}" style="text-decoration: none; flex: none;">
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" hint-size="140px,38px"><span style="white-space: nowrap;">Become a partner</span></x-import>
+        </a>
+      </div>
+      <details data-nav="1" data-nav-mobile="" style="display: none; position: relative;">
+        <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 700; color: var(--navy); padding: 9px 16px; border: 1px solid var(--navy); border-radius: 999px; display: flex; align-items: center; gap: 8px;">Menu<span style="font-size: 11px;">▾</span></summary>
+        <div style="position: absolute; top: 100%; right: 0; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; width: min(280px, calc(100vw - 48px)); display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+          <a href="{{ nav.home }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Home</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Partnership</span>
+          <a href="{{ nav.partnership }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How we partner</a>
+          <a href="{{ nav.demo }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partnership overview</a>
+          <a href="{{ nav.onboard }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Onboarding checklist</a>
+          <a href="{{ nav.become }}#faq" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partner FAQ</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Training</span>
+          <a href="{{ nav.training }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Training modules</a>
+          <a href="{{ nav.topics }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Required topics</a>
+          <a href="{{ nav.ceu }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU library</a>
+          <a href="{{ nav.howto }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How to attest</a>
+          <a href="{{ nav.attest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Start initial attestation</a>
+          <a href="{{ nav.ceuAttest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU attestation</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">More</span>
+          <a href="{{ nav.forms }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Forms</a>
+          <a href="{{ nav.contact }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Contact</a>
+          <div style="border-top: 1px solid var(--line); margin: 6px 0 0; padding: 10px 6px 4px;">
+            <a href="{{ nav.become }}" style="display: block; text-align: center; padding: 10px 12px; border: 1px solid var(--navy); border-radius: 999px; font-size: 15px; font-weight: 700; color: var(--navy); text-decoration: none;">Become a partner</a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </nav>
+
+  <div data-print-hide=""><x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.PageHeaderBar" kicker="Continuing education" title="Yearly CEU attestation" crumbs="Confirm the continuing education you completed this year. About 5 minutes." hint-size="100%,140px"></x-import></div>
+
+  <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width: 820px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 56px 24px 90px;">
+      <div data-print-hide="" style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 40px 36px; display: flex; flex-direction: column; gap: 22px;">
+        <img src="assets/bloom.svg" alt="" style="width: 44px; height: 44px;">
+        <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: 34px; line-height: 1.2; color: var(--navy); margin: 0; text-wrap: pretty;">Thank you, {{ firstName }}. Your CEU attestation is on file.</h1>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; max-width: 60ch;">We'll reach out only if something needs a second look. Your next CEU attestation is due next year.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; border-top: 1px solid var(--line); padding-top: 22px;">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Reference</span>
+            <span style="font-size: 17px; color: var(--navy); font-weight: 700;">{{ refId }}</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">CE hours</span>
+            <span style="font-size: 17px; color: var(--navy); font-weight: 700;">{{ totalLabel }}</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Year</span>
+            <span style="font-size: 17px; color: var(--navy); font-weight: 700;">{{ f.year }}</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" onClick="{{ printCopy }}" hint-size="190px,48px">Print certificate</x-import>
+          <a href="{{ nav.ceu }}" style="text-decoration: none;">
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" hint-size="180px,48px">Back to CEU library</x-import>
+          </a>
+        </div>
+      </div>
+      <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 14px; margin-top: 28px;">
+        <div style="border: 2px solid var(--blue); border-radius: 12px; padding: 44px 40px; display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center;">
+          <img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 190px; height: auto;">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: .26em; text-transform: uppercase; color: var(--leaf);">Certificate of continuing education</span>
+          <span style="font-size: 17px; color: var(--sage);">This certifies that</span>
+          <span style="font-family: var(--font-serif); font-size: 38px; line-height: 1.15; color: var(--navy); border-bottom: 1px solid var(--line); padding: 0 24px 10px; min-width: 60%;">{{ f.fullName }}</span>
+          <p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--ink); max-width: 54ch; text-wrap: pretty;">{{ certLine }}</p>
+          <div style="display: flex; flex-direction: column; gap: 4px; font-size: 14px; line-height: 1.5; color: var(--sage); max-width: 60ch;">
+            <sc-for list="{{ certCourses }}" as="cc" hint-placeholder-count="2">
+              <span>{{ cc }}</span>
+            </sc-for>
+          </div>
+          <div style="display: flex; gap: 44px; flex-wrap: wrap; justify-content: center; padding-top: 10px;">
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">CE hours</span>
+              <span style="font-size: 17px; font-weight: 700; color: var(--navy);">{{ totalLabel }}</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Date</span>
+              <span style="font-size: 17px; font-weight: 700; color: var(--navy);">{{ signedLabel }}</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 4px;">
+              <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Reference</span>
+              <span style="font-size: 17px; font-weight: 700; color: var(--navy);">{{ refId }}</span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; padding-top: 6px;">
+            <div style="{{ sigImgStyle }}"></div>
+            <span style="border-top: 1px solid var(--line); padding-top: 6px; min-width: 240px; font-size: 13px; color: var(--sage);">Signature · CMS GUIDE Model</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ editing }}" hint-placeholder-val="{{ true }}">
+    <div style="max-width: 820px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 48px 24px 90px; display: flex; flex-direction: column; gap: 48px;">
+
+      <section style="display: flex; flex-direction: column; gap: 20px;">
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">1 · About you</x-import>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px 20px;">
+          <label style="display: flex; flex-direction: column; gap: 8px; grid-column: 1 / -1;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Full legal name</span>
+            <input name="fullName" value="{{ f.fullName }}" onChange="{{ onField }}" placeholder="As it appears on your license" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box;">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px; grid-column: 1 / -1;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Organization</span>
+            <input name="org" list="al-partner-orgs" autocomplete="off" value="{{ f.org }}" onChange="{{ onField }}" placeholder="The practice or organization you work for" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box;">
+            <datalist id="al-partner-orgs">
+              <sc-for list="{{ orgOptions }}" as="o" hint-placeholder-count="0">
+                <option value="{{ o }}"></option>
+              </sc-for>
+            </datalist>
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Role</span>
+            <select name="role" value="{{ f.role }}" onChange="{{ onField }}" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box;">
+              <option value="">Select your role</option>
+              <option>Physician (MD / DO)</option>
+              <option>Nurse practitioner</option>
+              <option>Physician assistant</option>
+              <option>Registered nurse</option>
+              <option>Licensed clinical social worker</option>
+              <option>Care navigator</option>
+              <option>Physical therapist (PT)</option>
+              <option>Physical therapist assistant (PTA)</option>
+              <option>Occupational therapist (OT)</option>
+              <option>Occupational therapy assistant (OTA)</option>
+              <option>Speech-language pathologist (SLP)</option>
+              <option>Other</option>
+            </select>
+            <sc-if value="{{ roleIsOther }}" hint-placeholder-val="{{ false }}">
+              <input name="roleOther" value="{{ f.roleOther }}" onChange="{{ onField }}" placeholder="Your role" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box;">
+            </sc-if>
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Work email</span>
+            <input name="email" type="email" value="{{ f.email }}" onChange="{{ onField }}" placeholder="name@practice.com" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box;">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">State of practice</span>
+            <select name="state" value="{{ f.state }}" onChange="{{ onField }}" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box;">
+              <option value="">Select a state</option>
+              <option>Florida</option>
+              <option>Ohio</option>
+              <option>Both Florida and Ohio</option>
+            </select>
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">CEU year</span>
+            <select name="year" value="{{ f.year }}" onChange="{{ onField }}" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box;">
+              <sc-for list="{{ years }}" as="y" hint-placeholder-count="2">
+                <option value="{{ y }}">{{ y }}</option>
+              </sc-for>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 20px;">
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">2 · Courses you completed</x-import>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: var(--sage);">Courses you marked complete in the <a href="{{ nav.ceu }}" style="font-weight: 700;">CEU library</a> on this computer are already checked. Add the date for each one.</p>
+        <sc-if value="{{ noCourses }}" hint-placeholder-val="{{ false }}">
+          <div style="background: var(--mist); border: 1px dashed var(--line); border-radius: var(--radius-lg); padding: 22px 24px; font-size: 16px;">There are no library courses listed yet. Check back soon.</div>
+        </sc-if>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+          <span style="font-size: 15px; font-weight: 700; color: var(--navy);">{{ pickedSummary }}</span>
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" onClick="{{ toggleAll }}" hint-size="190px,38px">{{ toggleAllLabel }}</x-import>
+        </div>
+        <sc-if value="{{ showAll }}" hint-placeholder-val="{{ false }}">
+          <input value="{{ q }}" onChange="{{ onQ }}" placeholder="Search courses" style="font-family: var(--font-sans); font-size: 16px; padding: 12px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; max-width: 420px; box-sizing: border-box;">
+        </sc-if>
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;">
+          <sc-if value="{{ listEmpty }}" hint-placeholder-val="{{ false }}">
+            <div style="padding: 20px 22px; font-size: 15px; color: var(--sage);">No courses selected yet. Click "Add courses from the library" to choose them.</div>
+          </sc-if>
+          <sc-for list="{{ courses }}" as="c" hint-placeholder-count="3">
+            <div style="{{ c.rowStyle }}">
+              <label style="display: flex; gap: 14px; align-items: flex-start; flex: 1 1 320px; cursor: pointer;">
+                <input type="checkbox" checked="{{ c.checked }}" onChange="{{ c.onToggle }}" style="width: 22px; height: 22px; margin-top: 2px; accent-color: var(--navy); flex: none;">
+                <span style="display: flex; flex-direction: column; gap: 4px;">
+                  <span style="font-size: 17px; font-weight: 700; color: var(--navy);">{{ c.title }}</span>
+                  <span style="font-size: 14px; color: var(--sage);">{{ c.hoursLabel }}</span>
+                </span>
+              </label>
+              <sc-if value="{{ c.checked }}" hint-placeholder-val="{{ false }}">
+                <label style="display: flex; flex-direction: column; gap: 6px; margin-left: 36px;">
+                  <span style="font-size: 13px; font-weight: 700; color: var(--sage);">Date completed</span>
+                  <input type="date" value="{{ c.date }}" onChange="{{ c.onDate }}" max="{{ todayIso }}" style="font-family: var(--font-sans); font-size: 16px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink);">
+                </label>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+
+      <section style="display: flex; flex-direction: column; gap: 20px;">
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">3 · Sign</x-import>
+        <div style="background: var(--mist); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between;">
+          <span style="font-size: 16px; color: var(--ink);">Total CE hours for {{ f.year }}</span>
+          <span style="font-family: var(--font-serif); font-size: 30px; color: var(--navy);">{{ totalLabel }}</span>
+          <sc-if value="{{ hasRequired }}" hint-placeholder-val="{{ false }}">
+            <span style="flex: 1 1 100%; font-size: 14px; color: var(--sage);">{{ requiredNote }}</span>
+          </sc-if>
+        </div>
+        <label style="display: flex; gap: 14px; align-items: flex-start; cursor: pointer; font-size: 17px; line-height: 1.55;">
+          <input name="confirm" type="checkbox" checked="{{ f.confirm }}" onChange="{{ onCheck }}" style="width: 22px; height: 22px; margin-top: 3px; accent-color: var(--navy); flex: none;">
+          <span>I attest that I completed the continuing education listed above, and that it's true and complete to the best of my knowledge.</span>
+        </label>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Draw your signature</span>
+            <button type="button" onClick="{{ clearSig }}" style="background: none; border: none; padding: 6px 0; font-family: var(--font-sans); font-size: 15px; font-weight: 700; color: var(--leaf); cursor: pointer;" style-hover="color: var(--navy);">Clear</button>
+          </div>
+          <div style="position: relative; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); height: 180px; overflow: hidden;">
+            <canvas ref="{{ sigRef }}" style="position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; cursor: crosshair;"></canvas>
+            <div style="position: absolute; left: 28px; right: 28px; bottom: 44px; border-bottom: 1px solid var(--line); pointer-events: none;"></div>
+            <span style="position: absolute; left: 28px; bottom: 16px; font-size: 13px; color: var(--sage); pointer-events: none;">{{ sigHint }}</span>
+          </div>
+          <span style="font-size: 14px; color: var(--sage);">Printed name: <strong style="color: var(--navy);">{{ printedName }}</strong></span>
+        </div>
+      </section>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center; border-top: 1px solid var(--line); padding-top: 28px;">
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" disabled="{{ notReady }}" onClick="{{ submit }}" hint-size="220px,48px">{{ submitLabel }}</x-import>
+        <span style="font-size: 15px; color: var(--sage);">{{ readyNote }}</span>
+        <sc-if value="{{ sendError }}" hint-placeholder-val="{{ false }}">
+          <p role="alert" style="flex: 1 1 100%; margin: 0; font-size: 15px; color: #9A3B22; font-weight: 700;">{{ sendError }}</p>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+
+  <div data-print-hide="" style="margin-top: auto;"><footer style="background: var(--navy); color: #fff; font-family: var(--font-sans);">
+  <div style="max-width: 980px; margin: 0 auto; padding: 56px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px;">
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="background: #fff; border-radius: 12px; padding: 12px 16px; align-self: flex-start;">
+        <img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 160px; height: auto; display: block;">
+      </div>
+      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--blue-soft); max-width: 36ch;">Care navigator training and attestation for GUIDE Model partner practices in Florida and Ohio.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--blue-soft);">Partner contact</span>
+      <span style="font-family: var(--font-serif); font-size: 20px;">Bryson Pritchard</span>
+      <span style="font-size: 15px; color: var(--blue-soft);">Vice President of Growth</span>
+      <a href="mailto:bpritchard@ableliving-mail.com" style="font-size: 15px; color: #fff; font-weight: 700; word-break: break-all;">bpritchard@ableliving-mail.com</a>
+    </div>
+  </div>
+  <div style="border-top: 1px solid var(--border-on-dark);">
+    <div style="max-width: 980px; margin: 0 auto; padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 10px; font-size: 13px; line-height: 1.6; color: var(--blue-soft);">
+      <div style="display: flex; flex-wrap: wrap; gap: 6px 20px; justify-content: space-between;"><span>© 2026 AbleLiving Memory Support, PLLC. Participant in the CMS GUIDE Model.</span><span style="display: flex; gap: 18px;"><a href="{{ nav.privacy }}" style="color: #fff; font-weight: 700;">Privacy policy</a><a href="{{ nav.contact }}" style="color: #fff; font-weight: 700;">Contact us</a></span></div>
+      <p style="margin: 0; max-width: 90ch;">This site provides training and partnership information for GUIDE Model partner practices. It is not medical advice and does not collect patient health information. AbleLiving Memory Support, PLLC participates in the CMS GUIDE Model; this site is not an official CMS website and is not endorsed by CMS. In an emergency, call 911.</p>
+    </div>
+  </div>
+</footer></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;formspreeId&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;xeaovgwy&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Submission&quot;}}">
+const PKEY = 'al-ceu-progress';
+// Separate Formspree form for CEU attestations. Replace with the new form's ID.
+const CEU_FORMSPREE_ID = 'xeaovgwy';
+const MIN_HOURS = 2; // CMS minimum CE hours per year to attest
+const LAST_YEAR = 2028;
+const todayIso = () => new Date().toISOString().slice(0, 10);
+const round = n => Math.round(n * 100) / 100;
+const hrs = n => { const v = round(Number(n) || 0); return v + ' CE hour' + (v === 1 ? '' : 's'); };
+
+class Component extends DCLogic {
+  state = {
+    f: { fullName: '', org: '', role: '', roleOther: '', email: '', state: '', year: String(new Date().getFullYear()), other: '', otherHours: '', confirm: false, signature: '' },
+    courses: [], picks: {}, required: 0, progress: {},
+    submitted: false, sending: false, sendError: '', refId: '', hasSig: false
+  };
+
+  async componentDidMount() {
+    let progress = {};
+    try { progress = JSON.parse(localStorage.getItem(PKEY) || '{}'); } catch (e) {}
+    const dev = /\.dc\.html/.test(decodeURIComponent(location.pathname));
+    let courses = [], required = 0;
+    try {
+      const r = await fetch(dev ? 'partners.json' : 'partners.json?t=' + Date.now(), { cache: 'no-store' });
+      const d = await r.json();
+      this.partnersData = d;
+      this.setState({ orgOptions: (d.partners || []).filter(p => p.active !== false).map(p => p.name).sort() });
+      courses = (d.ceu && Array.isArray(d.ceu.courses)) ? d.ceu.courses : [];
+      required = Number(d.ceu && d.ceu.requiredHours) || 0;
+    } catch (e) {}
+    this.setState({ courses, required, progress, picks: this.picksFor(courses, progress, this.state.f.year) });
+  }
+
+  picksFor(courses, progress, year) {
+    const p = {};
+    courses.forEach(c => { const d = progress[c.id]; if (d && d.slice(0, 4) === String(year)) p[c.id] = { checked: true, date: d }; });
+    return p;
+  }
+
+  onField = e => {
+    const { name, value } = e.target;
+    this.setState(s => {
+      const patch = { f: { ...s.f, [name]: value }, sendError: '' };
+      if (name === 'year') patch.picks = this.picksFor(s.courses, s.progress, value);
+      return patch;
+    });
+  };
+  sigRef = el => { if (el === this.canvas) return; this.canvas = el; if (el) this.setupCanvas(el); };
+  setupCanvas(c) {
+    const ctx = c.getContext('2d');
+    this.ctx = ctx;
+    const size = () => {
+      const dpr = window.devicePixelRatio || 1;
+      const r = c.getBoundingClientRect();
+      if (!r.width) return;
+      const w = Math.round(r.width * dpr), h = Math.round(r.height * dpr);
+      if (c.width === w && c.height === h) return;
+      c.width = w; c.height = h;
+      ctx.lineWidth = 2.2 * dpr; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      ctx.strokeStyle = ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--navy').trim() || '#122F52';
+      if (this.state.hasSig) this.setState({ hasSig: false });
+    };
+    requestAnimationFrame(size);
+    if (this.ro) this.ro.disconnect();
+    this.ro = new ResizeObserver(size);
+    this.ro.observe(c);
+    let drawing = false, last = null;
+    const pt = e => { const b = c.getBoundingClientRect(); return { x: (e.clientX - b.left) * c.width / b.width, y: (e.clientY - b.top) * c.height / b.height }; };
+    c.onpointerdown = e => { drawing = true; last = pt(e); c.setPointerCapture(e.pointerId); ctx.beginPath(); ctx.arc(last.x, last.y, ctx.lineWidth / 2, 0, Math.PI * 2); ctx.fill(); };
+    c.onpointermove = e => {
+      if (!drawing) return;
+      const p = pt(e);
+      ctx.beginPath(); ctx.moveTo(last.x, last.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+      last = p;
+      if (!this.state.hasSig) this.setState({ hasSig: true });
+    };
+    c.onpointerup = c.onpointercancel = () => { drawing = false; };
+  }
+  clearSig = () => { if (this.canvas && this.ctx) this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height); this.setState({ hasSig: false }); };
+  onCheck = e => { const { name, checked } = e.target; this.setState(s => ({ f: { ...s.f, [name]: checked } })); };
+
+  submit = async () => {
+    const s = this.state;
+    const id = 'CEU-' + s.f.year + '-' + Math.random().toString(36).slice(2, 7).toUpperCase();
+    const picked = s.courses.filter(c => s.picks[c.id] && s.picks[c.id].checked);
+    this.setState({ sending: true, sendError: '' });
+    const payload = {
+      _subject: `CEU attestation ${id} — ${s.f.fullName}`,
+      type: 'CEU attestation', reference: id, ceu_year: s.f.year, signed_at: new Date().toLocaleString('en-US'),
+      full_name: s.f.fullName, organization: s.f.org, role: s.f.role === 'Other' ? 'Other: ' + s.f.roleOther.trim() : s.f.role,
+      email: s.f.email, state: s.f.state, _replyto: s.f.email,
+      library_courses: picked.map(c => `[x] ${c.title} (${hrs(c.hours)}) — completed ${s.picks[c.id].date}`).join('\n') || 'None',
+      total_hours: String(this.total()), required_hours: s.required ? String(s.required) : 'Not set',
+      signature_image: this.canvas ? this.canvas.toDataURL('image/png') : ''
+    };
+    try {
+      const formId = (this.props.formspreeId || CEU_FORMSPREE_ID).trim();
+      const res = await fetch('https://formspree.io/f/' + formId, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(payload) });
+      if (!res.ok) throw new Error();
+    } catch (e) {
+      this.setState({ sending: false, sendError: "We couldn't send your attestation. Check your connection and try again, or email bpritchard@ableliving-mail.com." });
+      return;
+    }
+    try {
+      const pd = this.partnersData;
+      if (pd && pd.logUrl) {
+        const org = s.f.org.trim();
+        const p = (pd.partners || []).find(x => x.name.toLowerCase() === org.toLowerCase());
+        const body = { event: 'CEU attestation', partnerId: p ? p.id : '', partnerName: p ? p.name : org, form: 'CEU ' + s.f.year + ' · ' + this.total() + ' hrs', person: s.f.fullName.trim(), role: s.f.role === 'Other' ? 'Other: ' + s.f.roleOther.trim() : s.f.role, dueDate: (Number(s.f.year) + 1) + '-12-31', reference: id };
+        fetch(pd.logUrl, { method: 'POST', mode: 'no-cors', keepalive: true, body: JSON.stringify(body) }).catch(() => {});
+      }
+    } catch (e) {}
+    this.setState({ submitted: true, sending: false, refId: id, sigData: payload.signature_image, signedAt: new Date().toISOString(), certPicked: picked.map(c => `${c.title} · ${hrs(c.hours)} · ${s.picks[c.id].date}`) });
+    window.scrollTo(0, 0);
+  };
+
+  total() {
+    const s = this.state;
+    const lib = s.courses.filter(c => s.picks[c.id] && s.picks[c.id].checked).reduce((a, c) => a + (Number(c.hours) || 0), 0);
+    return round(lib);
+  }
+
+  renderVals() {
+    const s = this.state;
+    const dev = /\.dc\.html/.test(decodeURIComponent(location.pathname));
+    const y = new Date().getFullYear();
+    const total = this.total();
+    const picked = s.courses.filter(c => s.picks[c.id] && s.picks[c.id].checked);
+    const missing = [];
+    const f = s.f;
+    if (!f.fullName.trim() || !f.org.trim() || !f.email.trim() || !f.state || !f.role || (f.role === 'Other' && !f.roleOther.trim())) missing.push('your details');
+    if (!picked.length) missing.push('at least one course');
+    else if (total < Math.max(MIN_HOURS, s.required || 0)) missing.push(`at least ${Math.max(MIN_HOURS, s.required || 0)} CE hours (you have ${total})`);
+    if (picked.some(c => !s.picks[c.id].date)) missing.push('completion dates');
+    if (!f.confirm || !s.hasSig) missing.push('your signature');
+    return {
+      nav: dev
+        ? { home: 'Home.dc.html', partnership: 'Partnership.dc.html', become: 'Become%20a%20Partner.dc.html', forms: 'Forms.dc.html', contact: 'Contact.dc.html', privacy: 'Privacy%20Policy.dc.html', demo: 'Partnership%20Demo.dc.html', onboard: 'Onboarding%20Checklist.dc.html', training: 'Training.dc.html', topics: 'Required%20Topics.dc.html', howto: 'How%20to%20Attest.dc.html', attest: 'Clinician%20Attestation.dc.html', portal: 'Partner%20Portal.dc.html', ceu: 'CEU%20Library.dc.html', ceuAttest: 'CEU%20Attestation.dc.html' }
+        : { home: './', partnership: 'partnership.html', become: 'become-a-partner.html', forms: 'forms.html', contact: 'contact.html', privacy: 'privacy-policy.html', demo: 'partnership-demo.html', onboard: 'onboarding-checklist.html', training: 'training.html', topics: 'required-topics.html', howto: 'how-to-attest.html', attest: 'attestation.html', portal: 'partner-portal.html', ceu: 'ceu-library.html', ceuAttest: 'ceu-attestation.html' },
+      f, onField: this.onField, onCheck: this.onCheck, roleIsOther: f.role === 'Other', orgOptions: s.orgOptions || [],
+      sigRef: this.sigRef, clearSig: this.clearSig,
+      sigHint: s.hasSig ? 'Signature captured' : 'Sign with your mouse, finger, or stylus',
+      printedName: f.fullName.trim() || '—',
+      years: Array.from({ length: Math.max(1, LAST_YEAR - (y - 1) + 1) }, (_, i) => String(y - 1 + i)), todayIso: todayIso(),
+      noCourses: s.courses.length === 0,
+      showAll: !!s.showAll, q: s.q || '', onQ: e => this.setState({ q: e.target.value }),
+      toggleAll: () => this.setState(st => ({ showAll: !st.showAll, q: '' })),
+      toggleAllLabel: s.showAll ? 'Show only selected' : 'Add courses from the library',
+      pickedSummary: `${picked.length} course${picked.length === 1 ? '' : 's'} selected`,
+      listEmpty: !s.showAll && picked.length === 0 && s.courses.length > 0,
+      courses: s.courses.filter(c => {
+        const on = s.picks[c.id] && s.picks[c.id].checked;
+        if (!s.showAll) return on;
+        const q = (s.q || '').trim().toLowerCase();
+        return !q || (c.title + ' ' + (c.category || '')).toLowerCase().includes(q);
+      }).map((c, i) => {
+        const p = s.picks[c.id] || { checked: false, date: '' };
+        return {
+          title: c.title, hoursLabel: hrs(c.hours), checked: !!p.checked, date: p.date || '',
+          rowStyle: { display: 'flex', flexWrap: 'wrap', gap: '12px 24px', alignItems: 'center', justifyContent: 'space-between', padding: '18px 22px', borderTop: i ? '1px solid var(--line)' : 'none' },
+          onToggle: () => this.setState(st => ({ picks: { ...st.picks, [c.id]: { ...p, checked: !p.checked } } })),
+          onDate: e => { const v = e.target.value; this.setState(st => ({ picks: { ...st.picks, [c.id]: { checked: true, date: v } } })); }
+        };
+      }),
+      totalLabel: hrs(total), hasRequired: true,
+      requiredNote: (() => {
+        const req = Math.max(MIN_HOURS, s.required || 0);
+        return total >= req ? `Meets the ${round(req)}-hour yearly CMS requirement.` : `${round(req - total)} more hour${round(req - total) === 1 ? '' : 's'} needed. CMS requires at least ${round(req)} CE hours a year before you can attest.`;
+      })(),
+      notReady: missing.length > 0 || s.sending,
+      readyNote: missing.length ? 'Still needed: ' + missing.join(', ') + '.' : 'Ready to submit.',
+      submitLabel: s.sending ? 'Sending…' : 'Submit CEU attestation',
+      submit: this.submit, sendError: s.sendError,
+      submitted: s.submitted, editing: !s.submitted, refId: s.refId,
+      firstName: f.fullName.trim().split(/\s+/)[0] || 'there',
+      printCopy: () => window.print(),
+      certLine: `has completed ${hrs(total)} of continuing education in dementia care for ${f.year}, meeting the yearly CE requirement for the CMS GUIDE Model.`,
+      certCourses: s.certPicked || [],
+      signedLabel: s.signedAt ? new Date(s.signedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : '',
+      sigImgStyle: { width: 240, height: 70, backgroundImage: s.sigData ? `url("${s.sigData}")` : 'none', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center bottom' }
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<title>Attestation — AbleLiving</title>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#122F52"/><g fill="#87AEDF"><circle cx="50" cy="38" r="10"/><circle cx="61" cy="46" r="10"/><circle cx="57" cy="59" r="10"/><circle cx="43" cy="59" r="10"/><circle cx="39" cy="46" r="10"/></g><circle cx="50" cy="50" r="5" fill="#F8CB27"/></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="ds/tokens/colors.css">
+  <link rel="stylesheet" href="ds/tokens/fonts.css">
+  <link rel="stylesheet" href="ds/tokens/typography.css">
+  <link rel="stylesheet" href="ds/tokens/spacing.css">
+  <link rel="stylesheet" href="ds/tokens/base.css">
+  <link rel="stylesheet" href="ds/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
+  <script src="ds/_ds_bundle.js"></script>
+  <style>
+    :root { --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
+    body { margin: 0; background: var(--paper); }
+    * { font-variant-ligatures: no-common-ligatures no-discretionary-ligatures; font-feature-settings: 'liga' 0, 'dlig' 0; font-variation-settings: 'WONK' 0; }
+    a { color: var(--leaf); }
+    a:hover { color: var(--navy); }
+  </style>
+  <style>summary::-webkit-details-marker { display: none; }</style>
+  <script>document.addEventListener('click', function (e) { document.querySelectorAll('details[data-nav][open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); }); });</script>
+  <style>@media (max-width: 760px) { [data-nav-full] { display: none !important; } [data-nav-mobile] { display: block !important; } }</style>
+</helmet>
+
+<div style="min-height: 100vh; background: var(--paper); font-family: var(--font-sans); color: var(--ink);">
+  <nav style="background: #fff; border-bottom: 1px solid var(--line); font-family: var(--font-sans); position: relative; z-index: 20;">
+    <div style="max-width: 980px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px 28px; flex-wrap: wrap;">
+      <a href="{{ nav.home }}" style="display: block;"><img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 170px; height: auto; display: block;"></a>
+      <div data-nav-full="" style="display: flex; align-items: center; justify-content: flex-end; gap: 8px 26px; flex-wrap: wrap; flex: 1 1 auto;">
+        <details data-nav="1" style="position: relative;">
+          <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Partnership<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
+          <div style="position: absolute; top: 100%; left: -12px; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; min-width: 230px; display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+            <a href="{{ nav.partnership }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How we partner</a>
+            <a href="{{ nav.demo }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partnership overview</a>
+            <a href="{{ nav.become }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Become a partner</a>
+            <a href="{{ nav.onboard }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Onboarding checklist</a>
+            <a href="{{ nav.become }}#faq" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partner FAQ</a>
+          </div>
+        </details>
+        <details data-nav="1" style="position: relative;">
+          <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 800; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Training<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
+          <div style="position: absolute; top: 100%; left: -12px; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; min-width: 250px; display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+            <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Learn</span>
+            <a href="{{ nav.training }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Training modules</a>
+            <a href="{{ nav.topics }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Required topics</a>
+            <a href="{{ nav.ceu }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU library</a>
+            <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Attest</span>
+            <a href="{{ nav.howto }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How to attest</a>
+            <a href="{{ nav.attest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Start initial attestation</a>
+            <a href="{{ nav.ceuAttest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU attestation</a>
+          </div>
+        </details>
+        <a href="{{ nav.forms }}" style="font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none; padding: 8px 0;" style-hover="color: var(--leaf);">Forms</a>
+        <a href="{{ nav.contact }}" style="font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none; padding: 8px 0;" style-hover="color: var(--leaf);">Contact</a>
+        <a href="{{ nav.become }}" style="text-decoration: none; flex: none;">
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" hint-size="140px,38px"><span style="white-space: nowrap;">Become a partner</span></x-import>
+        </a>
+      </div>
+      <details data-nav="1" data-nav-mobile="" style="display: none; position: relative;">
+        <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 700; color: var(--navy); padding: 9px 16px; border: 1px solid var(--navy); border-radius: 999px; display: flex; align-items: center; gap: 8px;">Menu<span style="font-size: 11px;">▾</span></summary>
+        <div style="position: absolute; top: 100%; right: 0; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; width: min(280px, calc(100vw - 48px)); display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+          <a href="{{ nav.home }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Home</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Partnership</span>
+          <a href="{{ nav.partnership }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How we partner</a>
+          <a href="{{ nav.demo }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partnership overview</a>
+          <a href="{{ nav.onboard }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Onboarding checklist</a>
+          <a href="{{ nav.become }}#faq" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partner FAQ</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Training</span>
+          <a href="{{ nav.training }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Training modules</a>
+          <a href="{{ nav.topics }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Required topics</a>
+          <a href="{{ nav.ceu }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU library</a>
+          <a href="{{ nav.howto }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How to attest</a>
+          <a href="{{ nav.attest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Start initial attestation</a>
+          <a href="{{ nav.ceuAttest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU attestation</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">More</span>
+          <a href="{{ nav.forms }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Forms</a>
+          <a href="{{ nav.contact }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Contact</a>
+          <div style="border-top: 1px solid var(--line); margin: 6px 0 0; padding: 10px 6px 4px;">
+            <a href="{{ nav.become }}" style="display: block; text-align: center; padding: 10px 12px; border: 1px solid var(--navy); border-radius: 999px; font-size: 15px; font-weight: 700; color: var(--navy); text-decoration: none;">Become a partner</a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </nav>
+
+  <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.PageHeaderBar" kicker="Staff compliance" title="Clinician training &amp; compliance attestation" crumbs="{{ crumbs }}" hint-size="100%,140px"></x-import>
+
+  <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width: 820px; margin: 0 auto; padding: 56px 24px 90px;">
+      <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 40px 36px; display: flex; flex-direction: column; gap: 22px;">
+        <img src="assets/bloom.svg" alt="" style="width: 44px; height: 44px;">
+        <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: 34px; line-height: 1.2; color: var(--navy); margin: 0; text-wrap: pretty;">Thank you, {{ firstName }}. Your attestation is on file.</h1>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--ink); max-width: 60ch;">Compliance will review it within two business days. You don't need to do anything else unless we reach out.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; border-top: 1px solid var(--line); padding-top: 22px;">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Reference</span>
+            <span style="font-size: 17px; color: var(--navy); font-weight: 700;">{{ refId }}</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Signed</span>
+            <span style="font-size: 17px; color: var(--navy); font-weight: 700;">{{ todayLabel }}</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Next due</span>
+            <span style="font-size: 17px; color: var(--navy); font-weight: 700;">{{ nextDueLabel }}</span>
+          </div>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="primary" on-click="{{ printCopy }}" hint-size="180px,48px">Print a copy</x-import>
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" on-click="{{ reset }}" hint-size="180px,48px">Start over</x-import>
+        </div>
+      </div>
+    </div>
+    <footer style="background: var(--navy); color: #fff; font-family: var(--font-sans);">
+  <div style="max-width: 980px; margin: 0 auto; padding: 56px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px;">
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="background: #fff; border-radius: 12px; padding: 12px 16px; align-self: flex-start;">
+        <img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 160px; height: auto; display: block;">
+      </div>
+      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--blue-soft); max-width: 36ch;">Care navigator training and attestation for GUIDE Model partner practices in Florida and Ohio.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--blue-soft);">Partner contact</span>
+      <span style="font-family: var(--font-serif); font-size: 20px;">Bryson Pritchard</span>
+      <span style="font-size: 15px; color: var(--blue-soft);">Vice President of Growth</span>
+      <a href="mailto:bpritchard@ableliving-mail.com" style="font-size: 15px; color: #fff; font-weight: 700; word-break: break-all;">bpritchard@ableliving-mail.com</a>
+    </div>
+  </div>
+  <div style="border-top: 1px solid var(--border-on-dark);">
+    <div style="max-width: 980px; margin: 0 auto; padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 10px; font-size: 13px; line-height: 1.6; color: var(--blue-soft);">
+      <div style="display: flex; flex-wrap: wrap; gap: 6px 20px; justify-content: space-between;"><span>© 2026 AbleLiving Memory Support, PLLC. Participant in the CMS GUIDE Model.</span><span style="display: flex; gap: 18px;"><a href="{{ nav.privacy }}" style="color: #fff; font-weight: 700;">Privacy policy</a><a href="{{ nav.contact }}" style="color: #fff; font-weight: 700;">Contact us</a></span></div>
+      <p style="margin: 0; max-width: 90ch;">This site provides training and partnership information for GUIDE Model partner practices. It is not medical advice and does not collect patient health information. AbleLiving Memory Support, PLLC participates in the CMS GUIDE Model; this site is not an official CMS website and is not endorsed by CMS. In an emergency, call 911.</p>
+    </div>
+  </div>
+</footer>
+  </sc-if>
+
+  <sc-if value="{{ editing }}" hint-placeholder-val="{{ true }}">
+    <div style="max-width: 820px; margin: 0 auto; padding: 48px 24px 140px; display: flex; flex-direction: column; gap: 56px;">
+
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <p style="margin: 0; font-family: var(--font-serif); font-size: 22px; line-height: 1.45; color: var(--navy); text-wrap: pretty;">Please confirm your training is current and that you meet our compliance requirements. It takes about five minutes.</p>
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Callout" tone="gold" hint-size="100%,80px">Only check a statement if it's true for you today. If something isn't true yet, stop here and email <a href="mailto:compliance@ableliving.care">compliance@ableliving.care</a> — we'll help you sort it out before you sign.</x-import>
+      </div>
+
+      <section style="display: flex; flex-direction: column; gap: 24px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 14px;">
+          <span style="font-family: var(--font-serif); font-style: italic; font-size: 28px; color: var(--blue);">01</span>
+          <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 26px; color: var(--navy); margin: 0;">About you</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+          <label style="display: flex; flex-direction: column; gap: 8px; grid-column: 1 / -1;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Full legal name</span>
+            <input name="fullName" value="{{ f.fullName }}" onChange="{{ onField }}" placeholder="As it appears on your license" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); outline: none;" style-focus="border-color: var(--blue); box-shadow: var(--focus-ring);">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px; grid-column: 1 / -1;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Organization</span>
+            <input name="org" list="al-partner-orgs" autocomplete="off" value="{{ f.org }}" onChange="{{ onField }}" placeholder="The practice or organization you work for" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); outline: none;" style-focus="border-color: var(--blue); box-shadow: var(--focus-ring);">
+            <datalist id="al-partner-orgs">
+              <sc-for list="{{ orgOptions }}" as="o" hint-placeholder-count="0">
+                <option value="{{ o }}"></option>
+              </sc-for>
+            </datalist>
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Role</span>
+            <select name="role" value="{{ f.role }}" onChange="{{ onField }}" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); outline: none;" style-focus="border-color: var(--blue); box-shadow: var(--focus-ring);">
+              <option value="">Select your role</option>
+              <option>Physician (MD / DO)</option>
+              <option>Nurse practitioner</option>
+              <option>Physician assistant</option>
+              <option>Registered nurse</option>
+              <option>Licensed clinical social worker</option>
+              <option>Care navigator</option>
+              <option>Physical therapist (PT)</option>
+              <option>Physical therapist assistant (PTA)</option>
+              <option>Occupational therapist (OT)</option>
+              <option>Occupational therapy assistant (OTA)</option>
+              <option>Speech-language pathologist (SLP)</option>
+              <option>Other</option>
+            </select>
+            <sc-if value="{{ roleIsOther }}" hint-placeholder-val="{{ false }}">
+              <input name="roleOther" value="{{ f.roleOther }}" onChange="{{ onField }}" placeholder="Your role" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box;">
+            </sc-if>
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Work email</span>
+            <input name="email" type="email" value="{{ f.email }}" onChange="{{ onField }}" placeholder="name@ableliving.care" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); outline: none;" style-focus="border-color: var(--blue); box-shadow: var(--focus-ring);">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">NPI number <span style="font-weight: 400; color: var(--sage);">(if you have one)</span></span>
+            <input name="npi" inputmode="numeric" maxlength="10" value="{{ f.npi }}" onChange="{{ onField }}" placeholder="10 digits" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); outline: none;" style-focus="border-color: var(--blue); box-shadow: var(--focus-ring);">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">License or certification number <span style="font-weight: 400; color: var(--sage);">(optional)</span></span>
+            <input name="license" value="{{ f.license }}" onChange="{{ onField }}" placeholder="e.g. ME 123456" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); outline: none;" style-focus="border-color: var(--blue); box-shadow: var(--focus-ring);">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">State of practice</span>
+            <select name="state" value="{{ f.state }}" onChange="{{ onField }}" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); outline: none;" style-focus="border-color: var(--blue); box-shadow: var(--focus-ring);">
+              <option value="">Select a state</option>
+              <option>Florida</option>
+              <option>Ohio</option>
+              <option>Both Florida and Ohio</option>
+            </select>
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">License expiration date <span style="font-weight: 400; color: var(--sage);">(optional)</span></span>
+            <input name="expires" type="date" value="{{ f.expires }}" onChange="{{ onField }}" style="font-family: var(--font-sans); font-size: 17px; padding: 12px 15px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); outline: none;" style-focus="border-color: var(--blue); box-shadow: var(--focus-ring);">
+          </label>
+        </div>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 24px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 14px;">
+          <span style="font-family: var(--font-serif); font-style: italic; font-size: 28px; color: var(--blue);">02</span>
+          <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 26px; color: var(--navy); margin: 0;">Training I've completed</h2>
+        </div>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: var(--sage);">{{ trainingHint }}</p>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <sc-for list="{{ training }}" as="item" hint-placeholder-count="4">
+            <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 20px 22px; display: flex; gap: 18px; align-items: center; flex-wrap: wrap;">
+              <button type="button" onClick="{{ item.toggle }}" aria-pressed="{{ item.checked }}" style="flex: 1 1 320px; display: flex; gap: 16px; align-items: flex-start; background: none; border: none; padding: 0; text-align: left; cursor: pointer; font-family: var(--font-sans);">
+                <sc-if value="{{ item.checked }}" hint-placeholder-val="{{ false }}">
+                  <span style="flex: none; width: 26px; height: 26px; border-radius: 7px; background: var(--leaf); border: 1.5px solid var(--leaf); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700;">✓</span>
+                </sc-if>
+                <sc-if value="{{ item.unchecked }}" hint-placeholder-val="{{ true }}">
+                  <span style="flex: none; width: 26px; height: 26px; border-radius: 7px; background: #fff; border: 1.5px solid var(--sage);"></span>
+                </sc-if>
+                <span style="display: flex; flex-direction: column; gap: 4px;">
+                  <span style="font-size: 17px; font-weight: 700; color: var(--navy); line-height: 1.4;">{{ item.title }}</span>
+                  <span style="font-size: 15px; color: var(--sage); line-height: 1.55;">{{ item.detail }}</span>
+                </span>
+              </button>
+              <sc-if value="{{ showDates }}" hint-placeholder-val="{{ true }}">
+                <label style="flex: 0 0 auto; display: flex; flex-direction: column; gap: 6px; margin-left: 42px;">
+                  <span style="font-size: 13px; font-weight: 700; color: var(--sage);">Date completed</span>
+                  <input type="date" value="{{ item.date }}" onChange="{{ item.onDate }}" max="{{ todayIso }}" style="font-family: var(--font-sans); font-size: 16px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); outline: none;" style-focus="border-color: var(--blue); box-shadow: var(--focus-ring);">
+                </label>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 24px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 14px;">
+          <span style="font-family: var(--font-serif); font-style: italic; font-size: 28px; color: var(--blue);">03</span>
+          <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 26px; color: var(--navy); margin: 0;">GUIDE training topics</h2>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap;">
+          <p style="margin: 0; flex: 1 1 360px; font-size: 16px; line-height: 1.65; color: var(--sage); text-wrap: pretty;">CMS requires GUIDE care navigators to be trained in each of these topics (GUIDE Model, Appendix B). Check each one your training covered.</p>
+          <span style="font-size: 15px; font-weight: 700; color: var(--navy);">{{ topicsDone }}</span>
+        </div>
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+          <sc-for list="{{ topics }}" as="item" hint-placeholder-count="13">
+            <button type="button" onClick="{{ item.toggle }}" aria-pressed="{{ item.checked }}" style="display: flex; gap: 16px; align-items: flex-start; background: none; border: none; border-top: {{ item.divider }}; padding: 18px 22px; text-align: left; cursor: pointer; font-family: var(--font-sans);">
+              <sc-if value="{{ item.checked }}" hint-placeholder-val="{{ false }}">
+                <span style="flex: none; width: 26px; height: 26px; border-radius: 7px; background: var(--leaf); border: 1.5px solid var(--leaf); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700;">✓</span>
+              </sc-if>
+              <sc-if value="{{ item.unchecked }}" hint-placeholder-val="{{ true }}">
+                <span style="flex: none; width: 26px; height: 26px; border-radius: 7px; background: #fff; border: 1.5px solid var(--sage);"></span>
+              </sc-if>
+              <span style="display: flex; flex-direction: column; gap: 4px;">
+                <span style="font-size: 17px; font-weight: 700; color: var(--navy); line-height: 1.4;">{{ item.title }}</span>
+                <span style="font-size: 15px; color: var(--sage); line-height: 1.55; text-wrap: pretty;">{{ item.detail }}</span>
+              </span>
+            </button>
+          </sc-for>
+        </div>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 24px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 14px;">
+          <span style="font-family: var(--font-serif); font-style: italic; font-size: 28px; color: var(--blue);">04</span>
+          <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 26px; color: var(--navy); margin: 0;">Compliance statements</h2>
+        </div>
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+          <sc-for list="{{ compliance }}" as="item" hint-placeholder-count="5">
+            <button type="button" onClick="{{ item.toggle }}" aria-pressed="{{ item.checked }}" style="display: flex; gap: 16px; align-items: flex-start; background: none; border: none; border-top: {{ item.divider }}; padding: 20px 22px; text-align: left; cursor: pointer; font-family: var(--font-sans);">
+              <sc-if value="{{ item.checked }}" hint-placeholder-val="{{ false }}">
+                <span style="flex: none; width: 26px; height: 26px; border-radius: 7px; background: var(--leaf); border: 1.5px solid var(--leaf); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700;">✓</span>
+              </sc-if>
+              <sc-if value="{{ item.unchecked }}" hint-placeholder-val="{{ true }}">
+                <span style="flex: none; width: 26px; height: 26px; border-radius: 7px; background: #fff; border: 1.5px solid var(--sage);"></span>
+              </sc-if>
+              <span style="font-size: 17px; color: var(--ink); line-height: 1.55; text-wrap: pretty;">{{ item.text }}</span>
+            </button>
+          </sc-for>
+        </div>
+        <label style="display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Anything to disclose? <span style="font-weight: 400; color: var(--sage);">(optional)</span></span>
+          <textarea name="disclosure" rows="3" value="{{ f.disclosure }}" onChange="{{ onField }}" placeholder="Pending board actions, outside employment that could be a conflict of interest, or anything else compliance should know." style="font-family: var(--font-sans); font-size: 16px; line-height: 1.6; padding: 13px 15px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); outline: none; resize: vertical;" style-focus="border-color: var(--blue); box-shadow: var(--focus-ring);"></textarea>
+        </label>
+      </section>
+
+      <section style="display: flex; flex-direction: column; gap: 24px;">
+        <div style="display: flex; align-items: baseline; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 14px;">
+          <span style="font-family: var(--font-serif); font-style: italic; font-size: 28px; color: var(--blue);">05</span>
+          <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 26px; color: var(--navy); margin: 0;">Sign</h2>
+        </div>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--ink); max-width: 64ch;">By signing, I confirm that everything above is true and complete to the best of my knowledge. I understand that a false statement may lead to removal from the GUIDE program and other action.</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Draw your signature</span>
+            <button type="button" onClick="{{ clearSig }}" style="background: none; border: none; padding: 6px 0; font-family: var(--font-sans); font-size: 15px; font-weight: 700; color: var(--leaf); cursor: pointer;" style-hover="color: var(--navy);">Clear</button>
+          </div>
+          <div style="position: relative; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); height: 180px; overflow: hidden;">
+            <canvas ref="{{ sigRef }}" style="position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; cursor: crosshair;"></canvas>
+            <div style="position: absolute; left: 28px; right: 28px; bottom: 44px; border-bottom: 1px solid var(--line); pointer-events: none;"></div>
+            <span style="position: absolute; left: 28px; bottom: 16px; font-size: 13px; color: var(--sage); pointer-events: none;">{{ sigHint }}</span>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Printed name</span>
+            <span style="font-size: 17px; color: var(--navy); font-weight: 700; min-height: 27px;">{{ printedName }}</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Date</span>
+            <span style="font-size: 17px; color: var(--navy); font-weight: 700;">{{ todayLabel }}</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div style="position: sticky; bottom: 0; background: #fff; border-top: 1px solid var(--line);">
+      <div style="max-width: 820px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-size: 15px; color: var(--navy); font-weight: 700;">{{ progressLabel }}</span>
+          <div style="height: 6px; background: var(--mist); border-radius: 999px; overflow: hidden;">
+            <div style="height: 100%; width: {{ progressPct }}; background: var(--leaf); border-radius: 999px; transition: width var(--duration-fast) var(--ease-standard);"></div>
+          </div>
+        </div>
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="primary" disabled="{{ notReady }}" on-click="{{ submit }}" hint-size="200px,48px">{{ submitLabel }}</x-import>
+        <sc-if value="{{ hasError }}" hint-placeholder-val="{{ false }}">
+          <p role="alert" style="flex: 1 1 100%; margin: 0; font-size: 15px; line-height: 1.5; color: var(--rust-strong);">{{ sendError }}</p>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;period&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;Annual renewal&quot;, &quot;New hire onboarding&quot;], &quot;default&quot;: &quot;Annual renewal&quot;, &quot;tsType&quot;: &quot;string&quot;}, &quot;requireDates&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;}, &quot;formspreeId&quot;: {&quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;xgavznke&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Delivery&quot;}}">
+class Component extends DCLogic {
+  state = {
+    f: { fullName: '', org: '', role: '', roleOther: '', email: '', npi: '', license: '', state: '', expires: '', disclosure: '' },
+    training: [
+      { id: 't1', title: 'Dementia care training for my role', detail: 'The CMS GUIDE Model care navigator curriculum. Confirm each topic in the next section.', checked: false, date: '' },
+      { id: 't2', title: 'HIPAA privacy and security', detail: 'How we protect patient and family information at home and in our systems.', checked: false, date: '' },
+      { id: 't3', title: 'Medicare fraud, waste, and abuse', detail: 'Required yearly for everyone who bills or documents Medicare services.', checked: false, date: '' },
+      { id: 't4', title: 'Recognizing and reporting elder abuse', detail: 'Signs of abuse, neglect, and exploitation, and how to report them in Florida and Ohio.', checked: false, date: '' }
+    ],
+    topics: [
+      { id: 'g1', title: "Background on dementia", detail: "Dementia as a medical condition; how the disease progresses; balancing dementia with other conditions.", checked: false },
+      { id: 'g2', title: "Overview of assessments", detail: "Assessments available for dementia; recommendations for a successful assessment.", checked: false },
+      { id: 'g3', title: "Care plan", detail: "What a care plan is; including the person with dementia in building the plan.", checked: false },
+      { id: 'g4', title: "Person-centered planning", detail: "What person-centered planning means and how to use it in planning.", checked: false },
+      { id: 'g5', title: "Challenging behaviors", detail: "Managing behavioral symptoms; common behavioral changes due to dementia and how to address them.", checked: false },
+      { id: 'g6', title: "Functional needs", detail: "Activities of daily living (ADLs) and instrumental activities (IADLs); how dementia changes them and how to help; monitoring medications and keeping a medication schedule.", checked: false },
+      { id: 'g7', title: "Advance care planning", detail: "Advance medical directives and the POLST form; helping someone plan ahead for care.", checked: false },
+      { id: 'g8', title: "Decision-making capacity", detail: "What capacity for medical decisions is; what it means when someone no longer has it; supported decision-making.", checked: false },
+      { id: 'g9', title: "Safety", detail: "Safety at home, in public, and while driving; elder abuse, neglect, and financial exploitation; access to weapons and dangerous substances.", checked: false },
+      { id: 'g10', title: "Communication", detail: "Ways to communicate with people living with dementia and their caregivers.", checked: false },
+      { id: 'g11', title: "Coordinating medical care and community services", detail: "Working with clinical providers; supporting transitions between care settings; accessing community services and supports, including respite; working with case managers to close gaps and avoid duplication.", checked: false },
+      { id: 'g12', title: "Supporting a caregiver", detail: "Caregiver strain and support, such as peer-to-peer, support groups, and 1:1 support; in-home caregiver training and why caregiver education matters.", checked: false },
+      { id: 'g13', title: "Diversity in dementia", detail: "Treating dementia and communicating with diverse populations in a culturally competent way.", checked: false }
+    ],
+    compliance: [
+      { id: 'c0', text: 'I have completed all modules, which took me over 20 hours of training time.', checked: false },
+      { id: 'c1', text: 'My professional license or certification is active and in good standing, with no restrictions I haven\'t disclosed below.', checked: false },
+      { id: 'c2', text: 'I am not excluded, suspended, or debarred from Medicare, Medicaid, or any other federal health care program.', checked: false },
+      { id: 'c3', text: 'I will keep patient and family information private and use it only to provide or coordinate care.', checked: false },
+      { id: 'c5', text: 'I will tell compliance within five business days if anything above changes.', checked: false }
+    ],
+    hasSig: false,
+    submitted: false,
+    refId: ''
+  };
+
+  sigRef = (el) => {
+    if (el === this.canvas) return;
+    this.canvas = el;
+    if (el) this.setupCanvas(el);
+  };
+
+  setupCanvas(c) {
+    const ctx = c.getContext('2d');
+    this.ctx = ctx;
+    const size = () => {
+      const dpr = window.devicePixelRatio || 1;
+      const r = c.getBoundingClientRect();
+      if (!r.width) return;
+      const w = Math.round(r.width * dpr), h = Math.round(r.height * dpr);
+      if (c.width === w && c.height === h) return;
+      c.width = w; c.height = h;
+      ctx.lineWidth = 2.2 * dpr; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      ctx.strokeStyle = ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--navy').trim() || '#122F52';
+      if (this.state.hasSig) this.setState({ hasSig: false });
+    };
+    requestAnimationFrame(size);
+    if (this.ro) this.ro.disconnect();
+    this.ro = new ResizeObserver(size);
+    this.ro.observe(c);
+    let drawing = false, last = null;
+    const pt = (e) => { const b = c.getBoundingClientRect(); return { x: (e.clientX - b.left) * c.width / b.width, y: (e.clientY - b.top) * c.height / b.height }; };
+    c.onpointerdown = (e) => { drawing = true; last = pt(e); c.setPointerCapture(e.pointerId); ctx.beginPath(); ctx.arc(last.x, last.y, ctx.lineWidth / 2, 0, Math.PI * 2); ctx.fill(); };
+    c.onpointermove = (e) => {
+      if (!drawing) return;
+      const p = pt(e);
+      ctx.beginPath(); ctx.moveTo(last.x, last.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+      last = p;
+      if (!this.state.hasSig) this.setState({ hasSig: true });
+    };
+    c.onpointerup = c.onpointercancel = () => { drawing = false; };
+  }
+
+  clearSig = () => {
+    if (this.canvas && this.ctx) this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    this.setState({ hasSig: false });
+  };
+
+  onField = (e) => { const { name, value } = e.target; this.setState(s => ({ f: { ...s.f, [name]: value } })); };
+
+  toggle(list, id) { this.setState(s => ({ [list]: s[list].map(x => x.id === id ? { ...x, checked: !x.checked } : x) })); }
+  setDate(id, v) { this.setState(s => ({ training: s.training.map(x => x.id === id ? { ...x, date: v, checked: v ? true : x.checked } : x) })); }
+
+  submit = async () => {
+    const s = this.state;
+    const id = 'AL-' + new Date().getFullYear() + '-' + Math.random().toString(36).slice(2, 7).toUpperCase();
+    const formId = (this.props.formspreeId || 'xgavznke').trim();
+    if (formId) {
+      this.setState({ sending: true, sendError: '' });
+      const payload = {
+        _subject: `Attestation ${id} — ${s.f.fullName}`,
+        reference: id,
+        period: this.props.period ?? 'Annual renewal',
+        signed_at: new Date().toLocaleString('en-US'),
+        full_name: s.f.fullName, organization: s.f.org, role: s.f.role === 'Other' ? 'Other: ' + s.f.roleOther.trim() : s.f.role, email: s.f.email, npi: s.f.npi,
+        license: s.f.license, state: s.f.state, license_expires: s.f.expires,
+        _replyto: s.f.email,
+        training: s.training.map(t => `${t.checked ? '[x]' : '[ ]'} ${t.title}${t.date ? ' — completed ' + t.date : ''}`).join('\n'),
+        guide_training_topics: s.topics.map(t => `${t.checked ? '[x]' : '[ ]'} ${t.title}`).join('\n'),
+        compliance: s.compliance.map(c => `${c.checked ? '[x]' : '[ ]'} ${c.text}`).join('\n'),
+        disclosure: s.f.disclosure || 'None',
+        signature_image: this.canvas ? this.canvas.toDataURL('image/png') : ''
+      };
+      try {
+        const res = await fetch('https://formspree.io/f/' + formId, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error();
+      } catch (e) {
+        this.setState({ sending: false, sendError: 'We couldn\'t send your attestation. Check your connection and try again, or email compliance@ableliving.care.' });
+        return;
+      }
+    }
+    this.logAttestation(id);
+    this.setState({ submitted: true, sending: false, refId: id });
+    window.scrollTo(0, 0);
+  };
+
+  async componentDidMount() {
+    const dev = /\.dc\.html/.test(decodeURIComponent(location.pathname));
+    try {
+      const r = await fetch(dev ? 'partners.json' : 'partners.json?t=' + Date.now(), { cache: 'no-store' });
+      const d = await r.json();
+      this.partnersData = d;
+      this.setState({ orgOptions: (d.partners || []).filter(p => p.active !== false).map(p => p.name).sort() });
+    } catch (e) {}
+  }
+
+  logAttestation(ref) {
+    const d = this.partnersData, s = this.state;
+    if (!d || !d.logUrl) return;
+    const org = s.f.org.trim();
+    const p = (d.partners || []).find(x => x.name.toLowerCase() === org.toLowerCase());
+    const due = new Date(); due.setFullYear(due.getFullYear() + 1);
+    const body = { event: 'Initial attestation', partnerId: p ? p.id : '', partnerName: p ? p.name : org, form: 'Initial attestation', person: s.f.fullName.trim(), role: s.f.role === 'Other' ? 'Other: ' + s.f.roleOther.trim() : s.f.role, dueDate: due.toISOString().slice(0, 10), reference: ref };
+    try { fetch(d.logUrl, { method: 'POST', mode: 'no-cors', keepalive: true, body: JSON.stringify(body) }).catch(() => {}); } catch (e) {}
+  }
+
+  reset = () => {
+    this.canvas = null;
+    this.setState(s => ({
+      submitted: false, hasSig: false,
+      f: Object.fromEntries(Object.keys(s.f).map(k => [k, ''])),
+      training: s.training.map(x => ({ ...x, checked: false, date: '' })),
+      topics: s.topics.map(x => ({ ...x, checked: false })),
+      compliance: s.compliance.map(x => ({ ...x, checked: false }))
+    }));
+  };
+
+  renderVals() {
+    const s = this.state;
+    const requireDates = this.props.requireDates ?? true;
+    const period = this.props.period ?? 'Annual renewal';
+    const fmt = (d) => d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    const now = new Date();
+    const next = new Date(now); next.setFullYear(now.getFullYear() + 1);
+
+    const reqFields = ['fullName', 'org', 'role', 'email', 'state'];
+    const steps = [
+      ...reqFields.map(k => !!s.f[k].trim() && (k !== 'role' || s.f.role !== 'Other' || !!s.f.roleOther.trim())),
+      ...s.training.map(t => t.checked && (!requireDates || !!t.date)),
+      ...s.topics.map(t => t.checked),
+      ...s.compliance.map(c => c.checked),
+      s.hasSig
+    ];
+    const done = steps.filter(Boolean).length;
+    const left = steps.length - done;
+
+    return {
+      nav: /\.dc\.html/.test(decodeURIComponent(location.pathname))
+        ? { home: 'Home.dc.html', partnership: 'Partnership.dc.html', become: 'Become%20a%20Partner.dc.html', forms: 'Forms.dc.html', contact: 'Contact.dc.html', privacy: 'Privacy%20Policy.dc.html', demo: 'Partnership%20Demo.dc.html', onboard: 'Onboarding%20Checklist.dc.html', training: 'Training.dc.html', topics: 'Required%20Topics.dc.html', howto: 'How%20to%20Attest.dc.html', attest: 'Clinician%20Attestation.dc.html', portal: 'Partner%20Portal.dc.html', ceu: 'CEU%20Library.dc.html', ceuAttest: 'CEU%20Attestation.dc.html' }
+        : { home: './', partnership: 'partnership.html', become: 'become-a-partner.html', forms: 'forms.html', contact: 'contact.html', privacy: 'privacy-policy.html', demo: 'partnership-demo.html', onboard: 'onboarding-checklist.html', training: 'training.html', topics: 'required-topics.html', howto: 'how-to-attest.html', attest: 'attestation.html', portal: 'partner-portal.html', ceu: 'ceu-library.html', ceuAttest: 'ceu-attestation.html' },
+      f: s.f, roleIsOther: s.f.role === 'Other', orgOptions: s.orgOptions || [],
+      onField: this.onField,
+      submitted: s.submitted,
+      editing: !s.submitted,
+      periodLabel: period,
+      crumbs: period + ' · GUIDE Model program · Florida and Ohio',
+      showDates: requireDates,
+      trainingHint: requireDates
+        ? 'Check each course you\'ve finished and add the date you completed it.'
+        : 'Check each course you\'ve finished.',
+      training: s.training.map(t => ({
+        ...t, unchecked: !t.checked,
+        toggle: () => this.toggle('training', t.id),
+        onDate: (e) => this.setDate(t.id, e.target.value)
+      })),
+      topics: s.topics.map((t, i) => ({
+        ...t, unchecked: !t.checked,
+        divider: i === 0 ? 'none' : '1px solid var(--line)',
+        toggle: () => this.toggle('topics', t.id)
+      })),
+      topicsDone: s.topics.filter(t => t.checked).length + ' of ' + s.topics.length + ' topics confirmed',
+      compliance: s.compliance.map((c, i) => ({
+        ...c, unchecked: !c.checked,
+        divider: i === 0 ? 'none' : '1px solid var(--line)',
+        toggle: () => this.toggle('compliance', c.id)
+      })),
+      sigRef: this.sigRef,
+      clearSig: this.clearSig,
+      sigHint: s.hasSig ? 'Signature captured' : 'Sign with your mouse, finger, or stylus',
+      printedName: s.f.fullName.trim() || '—',
+      firstName: s.f.fullName.trim().split(/\s+/)[0] || 'there',
+      todayLabel: fmt(now),
+      todayIso: now.toISOString().slice(0, 10),
+      nextDueLabel: fmt(next),
+      progressLabel: left === 0 ? 'Everything is complete. Ready to submit.' : `${left} item${left === 1 ? '' : 's'} left to complete`,
+      progressPct: Math.round((done / steps.length) * 100) + '%',
+      notReady: left > 0 || !!s.sending,
+      submitLabel: s.sending ? 'Sending…' : 'Sign and submit',
+      sendError: s.sendError || '',
+      hasError: !!s.sendError,
+      submit: this.submit,
+      reset: this.reset,
+      refId: s.refId,
+      printCopy: () => window.print()
+    };
+  }
+}
+</script>
+</body>
+</html>
