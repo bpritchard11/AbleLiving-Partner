@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#122F52"/><g fill="#87AEDF"><circle cx="50" cy="38" r="10"/><circle cx="61" cy="46" r="10"/><circle cx="57" cy="59" r="10"/><circle cx="43" cy="59" r="10"/><circle cx="39" cy="46" r="10"/></g><circle cx="50" cy="50" r="5" fill="#F8CB27"/></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Partner Portal — AbleLiving</title>
+  <link rel="stylesheet" href="ds/tokens/colors.css">
+  <link rel="stylesheet" href="ds/tokens/fonts.css">
+  <link rel="stylesheet" href="ds/tokens/typography.css">
+  <link rel="stylesheet" href="ds/tokens/spacing.css">
+  <link rel="stylesheet" href="ds/tokens/base.css">
+  <link rel="stylesheet" href="ds/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
+  <script src="ds/_ds_bundle.js"></script>
+  <style>
+    :root { --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
+    body { margin: 0; background: var(--paper); }
+    * { font-variant-ligatures: no-common-ligatures no-discretionary-ligatures; font-feature-settings: 'liga' 0, 'dlig' 0; font-variation-settings: 'WONK' 0; }
+    a { color: var(--leaf); }
+    a:hover { color: var(--navy); }
+  </style>
+  <style>summary::-webkit-details-marker { display: none; }</style>
+  <script>document.addEventListener('click', function (e) { document.querySelectorAll('details[data-nav][open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); }); });</script>
+  <style>@media (max-width: 760px) { [data-nav-full] { display: none !important; } [data-nav-mobile] { display: block !important; } }</style>
+</helmet>
+<div style="min-height: 100vh; background: var(--paper); font-family: var(--font-sans); color: var(--ink); display: flex; flex-direction: column;">
+
+  <sc-if value="{{ showSiteNav }}" hint-placeholder-val="{{ true }}">
+    <nav style="background: #fff; border-bottom: 1px solid var(--line); font-family: var(--font-sans); position: relative; z-index: 20;">
+    <div style="max-width: 980px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px 28px; flex-wrap: wrap;">
+      <a href="{{ nav.home }}" style="display: block;"><img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 170px; height: auto; display: block;"></a>
+      <div data-nav-full="" style="display: flex; align-items: center; justify-content: flex-end; gap: 8px 26px; flex-wrap: wrap; flex: 1 1 auto;">
+        <details data-nav="1" style="position: relative;">
+          <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Partnership<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
+          <div style="position: absolute; top: 100%; left: -12px; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; min-width: 230px; display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+            <a href="{{ nav.partnership }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How we partner</a>
+            <a href="{{ nav.demo }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partnership overview</a>
+            <a href="{{ nav.become }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Become a partner</a>
+            <a href="{{ nav.onboard }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Onboarding checklist</a>
+            <a href="{{ nav.become }}#faq" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partner FAQ</a>
+          </div>
+        </details>
+        <details data-nav="1" style="position: relative;">
+          <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Training<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
+          <div style="position: absolute; top: 100%; left: -12px; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; min-width: 250px; display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+            <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Learn</span>
+            <a href="{{ nav.training }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Training modules</a>
+            <a href="{{ nav.topics }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Required topics</a>
+            <a href="{{ nav.ceu }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU library</a>
+            <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Attest</span>
+            <a href="{{ nav.howto }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How to attest</a>
+            <a href="{{ nav.attest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Start initial attestation</a>
+            <a href="{{ nav.ceuAttest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU attestation</a>
+          </div>
+        </details>
+        <a href="{{ nav.forms }}" style="font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none; padding: 8px 0;" style-hover="color: var(--leaf);">Forms</a>
+        <a href="{{ nav.contact }}" style="font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none; padding: 8px 0;" style-hover="color: var(--leaf);">Contact</a>
+        <a href="{{ nav.become }}" style="text-decoration: none; flex: none;">
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="primary" size="sm" hint-size="140px,38px"><span style="white-space: nowrap;">Become a partner</span></x-import>
+        </a>
+      </div>
+      <details data-nav="1" data-nav-mobile="" style="display: none; position: relative;">
+        <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 700; color: var(--navy); padding: 9px 16px; border: 1px solid var(--navy); border-radius: 999px; display: flex; align-items: center; gap: 8px;">Menu<span style="font-size: 11px;">▾</span></summary>
+        <div style="position: absolute; top: 100%; right: 0; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; width: min(280px, calc(100vw - 48px)); display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+          <a href="{{ nav.home }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Home</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Partnership</span>
+          <a href="{{ nav.partnership }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How we partner</a>
+          <a href="{{ nav.demo }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partnership overview</a>
+          <a href="{{ nav.onboard }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Onboarding checklist</a>
+          <a href="{{ nav.become }}#faq" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partner FAQ</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Training</span>
+          <a href="{{ nav.training }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Training modules</a>
+          <a href="{{ nav.topics }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Required topics</a>
+          <a href="{{ nav.ceu }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU library</a>
+          <a href="{{ nav.howto }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How to attest</a>
+          <a href="{{ nav.attest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Start initial attestation</a>
+          <a href="{{ nav.ceuAttest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU attestation</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">More</span>
+          <a href="{{ nav.forms }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Forms</a>
+          <a href="{{ nav.contact }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Contact</a>
+          <div style="border-top: 1px solid var(--line); margin: 6px 0 0; padding: 10px 6px 4px;">
+            <a href="{{ nav.become }}" style="display: block; text-align: center; padding: 10px 12px; border: 1px solid var(--navy); border-radius: 999px; font-size: 15px; font-weight: 700; color: var(--navy); text-decoration: none;">Become a partner</a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </nav>
+  </sc-if>
+
+  <sc-if value="{{ isLoading }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width: 980px; margin: 0 auto; padding: 120px 24px; font-size: 17px; color: var(--sage);">Loading the partner list…</div>
+  </sc-if>
+
+  <sc-if value="{{ loadError }}" hint-placeholder-val="{{ false }}">
+    <div style="max-width: 640px; margin: 0 auto; padding: 90px 24px; display: flex; flex-direction: column; gap: 14px;">
+      <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: 32px; color: var(--navy); margin: 0;">We couldn't load the partner list.</h1>
+      <p style="margin: 0; font-size: 17px; line-height: 1.65;">Refresh the page to try again. If it keeps happening, email <a href="mailto:bpritchard@ableliving-mail.com">Bryson Pritchard</a>.</p>
+    </div>
+  </sc-if>
+
+  <!-- GATE -->
+  <sc-if value="{{ isGate }}" hint-placeholder-val="{{ true }}">
+    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.PageHeaderBar" kicker="Partner practices" title="Partner Portal" crumbs="Choose your organization and enter the PIN AbleLiving gave you." hint-size="100%,140px"></x-import>
+    <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 64px 24px 90px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Sign in</x-import>
+        <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(30px, 4vw, 42px); line-height: 1.15; color: var(--navy); margin: 0; text-wrap: pretty;">Your practice's forms, in one place.</h1>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; max-width: 44ch; text-wrap: pretty;">Each partner practice has its own portal with the GUIDE forms your team uses on every visit.</p>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65; color: var(--sage);">Need a PIN? Email <a href="mailto:bpritchard@ableliving-mail.com" style="font-weight: 700;">Bryson Pritchard</a>.</p>
+      </div>
+      <form onSubmit="{{ onGateSubmit }}" style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 32px 30px; display: flex; flex-direction: column; gap: 20px;">
+        <label style="display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Organization</span>
+          <select name="partnerId" value="{{ gate.partnerId }}" onChange="{{ onGateField }}" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+            <option value="">Select your organization</option>
+            <sc-for list="{{ gateOptions }}" as="opt" hint-placeholder-count="2">
+              <option value="{{ opt.id }}">{{ opt.name }}</option>
+            </sc-for>
+          </select>
+        </label>
+        <label style="display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-size: 15px; font-weight: 700; color: var(--navy);">PIN</span>
+          <input name="pin" type="password" inputmode="numeric" autocomplete="off" maxlength="6" value="{{ gate.pin }}" onChange="{{ onGateField }}" placeholder="6 digits" style="font-family: var(--font-sans); font-size: 20px; letter-spacing: .12em; padding: 12px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+        </label>
+        <sc-if value="{{ gate.error }}" hint-placeholder-val="{{ false }}">
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #9A3B22; font-weight: 700;">{{ gate.error }}</p>
+        </sc-if>
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" type="submit" disabled="{{ gateLocked }}" hint-size="100%,48px">Open my portal</x-import>
+      </form>
+    </section>
+    <div style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 24px 40px; display: flex; justify-content: flex-end;">
+      <a href="#admin" onClick="{{ goAdminGate }}" style="font-size: 13px; color: var(--sage);">AbleLiving staff</a>
+    </div>
+  </sc-if>
+
+  <!-- ADMIN GATE -->
+  <sc-if value="{{ isAdminGate }}" hint-placeholder-val="{{ false }}">
+    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.PageHeaderBar" kicker="AbleLiving internal" title="Partner Portal admin" crumbs="For AbleLiving staff only." hint-size="100%,140px"></x-import>
+    <section style="max-width: 520px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 64px 24px 90px;">
+      <form onSubmit="{{ onAdminSubmit }}" style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 32px 30px; display: flex; flex-direction: column; gap: 20px;">
+        <label style="display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Admin PIN</span>
+          <input type="password" inputmode="numeric" autocomplete="off" maxlength="6" value="{{ adminPin }}" onChange="{{ onAdminPin }}" placeholder="6 digits" style="font-family: var(--font-sans); font-size: 20px; letter-spacing: .12em; padding: 12px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+        </label>
+        <sc-if value="{{ adminError }}" hint-placeholder-val="{{ false }}">
+          <p style="margin: 0; font-size: 15px; color: #9A3B22; font-weight: 700;">{{ adminError }}</p>
+        </sc-if>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" type="submit" hint-size="140px,48px">Sign in</x-import>
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" type="button" variant="ghost" onClick="{{ backToGate }}" hint-size="160px,48px">Back to partner sign-in</x-import>
+        </div>
+      </form>
+    </section>
+  </sc-if>
+
+  <!-- PARTNER PORTAL (white-labeled) -->
+  <sc-if value="{{ isPortal }}" hint-placeholder-val="{{ false }}">
+    <sc-if value="{{ preview }}" hint-placeholder-val="{{ false }}">
+      <div style="background: var(--gold); color: var(--navy); font-size: 14px; font-weight: 700;">
+        <div style="max-width: 980px; margin: 0 auto; padding: 10px 24px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+          <span>Preview of your unsaved draft. Partners won't see this until you publish.</span>
+          <a href="#admin" onClick="{{ exitPreview }}" style="color: var(--navy);">Back to admin</a>
+        </div>
+      </div>
+    </sc-if>
+    <header style="background: #fff; border-bottom: 1px solid var(--line);">
+      <div style="max-width: 980px; margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px 24px; flex-wrap: wrap;">
+        <div style="display: flex; align-items: center; gap: 18px 22px; flex-wrap: wrap;">
+          <sc-if value="{{ portal.hasLogo }}" hint-placeholder-val="{{ false }}">
+            <div role="img" aria-label="{{ portal.name }}" style="{{ portalLogoStyle }}"></div>
+          </sc-if>
+          <sc-if value="{{ portal.noLogo }}" hint-placeholder-val="{{ true }}">
+            <span style="font-family: var(--font-serif); font-size: 24px; font-weight: 500; color: var(--navy); line-height: 1.2;">{{ portal.name }}</span>
+          </sc-if>
+          <div style="width: 1px; align-self: stretch; min-height: 44px; background: var(--line);"></div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">In partnership with</span>
+            <img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 130px; height: auto; display: block;">
+          </div>
+        </div>
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" onClick="{{ signOut }}" hint-size="100px,38px">Sign out</x-import>
+      </div>
+    </header>
+    <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 64px 24px 40px; display: flex; flex-direction: column; gap: 18px;">
+      <sc-for list="{{ portal.announcements }}" as="ann" hint-placeholder-count="0">
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Callout" tone="{{ ann.tone }}" hint-size="100%,70px"><span style="font-size: 16px; line-height: 1.6; color: var(--navy);"><strong>{{ ann.title }}</strong> {{ ann.text }}</span></x-import>
+      </sc-for>
+      <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Partner portal</x-import>
+      <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(32px, 4.5vw, 46px); line-height: 1.15; color: var(--navy); margin: 0; text-wrap: pretty;">Welcome, {{ portal.name }}.</h1>
+      <p style="margin: 0; font-size: 18px; line-height: 1.65; max-width: 58ch; text-wrap: pretty;">Open the form that matches the visit you're documenting. It opens right here and is already set up for your practice.</p>
+    </section>
+    <sc-if value="{{ formOpen }}" hint-placeholder-val="{{ false }}">
+      <section style="max-width: 1180px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 24px 40px; display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between;">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">{{ openForm.kicker }}</span>
+            <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 28px; line-height: 1.2; color: var(--navy); margin: 0;">{{ openForm.label }}</h2>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="{{ openForm.url }}" target="_blank" rel="noopener" style="text-decoration: none;">
+              <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" hint-size="150px,38px">Open in new tab</x-import>
+            </a>
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" onClick="{{ closeForm }}" hint-size="130px,38px">Back to forms</x-import>
+          </div>
+        </div>
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;">
+          {{ formFrame }}
+        </div>
+        <span style="font-size: 13px; color: var(--sage);">If the form asks you to sign in or doesn't load, use "Open in new tab".</span>
+      </section>
+    </sc-if>
+    <sc-if value="{{ formClosed }}" hint-placeholder-val="{{ true }}">
+    <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 18px;">
+      <sc-for list="{{ portal.forms }}" as="form" hint-placeholder-count="2">
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 30px 28px; display: flex; flex-direction: column; gap: 14px;">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">{{ form.kicker }}</span>
+          <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 28px; line-height: 1.2; color: var(--navy); margin: 0;">{{ form.label }}</h2>
+          <p style="margin: 0; font-size: 16px; line-height: 1.65; color: var(--ink); flex: 1;">{{ form.body }}</p>
+          <sc-if value="{{ form.ready }}" hint-placeholder-val="{{ true }}">
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" onClick="{{ form.onOpen }}" style="{{ selfStart }}" hint-size="150px,48px">Open form</x-import>
+          </sc-if>
+          <sc-if value="{{ form.missing }}" hint-placeholder-val="{{ false }}">
+            <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-start;">
+              <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" disabled="{{ true }}" hint-size="150px,48px">Open form</x-import>
+              <span style="font-size: 14px; color: var(--sage);">This form isn't linked yet. Your AbleLiving contact will let you know when it's ready.</span>
+            </div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </section>
+    </sc-if>
+    <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 24px 90px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px;">
+      <div style="background: var(--mist); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Your AbleLiving contact</span>
+        <span style="font-family: var(--font-serif); font-size: 24px; color: var(--navy); line-height: 1.25;">{{ portal.contact.name }}</span>
+        <sc-if value="{{ portal.contact.hasTitle }}" hint-placeholder-val="{{ true }}">
+          <span style="font-size: 15px; color: var(--sage);">{{ portal.contact.title }}</span>
+        </sc-if>
+        <div style="display: flex; flex-direction: column; gap: 6px; padding-top: 6px;">
+          <sc-if value="{{ portal.contact.hasEmail }}" hint-placeholder-val="{{ true }}">
+            <a href="{{ portal.contact.mailto }}" style="font-size: 16px; font-weight: 700; word-break: break-all;">{{ portal.contact.email }}</a>
+          </sc-if>
+          <sc-if value="{{ portal.contact.hasPhone }}" hint-placeholder-val="{{ false }}">
+            <a href="{{ portal.contact.tel }}" style="font-size: 16px; font-weight: 700;">{{ portal.contact.phone }}</a>
+          </sc-if>
+        </div>
+      </div>
+      <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 28px; display: flex; flex-direction: column; gap: 14px;">
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Training &amp; attestation</span>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6;">Care navigator training for your team, and the attestation each clinician signs when they finish.</p>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; padding-top: 4px;">
+          <a href="{{ nav.training }}" style="text-decoration: none;">
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" hint-size="150px,38px">Training modules</x-import>
+          </a>
+          <a href="{{ nav.attest }}" style="text-decoration: none;">
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" hint-size="150px,38px">Attestation form</x-import>
+          </a>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <!-- ADMIN -->
+  <sc-if value="{{ isAdmin }}" hint-placeholder-val="{{ false }}">
+    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.PageHeaderBar" kicker="AbleLiving internal" title="Partner Portal admin" crumbs="{{ adminCrumbs }}" hint-size="100%,140px"></x-import>
+    <div style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 40px 24px 90px; display: flex; flex-direction: column; gap: 36px;">
+
+      <sc-if value="{{ dirty }}" hint-placeholder-val="{{ false }}">
+        <div style="background: var(--mist); border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: var(--radius-lg); padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; justify-content: space-between;">
+          <div style="display: flex; flex-direction: column; gap: 4px; flex: 1 1 320px;">
+            <span style="font-size: 17px; font-weight: 700; color: var(--navy);">You have changes that aren't live yet.</span>
+            <span style="font-size: 15px; line-height: 1.55; color: var(--sage);">Download partners.json, then upload it to your GitHub repository and replace the old file. Your draft is saved in this browser until then.</span>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" onClick="{{ download }}" hint-size="210px,48px">Download partners.json</x-import>
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" onClick="{{ discard }}" hint-size="150px,48px">Discard changes</x-import>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ clean }}" hint-placeholder-val="{{ true }}">
+        <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; padding: 4px 0;">
+          <span style="font-size: 16px; color: var(--sage);">Everything here matches the live site.</span>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ pickImport }}" hint-size="170px,38px">Import a partners.json</x-import>
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ download }}" hint-size="150px,38px">Download backup</x-import>
+          </div>
+        </div>
+      </sc-if>
+      <input type="file" accept=".json,application/json" ref="{{ importRef }}" onChange="{{ onImport }}" style="display: none;">
+
+      <nav style="display: flex; flex-wrap: wrap; gap: 6px; border-bottom: 1px solid var(--line); margin-bottom: -16px;">
+        <sc-for list="{{ tabs }}" as="tab" hint-placeholder-count="5">
+          <button type="button" onClick="{{ tab.onClick }}" style="{{ tab.style }}">{{ tab.label }}</button>
+        </sc-for>
+      </nav>
+
+      <!-- Access log -->
+      <sc-if value="{{ tabLog }}" hint-placeholder-val="{{ false }}">
+      <section style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;">
+        <button type="button" onClick="{{ toggleLog }}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px; background: transparent; border: none; cursor: pointer; font-family: var(--font-sans); text-align: left;">
+          <span style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font-size: 18px; font-weight: 700; color: var(--navy);">Access log</span>
+            <span style="font-size: 14px; color: var(--sage);">{{ logSummary }}</span>
+          </span>
+          <span style="font-size: 14px; font-weight: 700; color: var(--leaf); white-space: nowrap;">{{ logToggleLabel }}</span>
+        </button>
+        <sc-if value="{{ logOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="border-top: 1px solid var(--line); padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 16px;">
+            <sc-if value="{{ logNeedsSetup }}" hint-placeholder-val="{{ false }}">
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <p style="margin: 0; font-size: 15px; line-height: 1.6;">Connect Microsoft to start recording sign-ins, form opens and completed submissions. It takes one SharePoint list and three Power Automate flows. The full click-by-click guide is in <strong>access-log-setup-microsoft.txt</strong>.</p>
+                <ol style="margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.75;">
+                  <li>Create a SharePoint list <strong>Portal Activity</strong> with columns Event, PartnerId, Partner, Form.</li>
+                  <li><strong>Flow 1 (write):</strong> HTTP request received → Create item. Paste its URL below.</li>
+                  <li><strong>Flow 2 (read):</strong> HTTP request received → check key → Get items → Response. Paste its URL and your key below.</li>
+                  <li><strong>Flow 3 (submissions):</strong> one per Microsoft Form → Create item with Event "Submitted form".</li>
+                </ol>
+              </div>
+            </sc-if>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px;">
+              <label style="display: flex; flex-direction: column; gap: 6px;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Write URL <span style="font-weight: 400; color: var(--sage);">(Flow 1, published)</span></span>
+                <input value="{{ logUrl }}" onChange="{{ onLogUrl }}" placeholder="https://…powerplatform.com/… or …logic.azure.com/…" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 6px;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Read URL <span style="font-weight: 400; color: var(--sage);">(Flow 2, saved in this browser only)</span></span>
+                <input value="{{ logReadUrl }}" onChange="{{ onLogReadUrl }}" placeholder="Leave blank if it's the same as the write URL" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 6px;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Read key <span style="font-weight: 400; color: var(--sage);">(saved in this browser only)</span></span>
+                <input type="password" value="{{ logKey }}" onChange="{{ onLogKey }}" placeholder="Your private key" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 6px;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Team status URL <span style="font-weight: 400; color: var(--sage);">(Flow 4, published)</span></span>
+                <input value="{{ teamUrl }}" onChange="{{ onTeamUrl }}" placeholder="Shows each partner their staff's attestation status" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+            </div>
+            <sc-if value="{{ logReady }}" hint-placeholder-val="{{ false }}">
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+                  <select value="{{ logFilter }}" onChange="{{ onLogFilter }}" style="font-family: var(--font-sans); font-size: 15px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); min-width: 220px;">
+                    <option value="">All partners</option>
+                    <sc-for list="{{ logFilterOptions }}" as="lo" hint-placeholder-count="2">
+                      <option value="{{ lo.id }}">{{ lo.name }}</option>
+                    </sc-for>
+                  </select>
+                  <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ loadLog }}" hint-size="90px,38px">Refresh</x-import>
+                </div>
+                <sc-if value="{{ logStatus }}" hint-placeholder-val="{{ false }}">
+                  <span style="font-size: 14px; color: var(--sage);">{{ logStatus }}</span>
+                </sc-if>
+                <div style="border: 1px solid var(--line); border-radius: 12px; overflow: hidden;">
+                  <sc-for list="{{ logShownRows }}" as="lr" hint-placeholder-count="3">
+                    <div style="{{ lr.style }}">
+                      <span style="flex: 0 0 170px; font-size: 14px; color: var(--sage); font-variant-numeric: tabular-nums;">{{ lr.time }}</span>
+                      <span style="flex: 1 1 200px; font-size: 15px; font-weight: 700; color: var(--navy);">{{ lr.partner }}</span>
+                      <span style="flex: 1 1 220px; font-size: 15px; color: var(--ink);">{{ lr.action }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+                <sc-if value="{{ logHasMore }}" hint-placeholder-val="{{ false }}">
+                  <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" onClick="{{ logMore }}" style="{{ selfStart }}" hint-size="120px,38px">Show more</x-import>
+                </sc-if>
+              </div>
+            </sc-if>
+          </div>
+        </sc-if>
+      </section>
+      </sc-if>
+
+      <!-- Partners -->
+      <sc-if value="{{ tabPartners }}" hint-placeholder-val="{{ true }}">
+      <section style="display: flex; flex-direction: column; gap: 18px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; justify-content: space-between;">
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Partners</span>
+            <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 30px; color: var(--navy); margin: 0;">Partner practices</h2>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" onClick="{{ exportCsv }}" hint-size="140px,48px">Export CSV</x-import>
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" onClick="{{ addPartner }}" hint-size="150px,48px">Add partner</x-import>
+          </div>
+        </div>
+
+        <sc-if value="{{ isEditing }}" hint-placeholder-val="{{ false }}">
+          <div style="background: #fff; border: 1px solid var(--navy); border-radius: var(--radius-lg); padding: 28px 28px 30px; display: flex; flex-direction: column; gap: 22px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <h3 style="font-family: var(--font-serif); font-weight: 500; font-size: 24px; color: var(--navy); margin: 0;">{{ edTitle }}</h3>
+              <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Badge" tone="{{ edStatusTone }}" hint-size="80px,24px">{{ edStatusLabel }}</x-import>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px 20px;">
+              <label style="display: flex; flex-direction: column; gap: 8px;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Organization name</span>
+                <input name="name" value="{{ ed.name }}" onChange="{{ onEdField }}" placeholder="e.g. Tampa Bay Neurocognitive Institute" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 8px;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Portal ID <span style="font-weight: 400; color: var(--sage);">(used in their link)</span></span>
+                <input name="id" value="{{ ed.id }}" onChange="{{ onEdField }}" disabled="{{ edIdLocked }}" placeholder="e.g. tbni" style="font-family: var(--font-sans); font-size: 17px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 8px; grid-column: 1 / -1;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Pre-filled Comprehensive Assessment link <span style="font-weight: 400; color: var(--sage);">(optional)</span></span>
+                <input name="assessmentUrl" value="{{ ed.assessmentUrl }}" onChange="{{ onEdField }}" placeholder="Leave blank to use the shared link" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 8px; grid-column: 1 / -1;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Pre-filled Care Navigator Visit link <span style="font-weight: 400; color: var(--sage);">(optional)</span></span>
+                <input name="visitUrl" value="{{ ed.visitUrl }}" onChange="{{ onEdField }}" placeholder="Leave blank to use the shared link" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 8px; grid-column: 1 / -1;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Pre-filled Home Safety Assessment link <span style="font-weight: 400; color: var(--sage);">(optional)</span></span>
+                <input name="safetyUrl" value="{{ ed.safetyUrl }}" onChange="{{ onEdField }}" placeholder="Leave blank to use the shared link" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 8px; grid-column: 1 / -1;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Internal notes <span style="font-weight: 400; color: var(--sage);">(partners never see this)</span></span>
+                <textarea name="notes" value="{{ ed.notes }}" onChange="{{ onEdField }}" rows="2" placeholder="Contact person, contract date, anything useful" style="font-family: var(--font-sans); font-size: 16px; line-height: 1.5; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue); resize: vertical;"></textarea>
+              </label>
+              <label style="display: flex; flex-direction: column; gap: 8px; grid-column: 1 / -1;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Announcement for this partner <span style="font-weight: 400; color: var(--sage);">(optional, shows at the top of their portal)</span></span>
+                <textarea name="announcement" value="{{ ed.announcement }}" onChange="{{ onEdField }}" rows="2" placeholder="e.g. New Care Navigator Visit form starts March 1." style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue); line-height: 1.5; resize: vertical;"></textarea>
+              </label>
+              <div style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 12px;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">AbleLiving contact for this partner <span style="font-weight: 400; color: var(--sage);">(blank uses Bryson)</span></span>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                  <input name="name" value="{{ ed.contact.name }}" onChange="{{ onEdContact }}" placeholder="Name" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+                  <input name="title" value="{{ ed.contact.title }}" onChange="{{ onEdContact }}" placeholder="Title" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+                  <input name="email" type="email" value="{{ ed.contact.email }}" onChange="{{ onEdContact }}" placeholder="Email" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+                  <input name="phone" type="tel" value="{{ ed.contact.phone }}" onChange="{{ onEdContact }}" placeholder="Phone" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+                </div>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px 20px;">
+              <div style="background: var(--mist); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 20px; display: flex; flex-direction: column; gap: 12px;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Logo</span>
+                <div style="background: #fff; border: 1px solid var(--line); border-radius: 12px; min-height: 90px; display: flex; align-items: center; justify-content: center; padding: 14px;">
+                  <sc-if value="{{ edHasLogo }}" hint-placeholder-val="{{ false }}">
+                    <div style="{{ edLogoStyle }}"></div>
+                  </sc-if>
+                  <sc-if value="{{ edNoLogo }}" hint-placeholder-val="{{ true }}">
+                    <span style="font-size: 14px; color: var(--sage);">No logo yet. Their name shows instead.</span>
+                  </sc-if>
+                </div>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                  <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" onClick="{{ pickLogo }}" hint-size="130px,38px">Upload logo</x-import>
+                  <sc-if value="{{ edHasLogo }}" hint-placeholder-val="{{ false }}">
+                    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ removeLogo }}" hint-size="90px,38px">Remove</x-import>
+                  </sc-if>
+                </div>
+                <input type="file" accept="image/*" ref="{{ logoRef }}" onChange="{{ onLogo }}" style="display: none;">
+              </div>
+              <div style="background: var(--mist); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 20px; display: flex; flex-direction: column; gap: 12px;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">PIN</span>
+                <sc-if value="{{ edShowPin }}" hint-placeholder-val="{{ false }}">
+                  <div style="background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px;">
+                    <span style="font-family: var(--font-serif); font-size: 34px; letter-spacing: .18em; color: var(--navy);">{{ edNewPin }}</span>
+                    <span style="font-size: 14px; line-height: 1.5; color: var(--sage);">Send this to the partner now. It's stored scrambled, so you won't see it again after you close this panel.</span>
+                  </div>
+                </sc-if>
+                <sc-if value="{{ edPinHidden }}" hint-placeholder-val="{{ true }}">
+                  <span style="font-size: 14px; line-height: 1.5; color: var(--sage);">{{ edPinNote }}</span>
+                </sc-if>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                  <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" onClick="{{ genPin }}" hint-size="150px,38px">{{ edPinBtn }}</x-import>
+                  <sc-if value="{{ edShowPin }}" hint-placeholder-val="{{ false }}">
+                    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ copyPin }}" hint-size="110px,38px">Copy PIN</x-import>
+                  </sc-if>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Forms this partner uses <span style="font-weight: 400; color: var(--sage);">(unchecked forms are hidden from their portal)</span></span>
+              <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <sc-for list="{{ edOffers }}" as="o" hint-placeholder-count="3">
+                  <label style="display: flex; gap: 10px; align-items: center; font-size: 16px; color: var(--navy); cursor: pointer; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px;">
+                    <input name="{{ o.key }}" type="checkbox" checked="{{ o.checked }}" onChange="{{ onEdOffer }}" style="width: 18px; height: 18px; accent-color: var(--navy);">
+                    <span>{{ o.label }}</span>
+                  </label>
+                </sc-for>
+              </div>
+            </div>
+
+            <label style="display: flex; gap: 12px; align-items: center; font-size: 16px; color: var(--navy); cursor: pointer;">
+              <input name="active" type="checkbox" checked="{{ ed.active }}" onChange="{{ onEdField }}" style="width: 20px; height: 20px; accent-color: var(--navy);">
+              <span><strong>Active.</strong> Uncheck to hide this partner from sign-in without deleting them.</span>
+            </label>
+
+            <sc-if value="{{ edError }}" hint-placeholder-val="{{ false }}">
+              <p style="margin: 0; font-size: 15px; color: #9A3B22; font-weight: 700;">{{ edError }}</p>
+            </sc-if>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 20px;">
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" onClick="{{ saveEdit }}" hint-size="140px,48px">Save partner</x-import>
+                <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" onClick="{{ cancelEdit }}" hint-size="100px,48px">Cancel</x-import>
+              </div>
+              <sc-if value="{{ edCanDelete }}" hint-placeholder-val="{{ false }}">
+                <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" onClick="{{ deleteEdit }}" style="{{ dangerStyle }}" hint-size="150px,48px">Delete partner</x-import>
+              </sc-if>
+            </div>
+          </div>
+        </sc-if>
+
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;">
+          <sc-for list="{{ rows }}" as="row" hint-placeholder-count="2">
+            <div style="{{ row.rowStyle }}">
+              <div style="width: 72px; height: 52px; flex: 0 0 72px; border: 1px solid var(--line); border-radius: 10px; background: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                <sc-if value="{{ row.hasLogo }}" hint-placeholder-val="{{ false }}">
+                  <div style="{{ row.logoStyle }}"></div>
+                </sc-if>
+                <sc-if value="{{ row.noLogo }}" hint-placeholder-val="{{ true }}">
+                  <span style="font-family: var(--font-serif); font-size: 18px; color: var(--navy);">{{ row.initials }}</span>
+                </sc-if>
+              </div>
+              <div style="flex: 1 1 240px; min-width: 0; display: flex; flex-direction: column; gap: 4px;">
+                <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                  <span style="font-size: 17px; font-weight: 700; color: var(--navy);">{{ row.name }}</span>
+                  <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Badge" tone="{{ row.tone }}" hint-size="70px,24px">{{ row.status }}</x-import>
+                </div>
+                <span style="font-size: 14px; color: var(--sage);">{{ row.meta }}</span>
+              </div>
+              <div style="display: flex; gap: 4px 6px; flex-wrap: wrap;">
+                <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" onClick="{{ row.onEdit }}" hint-size="70px,38px">Edit</x-import>
+                <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ row.onDuplicate }}" hint-size="100px,38px">Duplicate</x-import>
+                <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ row.onPreview }}" hint-size="90px,38px">Preview</x-import>
+                <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ row.onCopyLink }}" hint-size="100px,38px">Copy link</x-import>
+              </div>
+            </div>
+          </sc-for>
+          <sc-if value="{{ noRows }}" hint-placeholder-val="{{ false }}">
+            <div style="padding: 32px 24px; font-size: 16px; color: var(--sage);">No partners yet. Add your first one above.</div>
+          </sc-if>
+        </div>
+      </section>
+      </sc-if>
+
+      <!-- Analytics -->
+      <sc-if value="{{ tabAnalytics }}" hint-placeholder-val="{{ false }}">
+      <section style="display: flex; flex-direction: column; gap: 22px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; justify-content: space-between;">
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Analytics</span>
+            <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 30px; color: var(--navy); margin: 0;">Portal activity</h2>
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+            <sc-for list="{{ anRanges }}" as="rg" hint-placeholder-count="4">
+              <button type="button" onClick="{{ rg.onClick }}" style="{{ rg.style }}">{{ rg.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <sc-if value="{{ anNeedsLog }}" hint-placeholder-val="{{ false }}">
+          <div style="background: var(--mist); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 24px; font-size: 16px; line-height: 1.6;">Analytics come from the access log. Connect it in the <strong>Access log</strong> tab first, then come back here.</div>
+        </sc-if>
+        <sc-if value="{{ anStatus }}" hint-placeholder-val="{{ false }}">
+          <span style="font-size: 14px; color: var(--sage);">{{ anStatus }}</span>
+        </sc-if>
+        <sc-if value="{{ anReady }}" hint-placeholder-val="{{ false }}">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px;">
+            <sc-for list="{{ anStats }}" as="st" hint-placeholder-count="4">
+              <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.StatStamp" value="{{ st.value }}" label="{{ st.label }}" hint-size="100%,100px"></x-import>
+            </sc-for>
+          </div>
+
+          <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 24px 24px 18px; display: flex; flex-direction: column; gap: 14px;">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; align-items: baseline;">
+              <span style="font-size: 17px; font-weight: 700; color: var(--navy);">Activity over time</span>
+              <span style="display: flex; gap: 16px; font-size: 13px; color: var(--sage);">
+                <span style="display: flex; gap: 6px; align-items: center;"><span style="width: 10px; height: 10px; border-radius: 3px; background: var(--navy);"></span>Sign-ins</span>
+                <span style="display: flex; gap: 6px; align-items: center;"><span style="width: 10px; height: 10px; border-radius: 3px; background: var(--blue);"></span>Form opens</span>
+              </span>
+            </div>
+            <div style="display: flex; align-items: flex-end; gap: 4px; height: 160px; border-bottom: 1px solid var(--line);">
+              <sc-for list="{{ anBars }}" as="bar" hint-placeholder-count="12">
+                <div title="{{ bar.tip }}" style="flex: 1 1 0; min-width: 0; height: 100%; display: flex; flex-direction: column; justify-content: flex-end;">
+                  <div style="{{ bar.opens }}"></div>
+                  <div style="{{ bar.signins }}"></div>
+                </div>
+              </sc-for>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--sage);">
+              <span>{{ anFirstLabel }}</span>
+              <span>{{ anLastLabel }}</span>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; align-items: start;">
+            <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; gap: 16px;">
+              <span style="font-size: 17px; font-weight: 700; color: var(--navy);">Opened vs. submitted, by form</span>
+              <sc-for list="{{ anForms }}" as="af" hint-placeholder-count="3">
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                  <div style="display: flex; justify-content: space-between; font-size: 15px;">
+                    <span style="color: var(--ink);">{{ af.label }}</span>
+                    <span style="font-weight: 700; color: var(--navy); font-variant-numeric: tabular-nums;">{{ af.summary }}</span>
+                  </div>
+                  <div style="height: 8px; background: var(--mist); border-radius: 999px; overflow: hidden;">
+                    <div style="{{ af.bar }}"></div>
+                  </div>
+                  <div style="height: 8px; background: var(--mist); border-radius: 999px; overflow: hidden;">
+                    <div style="{{ af.subBar }}"></div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+            <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+              <span style="font-size: 17px; font-weight: 700; color: var(--navy);">Needs a nudge</span>
+              <span style="font-size: 14px; line-height: 1.5; color: var(--sage);">Active partners with no sign-in in the last 30 days.</span>
+              <sc-for list="{{ anQuiet }}" as="q" hint-placeholder-count="2">
+                <div style="display: flex; justify-content: space-between; gap: 12px; font-size: 15px; padding: 8px 0; border-top: 1px solid var(--line);">
+                  <span style="font-weight: 700; color: var(--navy);">{{ q.name }}</span>
+                  <span style="color: var(--sage);">{{ q.last }}</span>
+                </div>
+              </sc-for>
+              <sc-if value="{{ anNoQuiet }}" hint-placeholder-val="{{ false }}">
+                <span style="font-size: 15px; color: var(--leaf); font-weight: 700;">Every active partner signed in recently.</span>
+              </sc-if>
+            </div>
+          </div>
+
+          <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;">
+            <div style="display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 14px 20px; background: var(--mist); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--sage);">
+              <span style="flex: 1 1 220px;">Partner</span>
+              <span style="flex: 0 0 80px; text-align: right;">Sign-ins</span>
+              <span style="flex: 0 0 90px; text-align: right;">Form opens</span>
+              <span style="flex: 0 0 90px; text-align: right;">Submitted</span>
+              <span style="flex: 0 0 90px; text-align: right;">Attested</span>
+              <span style="flex: 0 0 90px; text-align: right;">CEU current</span>
+              <span style="flex: 0 0 150px; text-align: right;">Last active</span>
+            </div>
+            <sc-for list="{{ anPartners }}" as="ap" hint-placeholder-count="2">
+              <div style="display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 14px 20px; border-top: 1px solid var(--line); align-items: baseline; font-size: 15px;">
+                <span style="flex: 1 1 220px; font-weight: 700; color: var(--navy);">{{ ap.name }}</span>
+                <span style="flex: 0 0 80px; text-align: right; font-variant-numeric: tabular-nums;">{{ ap.signins }}</span>
+                <span style="flex: 0 0 90px; text-align: right; font-variant-numeric: tabular-nums;">{{ ap.opens }}</span>
+                <span style="flex: 0 0 90px; text-align: right; font-variant-numeric: tabular-nums;">{{ ap.submitted }}</span>
+                <span style="flex: 0 0 90px; text-align: right; font-variant-numeric: tabular-nums;">{{ ap.attested }}</span>
+                <span style="flex: 0 0 90px; text-align: right; font-variant-numeric: tabular-nums;">{{ ap.ceuCurrent }}</span>
+                <span style="flex: 0 0 150px; text-align: right; color: var(--sage);">{{ ap.last }}</span>
+              </div>
+            </sc-for>
+          </div>
+          <span style="font-size: 13px; line-height: 1.5; color: var(--sage);">Blue bars are form opens from the portal; green bars are completed submissions recorded by Flow 3.</span>
+        </sc-if>
+      </section>
+      </sc-if>
+
+      <!-- CEU library -->
+      <sc-if value="{{ tabCeu }}" hint-placeholder-val="{{ false }}">
+      <section style="display: flex; flex-direction: column; gap: 18px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; justify-content: space-between;">
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Continuing education</span>
+            <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 30px; color: var(--navy); margin: 0;">CEU library</h2>
+          </div>
+          <label style="display: flex; align-items: center; gap: 10px; font-size: 15px; color: var(--navy);">
+            <span style="font-weight: 700;">Required hours per year</span>
+            <input type="number" min="0" step="0.5" value="{{ ceuRequired }}" onChange="{{ onCeuRequired }}" placeholder="None" style="font-family: var(--font-sans); font-size: 16px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 110px;">
+          </label>
+        </div>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; max-width: 66ch;">Courses added here show up on the public CEU library page and on the CEU attestation form. For a PowerPoint course, upload the .pptx to the <strong>modules</strong> folder on GitHub and type its exact file name below.</p>
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 26px; display: flex; flex-direction: column; gap: 16px;">
+          <span style="font-size: 17px; font-weight: 700; color: var(--navy);">Add a course</span>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px;">
+            <label style="display: flex; flex-direction: column; gap: 6px; grid-column: 1 / -1;">
+              <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Course title</span>
+              <input name="title" value="{{ ceuForm.title }}" onChange="{{ onCeuField }}" placeholder="e.g. Managing sundowning at home" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px;">
+              <span style="font-size: 15px; font-weight: 700; color: var(--navy);">CE hours</span>
+              <input name="hours" type="number" min="0" step="0.25" value="{{ ceuForm.hours }}" onChange="{{ onCeuField }}" placeholder="1" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+            </label>
+            <div style="display: flex; flex-direction: column; gap: 6px;">
+              <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Course material</span>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <sc-for list="{{ ceuSources }}" as="cs" hint-placeholder-count="2">
+                  <button type="button" onClick="{{ cs.onClick }}" style="{{ cs.style }}">{{ cs.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+            <sc-if value="{{ ceuIsFile }}" hint-placeholder-val="{{ true }}">
+              <label style="display: flex; flex-direction: column; gap: 6px; grid-column: 1 / -1;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">PowerPoint file name <span style="font-weight: 400; color: var(--sage);">(in the modules folder)</span></span>
+                <input name="file" value="{{ ceuForm.file }}" onChange="{{ onCeuField }}" placeholder="e.g. AbleLiving_CEU_Sundowning.pptx" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+            </sc-if>
+            <sc-if value="{{ ceuIsLink }}" hint-placeholder-val="{{ false }}">
+              <label style="display: flex; flex-direction: column; gap: 6px; grid-column: 1 / -1;">
+                <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Course link</span>
+                <input name="url" value="{{ ceuForm.url }}" onChange="{{ onCeuField }}" placeholder="https://…" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+              </label>
+            </sc-if>
+            <label style="display: flex; flex-direction: column; gap: 6px; grid-column: 1 / -1;">
+              <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Short description</span>
+              <textarea name="description" value="{{ ceuForm.description }}" onChange="{{ onCeuField }}" rows="2" placeholder="One or two sentences on what the course covers" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue); line-height: 1.5; resize: vertical;"></textarea>
+            </label>
+          </div>
+          <sc-if value="{{ ceuError }}" hint-placeholder-val="{{ false }}">
+            <p style="margin: 0; font-size: 15px; color: #9A3B22; font-weight: 700;">{{ ceuError }}</p>
+          </sc-if>
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" onClick="{{ addCeu }}" style="{{ selfStart }}" hint-size="130px,48px">Add course</x-import>
+        </div>
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden;">
+          <sc-for list="{{ ceuRows }}" as="cr" hint-placeholder-count="2">
+            <div style="{{ cr.style }}">
+              <span style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 3px;">
+                <span style="font-size: 16px; font-weight: 700; color: var(--navy);">{{ cr.title }}</span>
+                <span style="font-size: 14px; color: var(--sage); word-break: break-all;">{{ cr.meta }}</span>
+              </span>
+              <span style="display: flex; gap: 4px; flex-wrap: wrap;">
+                <label style="display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--sage);">
+                  <input type="number" min="0" step="0.25" value="{{ cr.hours }}" onChange="{{ cr.onHours }}" style="font-family: var(--font-sans); font-size: 14px; padding: 7px 8px; border: 1px solid var(--line); border-radius: 8px; width: 70px;">
+                  hrs
+                </label>
+                <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ cr.onUp }}" hint-size="60px,38px">Up</x-import>
+                <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ cr.onDown }}" hint-size="70px,38px">Down</x-import>
+                <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ cr.onRemove }}" style="{{ dangerStyle }}" hint-size="90px,38px">Remove</x-import>
+              </span>
+            </div>
+          </sc-for>
+          <sc-if value="{{ ceuEmpty }}" hint-placeholder-val="{{ false }}">
+            <div style="padding: 24px; font-size: 15px; color: var(--sage);">No CEU courses yet.</div>
+          </sc-if>
+        </div>
+      </section>
+      </sc-if>
+
+      <!-- Shared forms -->
+      <sc-if value="{{ tabShared }}" hint-placeholder-val="{{ false }}">
+      <section style="display: flex; flex-direction: column; gap: 18px;">
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--leaf);">Microsoft Forms</span>
+          <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: 30px; color: var(--navy); margin: 0;">Shared form links</h2>
+          <p style="margin: 6px 0 0; font-size: 16px; line-height: 1.6; color: var(--ink); max-width: 64ch;">Every partner uses these links unless you add a pre-filled link on their profile. To make one in Microsoft Forms: open the form, choose <strong>…</strong> then <strong>Get pre-filled URL</strong>, pick the partner's name in the organization question, and copy the link.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 26px 26px 28px; display: flex; flex-direction: column; gap: 18px;">
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Comprehensive Assessment</span>
+            <input name="assessment" value="{{ formUrls.assessment }}" onChange="{{ onFormUrl }}" placeholder="https://forms.office.com/…" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Care Navigator Visit</span>
+            <input name="visit" value="{{ formUrls.visit }}" onChange="{{ onFormUrl }}" placeholder="https://forms.office.com/…" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+          </label>
+          <label style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Home Safety Assessment</span>
+            <input name="safety" value="{{ formUrls.safety }}" onChange="{{ onFormUrl }}" placeholder="https://forms.office.com/…" style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+          </label>
+        </div>
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 26px 26px 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-size: 15px; font-weight: 700; color: var(--navy);">Message to all partners <span style="font-weight: 400; color: var(--sage);">(optional, shows at the top of every portal)</span></span>
+          <textarea value="{{ globalAnnouncement }}" onChange="{{ onGlobalAnn }}" rows="2" placeholder="e.g. Our office is closed Nov 27–28. Forms stay open." style="font-family: var(--font-sans); font-size: 16px; padding: 13px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue); line-height: 1.5; resize: vertical;"></textarea>
+        </div>
+      </section>
+      </sc-if>
+
+      <!-- Publishing + admin PIN -->
+      <sc-if value="{{ tabSettings }}" hint-placeholder-val="{{ false }}">
+      <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px;">
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <h3 style="font-family: var(--font-serif); font-weight: 500; font-size: 22px; color: var(--navy); margin: 0;">How to publish changes</h3>
+          <ol style="margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.7; color: var(--ink);">
+            <li>Make your changes here.</li>
+            <li>Click <strong>Download partners.json</strong>.</li>
+            <li>In GitHub, open your AbleLiving-training repository, choose <strong>Add file → Upload files</strong>, and upload it. It replaces the old one.</li>
+            <li>Changes go live in about a minute.</li>
+          </ol>
+        </div>
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <h3 style="font-family: var(--font-serif); font-weight: 500; font-size: 22px; color: var(--navy); margin: 0;">Change admin PIN</h3>
+          <input type="password" inputmode="numeric" maxlength="6" autocomplete="off" value="{{ newAdminPin }}" onChange="{{ onNewAdminPin }}" placeholder="New 6-digit PIN" style="font-family: var(--font-sans); font-size: 17px; padding: 12px 15px; border: 1px solid var(--line); border-radius: 12px; background: #fff; color: var(--ink); width: 100%; box-sizing: border-box; outline-color: var(--blue);">
+          <sc-if value="{{ adminPinMsg }}" hint-placeholder-val="{{ false }}">
+            <span style="font-size: 14px; color: var(--sage);">{{ adminPinMsg }}</span>
+          </sc-if>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: space-between;">
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" onClick="{{ saveAdminPin }}" hint-size="130px,38px">Update PIN</x-import>
+            <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="ghost" size="sm" onClick="{{ adminSignOut }}" hint-size="100px,38px">Sign out</x-import>
+          </div>
+        </div>
+      </section>
+      </sc-if>
+    </div>
+  </sc-if>
+
+  <div style="margin-top: auto;">
+    <footer style="background: var(--navy); color: #fff; font-family: var(--font-sans);">
+      <div style="max-width: 980px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: space-between; align-items: center; font-size: 14px; color: var(--blue-soft);">
+        <span>Partner portal provided by AbleLiving Memory Support. Participant in the CMS GUIDE Model.</span>
+        <a href="{{ footerMailto }}" style="color: #fff; font-weight: 700;">Questions? Email {{ footerFirst }}</a>
+      </div>
+    </footer>
+  </div>
+
+  <sc-if value="{{ toast }}" hint-placeholder-val="{{ false }}">
+    <div style="position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); background: var(--navy); color: #fff; font-size: 15px; font-weight: 700; padding: 12px 22px; border-radius: 999px; z-index: 50;">{{ toast }}</div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const SALT = 'ableliving';
+const DRAFT_KEY = 'al_partners_draft';
+const sha = async s => [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s)))].map(b => b.toString(16).padStart(2, '0')).join('');
+const clone = o => JSON.parse(JSON.stringify(o));
+const slug = s => (s || '').toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40);
+const randPin = () => { const a = new Uint32Array(1); crypto.getRandomValues(a); return String(a[0] % 1000000).padStart(6, '0'); };
+const fmtDate = iso => { try { return new Date(iso + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); } catch (e) { return iso; } };
+const today = () => new Date().toISOString().slice(0, 10);
+const FORM_COPY = {
+  assessment: { kicker: 'Yearly visit', body: 'Complete this at enrollment, at each reassessment, and at every annual visit.' },
+  visit: { kicker: 'Ongoing care', body: 'Document each care navigator visit with a patient and their caregiver.' },
+  safety: { kicker: 'In-home safety', body: 'One-time visit within 60 days of enrollment to evaluate safety concerns.' }
+};
+const FORM_KEYS = ['assessment', 'visit', 'safety'];
+const FORM_LABELS = { assessment: 'Comprehensive Assessment', visit: 'Care Navigator Visit', safety: 'Home Safety Assessment' };
+const normalize = d => {
+  if (!d) return d;
+  d.forms = d.forms || {};
+  FORM_KEYS.forEach(k => { d.forms[k] = d.forms[k] || { label: FORM_LABELS[k], url: '' }; });
+  (d.partners || []).forEach(p => {
+    FORM_KEYS.forEach(k => { if (p[k + 'Url'] === undefined) p[k + 'Url'] = ''; });
+    p.offers = { assessment: true, visit: true, safety: true, ...(p.offers || {}) };
+    p.announcement = p.announcement || '';
+    p.showChecklist = p.showChecklist !== false;
+    p.documents = Array.isArray(p.documents) ? p.documents : [];
+    p.contact = { name: '', title: '', email: '', phone: '', ...(p.contact || {}) };
+  });
+  d.announcement = d.announcement || '';
+  d.ceu = { requiredHours: '', courses: [], ...(d.ceu || {}) };
+  if (!Array.isArray(d.ceu.courses)) d.ceu.courses = [];
+  d.logUrl = d.logUrl || '';
+  d.teamUrl = d.teamUrl || '';
+  return d;
+};
+const DEFAULT_CONTACT = { name: 'Bryson Pritchard', title: 'Vice President of Growth', email: 'bpritchard@ableliving-mail.com', phone: '' };
+const LOG_KEY = 'al_log_key';
+const enc = s => new TextEncoder().encode(s);
+const deriveKey = async (pin, pid, salt) => {
+  const base = await crypto.subtle.importKey('raw', enc(`${SALT}|${pid}|${pin}`), 'PBKDF2', false, ['deriveKey']);
+  return crypto.subtle.deriveKey({ name: 'PBKDF2', salt, iterations: 250000, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']);
+};
+const lockFile = async (buf, pin, pid) => {
+  const salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12));
+  const ct = new Uint8Array(await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, await deriveKey(pin, pid, salt), buf));
+  const out = new Uint8Array(28 + ct.length); out.set(salt, 0); out.set(iv, 16); out.set(ct, 28);
+  return new Blob([out], { type: 'application/octet-stream' });
+};
+const unlockFile = async (buf, pin, pid) => {
+  const u = new Uint8Array(buf);
+  return crypto.subtle.decrypt({ name: 'AES-GCM', iv: u.slice(16, 28) }, await deriveKey(pin, pid, u.slice(0, 16)), u.slice(28));
+};
+const saveBlob = (blob, name) => {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1500);
+};
+const fmtSize = n => n > 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(n / 1024)) + ' KB';
+const APPS_SCRIPT = `// AbleLiving Partner Portal access log
+const READ_KEY = 'change-me'; // pick a private password, then paste it into Admin
+const SHEET = 'Log';
+
+function sheet_() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  let sh = ss.getSheetByName(SHEET);
+  if (!sh) { sh = ss.insertSheet(SHEET); sh.appendRow(['Time', 'Event', 'Partner ID', 'Partner', 'Form']); sh.setFrozenRows(1); }
+  return sh;
+}
+function out_(o) { return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON); }
+
+function doPost(e) {
+  const d = JSON.parse(e.postData.contents || '{}');
+  const clip = v => String(v || '').slice(0, 200);
+  sheet_().appendRow([new Date(), clip(d.event), clip(d.partnerId), clip(d.partnerName), clip(d.form)]);
+  return out_({ ok: true });
+}
+
+function doGet(e) {
+  if ((e.parameter.key || '') !== READ_KEY) return out_({ error: 'unauthorized' });
+  const sh = sheet_(), last = sh.getLastRow();
+  if (last < 2) return out_({ rows: [], total: 0 });
+  const n = Math.min(parseInt(e.parameter.limit || '1000', 10), 5000);
+  const start = Math.max(2, last - n + 1);
+  const vals = sh.getRange(start, 1, last - start + 1, 5).getValues().reverse();
+  return out_({ total: last - 1, rows: vals.map(r => ({ t: r[0], event: r[1], partnerId: r[2], partner: r[3], form: r[4] })) });
+}
+`;
+const offers = (p, k) => !p.offers || p.offers[k] !== false;
+
+class Component extends DCLogic {
+  state = {
+    view: 'loading', pub: null, draft: null,
+    gate: { partnerId: '', pin: '', error: '' }, fails: 0, lockUntil: 0,
+    portalId: null, preview: false,
+    adminPin: '', adminError: '',
+    ed: null, edIsNew: false, edOrigId: null, edNewPin: '', edError: '',
+    newAdminPin: '', adminPinMsg: '', toast: '',
+    anRange: 30, openFormKey: null, onboard: {}, onboardFor: null, team: { forId: null, rows: [], loading: false, error: '' },
+    ceuForm: { title: '', hours: '', description: '', file: '', url: '' }, ceuSource: 'file', ceuError: '',
+    tab: 'partners', docPartner: '', docForm: { title: '', date: today(), url: '', note: '', pin: '' }, docError: '',
+    docSource: 'upload', docFile: null, docBusy: false, pending: {},
+    logOpen: false, logRows: null, logLoading: false, logError: '', logShown: 25, logFilter: '', logTotal: 0,
+    logKey: (() => { try { return localStorage.getItem(LOG_KEY) || ''; } catch (e) { return ''; } })(),
+    logReadUrl: (() => { try { return localStorage.getItem('al_log_read') || ''; } catch (e) { return ''; } })()
+  };
+  logEvent(event, p, form) {
+    const url = this.state.pub && this.state.pub.logUrl;
+    if (!url || this.state.preview || !p) return;
+    try { fetch(url, { method: 'POST', mode: 'no-cors', keepalive: true, body: JSON.stringify({ event, partnerId: p.id, partnerName: p.name, form: form || '' }) }).catch(() => {}); } catch (e) {}
+  }
+  setTab(tab) {
+    const patch = { tab };
+    if (tab === 'log') patch.logOpen = true;
+    if ((tab === 'log' || tab === 'analytics') && !this.state.logRows) setTimeout(() => this.loadLog(), 0);
+    this.setState(patch);
+  }
+  onDocPartner = e => this.setState({ docPartner: e.target.value, docError: '' });
+  onDocField = e => { const { name, value } = e.target; this.setState(s => ({ docForm: { ...s.docForm, [name]: name === 'pin' ? value.replace(/\D/g, '') : value }, docError: '' })); };
+  docFileRef = React.createRef();
+  pickDocFile = () => this.docFileRef.current && this.docFileRef.current.click();
+  onDocFile = e => { const f = e.target.files[0]; e.target.value = ''; if (f) this.setState({ docFile: f, docError: '' }); };
+  addDoc = async () => {
+    const { docForm: f, docPartner, draft, docSource, docFile, docBusy } = this.state;
+    if (docBusy) return;
+    const err = m => this.setState({ docError: m, docBusy: false });
+    if (!f.title.trim()) return err('Choose a file type.');
+    if (!f.date) return err('Add the upload date.');
+    const d = clone(draft);
+    const p = d.partners.find(x => x.id === docPartner); if (!p) return;
+    const id = Date.now().toString(36);
+    const base = { id, title: f.title.trim(), date: f.date, note: f.note.trim() };
+    if (docSource === 'link') {
+      if (!/^https?:\/\//i.test(f.url.trim())) return err('Paste a full link starting with https://');
+      p.documents.push({ ...base, kind: 'link', url: f.url.trim() });
+    } else {
+      if (!docFile) return err('Select a file.');
+      if (docFile.size > 25 * 1048576) return err('GitHub only accepts uploads up to 25 MB. Use a SharePoint link for this one.');
+      if (!/^\d{6}$/.test(f.pin)) return err("Enter the partner's 6-digit PIN.");
+      if ((await sha(`${SALT}|${p.id}|${f.pin}`)) !== p.pinHash) return err("That PIN doesn't match this partner. If you've lost it, reset it on their profile first.");
+      this.setState({ docBusy: true });
+      const blob = await lockFile(await docFile.arrayBuffer(), f.pin, p.id);
+      const fname = `${p.id}-${id}.bin`;
+      p.documents.push({ ...base, kind: 'file', file: 'files/' + fname, fileName: docFile.name, mime: docFile.type || 'application/octet-stream', size: docFile.size });
+      saveBlob(blob, fname);
+      this.setState(s => ({ pending: { ...s.pending, [id]: { blob, fname } } }));
+    }
+    this.persist(d);
+    this.setState({ docForm: { title: '', date: today(), url: '', note: '', pin: '' }, docFile: null, docBusy: false });
+    this.flash(docSource === 'link' ? 'File added' : 'Locked file downloaded. Upload it to the files folder on GitHub.');
+  };
+  async downloadDoc(p, d) {
+    let pin = this.pin;
+    if (!pin || (await sha(`${SALT}|${p.id}|${pin}`)) !== p.pinHash) {
+      pin = (window.prompt('Enter your 6-digit portal PIN to open this file.') || '').trim();
+      if (!pin) return;
+      if ((await sha(`${SALT}|${p.id}|${pin}`)) !== p.pinHash) return this.flash("That PIN doesn't match.");
+      this.pin = pin;
+    }
+    this.flash('Unlocking file…');
+    try {
+      const r = await fetch(d.file, { cache: 'no-store' });
+      if (!r.ok) throw new Error('missing');
+      const plain = await unlockFile(await r.arrayBuffer(), pin, p.id);
+      saveBlob(new Blob([plain], { type: d.mime }), d.fileName);
+      this.flash('File downloaded');
+      this.logEvent('Opened file', p, d.title);
+    } catch (e) {
+      this.flash(e.message === 'missing' ? "This file isn't available yet. Check back soon." : "This file couldn't be unlocked. Ask your AbleLiving contact to re-send it.");
+    }
+  }
+  removeDoc(docId) {
+    if (!confirm('Remove this file from the partner\'s portal?')) return;
+    const d = clone(this.state.draft);
+    const p = d.partners.find(x => x.id === this.state.docPartner); if (!p) return;
+    p.documents = p.documents.filter(x => x.id !== docId);
+    this.persist(d);
+  }
+  componentDidUpdate() {
+    const s = this.state;
+    if (s.view !== 'portal' || !s.portalId) return;
+    if (s.onboardFor !== s.portalId) {
+      let ob = {}; try { ob = JSON.parse(localStorage.getItem('al_onboard_' + s.portalId) || '{}'); } catch (e) {}
+      this.setState({ onboard: ob, onboardFor: s.portalId });
+    }
+    if (s.team.forId !== s.portalId + (s.preview ? ':p' : '')) this.loadTeam();
+  }
+  setOnboard(patch) {
+    const id = this.state.portalId; if (!id) return;
+    const ob = { ...this.state.onboard, ...patch };
+    try { localStorage.setItem('al_onboard_' + id, JSON.stringify(ob)); } catch (e) {}
+    this.setState({ onboard: ob });
+  }
+  async loadTeam() {
+    const s = this.state, key = s.portalId + (s.preview ? ':p' : '');
+    const src = s.preview ? s.draft : s.pub;
+    const p = src && src.partners.find(x => x.id === s.portalId);
+    this.setState({ team: { forId: key, rows: [], loading: !!(src && src.teamUrl), error: '' } });
+    if (!src || !src.teamUrl || !p) return;
+    try {
+      const u = src.teamUrl;
+      const r = await fetch(u + (u.includes('?') ? '&' : '?') + 'partner=' + encodeURIComponent(p.name) + '&partnerId=' + encodeURIComponent(p.id));
+      const j = await r.json();
+      const list = Array.isArray(j) ? j : (j.rows || j.value || []);
+      const rows = list.map(x => ({ t: x.t || x.Created || '', event: x.event || x.Title || '', person: x.person || x.Person || '', role: x.role || x.Role || '', dueDate: x.dueDate || x.DueDate || '', form: x.form || x.Form || '' }));
+      if (this.state.team.forId === key) this.setState({ team: { forId: key, rows, loading: false, error: '' } });
+    } catch (e) {
+      if (this.state.team.forId === key) this.setState({ team: { forId: key, rows: [], loading: false, error: "Team status couldn't load right now." } });
+    }
+  }
+  onTeamUrl = e => { const d = clone(this.state.draft); d.teamUrl = e.target.value.trim(); this.persist(d); };
+  onCeuField = e => { const { name, value } = e.target; this.setState(s => ({ ceuForm: { ...s.ceuForm, [name]: value }, ceuError: '' })); };
+  onCeuRequired = e => { const d = clone(this.state.draft); d.ceu.requiredHours = e.target.value; this.persist(d); };
+  addCeu = () => {
+    const { ceuForm: f, ceuSource, draft } = this.state;
+    const err = m => this.setState({ ceuError: m });
+    if (!f.title.trim()) return err('Add a course title.');
+    if (!(Number(f.hours) > 0)) return err('Add the CE hours.');
+    if (ceuSource === 'file' && !/\.pptx?$/i.test(f.file.trim())) return err('Type the PowerPoint file name, ending in .pptx');
+    if (ceuSource === 'link' && !/^https?:\/\//i.test(f.url.trim())) return err('Paste a full link starting with https://');
+    const d = clone(draft);
+    d.ceu.courses.push({ id: 'ceu-' + Date.now().toString(36), title: f.title.trim(), hours: Number(f.hours), description: f.description.trim(), file: ceuSource === 'file' ? f.file.trim() : '', url: ceuSource === 'link' ? f.url.trim() : '', added: today() });
+    this.persist(d);
+    this.setState({ ceuForm: { title: '', hours: '', description: '', file: '', url: '' } });
+    this.flash('Course added');
+  };
+  moveCeu(i, dir) {
+    const d = clone(this.state.draft), c = d.ceu.courses, j = i + dir;
+    if (j < 0 || j >= c.length) return;
+    [c[i], c[j]] = [c[j], c[i]];
+    this.persist(d);
+  }
+  removeCeu(id) {
+    if (!confirm('Remove this course from the CEU library?')) return;
+    const d = clone(this.state.draft); d.ceu.courses = d.ceu.courses.filter(c => c.id !== id); this.persist(d);
+  }
+  toggleLog = () => { const open = !this.state.logOpen; this.setState({ logOpen: open }); if (open && !this.state.logRows) this.loadLog(); };
+  onLogUrl = e => { const d = clone(this.state.draft); d.logUrl = e.target.value.trim(); this.persist(d); };
+  onLogReadUrl = e => { const v = e.target.value.trim(); this.setState({ logReadUrl: v }); try { localStorage.setItem('al_log_read', v); } catch (err) {} };
+  onLogKey = e => { const v = e.target.value; this.setState({ logKey: v }); try { localStorage.setItem(LOG_KEY, v); } catch (err) {} };
+  onLogFilter = e => this.setState({ logFilter: e.target.value, logShown: 25 });
+  logMore = () => this.setState(s => ({ logShown: s.logShown + 25 }));
+  loadLog = async () => {
+    const url = this.state.logReadUrl || this.state.draft.logUrl, key = this.state.logKey;
+    if (!url || !key) return;
+    this.setState({ logLoading: true, logError: '' });
+    try {
+      const r = await fetch(url + (url.includes('?') ? '&' : '?') + 'key=' + encodeURIComponent(key) + '&limit=5000');
+      let j; try { j = await r.json(); } catch (e) { throw new Error('net'); }
+      if (j && j.error) throw new Error(j.error === 'unauthorized' ? "The read key doesn't match." : String(j.error));
+      const list = Array.isArray(j) ? j : (j.rows || j.value || j.body || []);
+      const partners = this.state.draft.partners;
+      const rows = list.map(x => ({
+        t: x.t || x.Time || x.Created || x.created || '',
+        event: x.event || x.Event || x.Title || '',
+        partnerId: x.partnerId || x.PartnerId || '',
+        partner: x.partner || x.Partner || '',
+        form: x.form || x.Form || '',
+        person: x.person || x.Person || '', dueDate: x.dueDate || x.DueDate || ''
+      })).map(x => {
+        if (!x.partnerId && x.partner) { const m = partners.find(p => p.name.toLowerCase() === String(x.partner).toLowerCase().trim()); if (m) x.partnerId = m.id; }
+        return x;
+      }).sort((a, b) => new Date(b.t) - new Date(a.t));
+      this.setState({ logRows: rows, logTotal: j.total || rows.length, logLoading: false, logShown: 25 });
+    } catch (e) {
+      this.setState({ logLoading: false, logError: e.message && /read key/.test(e.message) ? e.message : "Couldn't reach the log. Check the read URL, that Flow 2 is on, and that its trigger allows Anyone." });
+    }
+  };
+  copyScript = () => navigator.clipboard.writeText(APPS_SCRIPT).then(() => this.flash('Setup script copied'));
+  onGlobalAnn = e => { const d = clone(this.state.draft); d.announcement = e.target.value; this.persist(d); };
+  onEdContact = e => { const { name, value } = e.target; this.setState(s => ({ ed: { ...s.ed, contact: { ...s.ed.contact, [name]: value } } })); };
+  exportCsv = () => {
+    const d = this.state.draft, base = location.origin + location.pathname.replace(/[^/]*$/, '') + 'partner-portal.html?p=';
+    const q = v => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+    const head = ['Name', 'Portal ID', 'Status', 'Portal link', 'Forms used', 'Contact name', 'Contact email', 'Contact phone', 'Announcement', 'Added', 'Notes'];
+    const lines = d.partners.slice().sort((a, b) => a.name.localeCompare(b.name)).map(p => [
+      p.name, p.id, p.active ? 'Active' : 'Paused', base + p.id,
+      FORM_KEYS.filter(k => offers(p, k)).map(k => FORM_LABELS[k]).join('; '),
+      p.contact.name || DEFAULT_CONTACT.name, p.contact.email || DEFAULT_CONTACT.email, p.contact.phone,
+      p.announcement, p.created, p.notes
+    ].map(q).join(','));
+    const url = URL.createObjectURL(new Blob([[head.map(q).join(','), ...lines].join('\r\n')], { type: 'text/csv' }));
+    const a = document.createElement('a'); a.href = url; a.download = 'ableliving-partners-' + today() + '.csv'; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  importRef = React.createRef();
+  logoRef = React.createRef();
+
+  async componentDidMount() {
+    let pub;
+    try {
+      const dev = /\.dc\.html/.test(decodeURIComponent(location.pathname));
+      const r = await fetch(dev ? 'partners.json' : 'partners.json?t=' + Date.now(), { cache: 'no-store' });
+      if (!r.ok) throw new Error(r.status);
+      pub = normalize(await r.json());
+    } catch (e) { this.setState({ view: 'error' }); return; }
+    let draft = null;
+    try { draft = normalize(JSON.parse(localStorage.getItem(DRAFT_KEY) || 'null')); } catch (e) {}
+    const q = new URLSearchParams(location.search);
+    const pre = q.get('p');
+    const gate = { ...this.state.gate };
+    if (pre && pub.partners.some(p => p.id === pre && p.active)) gate.partnerId = pre;
+    let view = 'gate', portalId = null;
+    const sess = sessionStorage.getItem('al_portal');
+    if (sess && pub.partners.some(p => p.id === sess && p.active)) { view = 'portal'; portalId = sess; }
+    if (sessionStorage.getItem('al_admin') === '1') view = 'admin';
+    else if (location.hash === '#admin' || q.has('admin')) view = 'adminGate';
+    this.setState({ pub, draft: draft || clone(pub), gate, view, portalId });
+  }
+
+  flash(msg) { this.setState({ toast: msg }); clearTimeout(this._t); this._t = setTimeout(() => this.setState({ toast: '' }), 2200); }
+  persist(draft) { this.setState({ draft }); try { localStorage.setItem(DRAFT_KEY, JSON.stringify(draft)); } catch (e) { this.flash('Draft too large to save in this browser'); } }
+  scrollTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+  // gate
+  onGateField = e => { const { name, value } = e.target; this.setState(s => ({ gate: { ...s.gate, [name]: name === 'pin' ? value.replace(/\D/g, '') : value, error: '' } })); };
+  onGateSubmit = async e => {
+    e.preventDefault();
+    const { gate, pub, lockUntil, fails } = this.state;
+    if (Date.now() < lockUntil) return;
+    const err = m => this.setState(s => ({ gate: { ...s.gate, error: m } }));
+    if (!gate.partnerId) return err('Choose your organization.');
+    if (!/^\d{6}$/.test(gate.pin)) return err('Enter your 6-digit PIN.');
+    const p = pub.partners.find(x => x.id === gate.partnerId);
+    const ok = p && (await sha(`${SALT}|${p.id}|${gate.pin}`)) === p.pinHash;
+    if (ok) {
+      sessionStorage.setItem('al_portal', p.id);
+      this.pin = gate.pin;
+      this.logEvent('Sign in', p);
+      this.setState({ view: 'portal', portalId: p.id, preview: false, fails: 0, gate: { ...gate, pin: '', error: '' } });
+      this.scrollTop();
+    } else {
+      const n = fails + 1;
+      if (n >= 5) {
+        this.setState({ fails: 0, lockUntil: Date.now() + 30000 });
+        err('Too many tries. Wait 30 seconds, then try again.');
+        setTimeout(() => this.setState(s => ({ lockUntil: 0, gate: { ...s.gate, error: '' } })), 30000);
+      } else { this.setState({ fails: n }); err("That PIN doesn't match. Check with your AbleLiving contact."); }
+    }
+  };
+  signOut = () => { sessionStorage.removeItem('al_portal'); this.setState({ openFormKey: null }); if (this.state.preview) return this.exitPreview(); this.setState({ view: 'gate', portalId: null }); this.scrollTop(); };
+  goAdminGate = e => { e && e.preventDefault(); this.setState({ view: 'adminGate', adminError: '', adminPin: '' }); this.scrollTop(); };
+  backToGate = () => { this.setState({ view: 'gate' }); history.replaceState(null, '', location.pathname + location.search); };
+
+  // admin auth
+  onAdminPin = e => this.setState({ adminPin: e.target.value.replace(/\D/g, ''), adminError: '' });
+  onAdminSubmit = async e => {
+    e.preventDefault();
+    const h = await sha(`${SALT}|admin|${this.state.adminPin}`);
+    if (h === this.state.pub.adminPinHash) { sessionStorage.setItem('al_admin', '1'); this.setState({ view: 'admin', adminPin: '' }); }
+    else this.setState({ adminError: "That PIN doesn't match." });
+  };
+  adminSignOut = () => { sessionStorage.removeItem('al_admin'); this.setState({ view: 'gate', ed: null }); history.replaceState(null, '', location.pathname); this.scrollTop(); };
+
+  // draft file ops
+  download = () => {
+    const d = { ...clone(this.state.draft), updated: today() };
+    const url = URL.createObjectURL(new Blob([JSON.stringify(d, null, 2)], { type: 'application/json' }));
+    const a = document.createElement('a'); a.href = url; a.download = 'partners.json'; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    this.flash('partners.json downloaded');
+  };
+  discard = () => { if (!confirm('Discard all unpublished changes?')) return; localStorage.removeItem(DRAFT_KEY); this.setState({ draft: clone(this.state.pub), ed: null }); };
+  pickImport = () => this.importRef.current && this.importRef.current.click();
+  onImport = e => {
+    const f = e.target.files[0]; e.target.value = ''; if (!f) return;
+    f.text().then(t => { const d = normalize(JSON.parse(t)); if (!Array.isArray(d.partners)) throw 0; this.persist(d); this.flash('Imported. Review, then download to publish.'); }).catch(() => this.flash("That file isn't a valid partners.json"));
+  };
+
+  // forms
+  onFormUrl = e => { const { name, value } = e.target; const d = clone(this.state.draft); d.forms[name].url = value.trim(); this.persist(d); };
+
+  // editor
+  openEditor(p, isNew, origId) { this.setState({ ed: p, edIsNew: isNew, edOrigId: origId, edNewPin: '', edError: '' }); setTimeout(() => window.scrollTo({ top: 260, behavior: 'smooth' }), 30); }
+  addPartner = () => this.openEditor({ id: '', name: '', pinHash: '', logo: '', active: true, assessmentUrl: '', visitUrl: '', safetyUrl: '', offers: { assessment: true, visit: true, safety: true }, announcement: '', contact: { name: '', title: '', email: '', phone: '' }, notes: '', created: today() }, true, null);
+  onEdOffer = e => { const { name, checked } = e.target; this.setState(s => ({ ed: { ...s.ed, offers: { ...s.ed.offers, [name]: checked } }, edError: '' })); };
+  onEdField = e => {
+    const { name, value, checked, type } = e.target;
+    this.setState(s => {
+      const ed = { ...s.ed, [name]: type === 'checkbox' ? checked : value };
+      if (name === 'name' && s.edIsNew && (!s.ed.id || s.ed.id === slug(s.ed.name))) ed.id = slug(value);
+      if (name === 'id') ed.id = slug(value);
+      return { ed, edError: '' };
+    });
+  };
+  pickLogo = () => this.logoRef.current && this.logoRef.current.click();
+  onLogo = e => {
+    const f = e.target.files[0]; e.target.value = ''; if (!f) return;
+    const img = new Image();
+    img.onload = () => {
+      const k = Math.min(1, 480 / img.width, 160 / img.height);
+      const c = document.createElement('canvas'); c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
+      c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+      this.setState(s => ({ ed: { ...s.ed, logo: c.toDataURL('image/webp', 0.9) } }));
+      URL.revokeObjectURL(img.src);
+    };
+    img.src = URL.createObjectURL(f);
+  };
+  removeLogo = () => this.setState(s => ({ ed: { ...s.ed, logo: '' } }));
+  genPin = async () => {
+    const { ed } = this.state;
+    if (!ed.id) return this.setState({ edError: 'Add a name first — the PIN is tied to the portal ID.' });
+    const pin = randPin();
+    this.setState({ edNewPin: pin, ed: { ...ed, pinHash: await sha(`${SALT}|${ed.id}|${pin}`), _pinFor: ed.id } });
+  };
+  copyPin = () => navigator.clipboard.writeText(this.state.edNewPin).then(() => this.flash('PIN copied'));
+  cancelEdit = () => this.setState({ ed: null, edNewPin: '' });
+  saveEdit = () => {
+    const { ed, edIsNew, edOrigId, draft } = this.state;
+    const err = m => this.setState({ edError: m });
+    if (!ed.name.trim()) return err('Add the organization name.');
+    if (!ed.id) return err('Add a portal ID.');
+    if (draft.partners.some(p => p.id === ed.id && p.id !== edOrigId)) return err('Another partner already uses that portal ID.');
+    if (!ed.pinHash) return err('Generate a PIN before saving.');
+    if (ed._pinFor && ed._pinFor !== ed.id) return err('The portal ID changed after the PIN was made. Generate a new PIN.');
+    const d = clone(draft);
+    if (!FORM_KEYS.some(k => offers(ed, k))) return err('Turn on at least one form for this partner.');
+    const clean = { ...ed, name: ed.name.trim(), assessmentUrl: (ed.assessmentUrl || '').trim(), visitUrl: (ed.visitUrl || '').trim(), safetyUrl: (ed.safetyUrl || '').trim() };
+    delete clean._pinFor;
+    if (edIsNew) d.partners.push(clean); else d.partners = d.partners.map(p => p.id === edOrigId ? clean : p);
+    this.persist(d);
+    this.setState({ ed: null, edNewPin: '' });
+    this.flash(edIsNew ? 'Partner added' : 'Partner saved');
+  };
+  deleteEdit = () => {
+    const { ed, edOrigId, draft } = this.state;
+    if (!confirm(`Delete ${ed.name}? Their portal will stop working once you publish.`)) return;
+    const d = clone(draft); d.partners = d.partners.filter(p => p.id !== edOrigId);
+    this.persist(d); this.setState({ ed: null });
+  };
+  duplicate(p) {
+    let id = slug(p.id + '-copy'), n = 2;
+    while (this.state.draft.partners.some(x => x.id === id)) id = slug(p.id + '-copy-' + n++);
+    this.openEditor({ ...clone(p), id, name: 'Copy of ' + p.name, pinHash: '', logo: '', notes: p.notes, created: today() }, true, null);
+  }
+  copyLink(p) {
+    const url = location.origin + location.pathname + '?p=' + encodeURIComponent(p.id);
+    navigator.clipboard.writeText(url).then(() => this.flash('Portal link copied'));
+  }
+  exitPreview = e => { e && e.preventDefault(); this.setState({ view: 'admin', preview: false, portalId: null }); this.scrollTop(); };
+
+  onNewAdminPin = e => this.setState({ newAdminPin: e.target.value.replace(/\D/g, ''), adminPinMsg: '' });
+  saveAdminPin = async () => {
+    const pin = this.state.newAdminPin;
+    if (!/^\d{6}$/.test(pin)) return this.setState({ adminPinMsg: 'Use exactly 6 digits.' });
+    const d = clone(this.state.draft); d.adminPinHash = await sha(`${SALT}|admin|${pin}`);
+    this.persist(d); this.setState({ newAdminPin: '', adminPinMsg: 'Updated in your draft. It takes effect once you publish.' });
+  };
+
+  renderVals() {
+    const s = this.state;
+    const dev = /\.dc\.html/.test(decodeURIComponent(location.pathname));
+    const nav = dev
+      ? { home: 'Home.dc.html', partnership: 'Partnership.dc.html', become: 'Become%20a%20Partner.dc.html', forms: 'Forms.dc.html', contact: 'Contact.dc.html', privacy: 'Privacy%20Policy.dc.html', demo: 'Partnership%20Demo.dc.html', onboard: 'Onboarding%20Checklist.dc.html', training: 'Training.dc.html', topics: 'Required%20Topics.dc.html', howto: 'How%20to%20Attest.dc.html', attest: 'Clinician%20Attestation.dc.html', portal: 'Partner%20Portal.dc.html', ceu: 'CEU%20Library.dc.html', ceuAttest: 'CEU%20Attestation.dc.html' }
+      : { home: './', partnership: 'partnership.html', become: 'become-a-partner.html', forms: 'forms.html', contact: 'contact.html', privacy: 'privacy-policy.html', demo: 'partnership-demo.html', onboard: 'onboarding-checklist.html', training: 'training.html', topics: 'required-topics.html', howto: 'how-to-attest.html', attest: 'attestation.html', portal: 'partner-portal.html', ceu: 'ceu-library.html', ceuAttest: 'ceu-attestation.html' };
+    const src = s.preview ? s.draft : s.pub;
+    const draft = s.draft || { partners: [], forms: { assessment: {}, visit: {} } };
+
+    let portal = { name: '', logo: '', hasLogo: false, noLogo: true, forms: [] };
+    const p = src && s.portalId && src.partners.find(x => x.id === s.portalId);
+    if (p) {
+      portal = {
+        name: p.name, logo: p.logo, hasLogo: !!p.logo, noLogo: !p.logo,
+        forms: FORM_KEYS.filter(k => offers(p, k)).map(k => {
+          const url = p[k + 'Url'] || (src.forms[k] && src.forms[k].url) || '';
+          return { key: k, label: src.forms[k].label, kicker: FORM_COPY[k].kicker, body: FORM_COPY[k].body, url, ready: !!url, missing: !url,
+            onOpen: () => { this.logEvent('Opened form', p, src.forms[k].label); if (k === 'assessment' && !this.state.onboard.s4) this.setOnboard({ s4: true }); this.setState({ openFormKey: k }); window.scrollTo({ top: 0, behavior: 'smooth' }); } };
+        })
+      };
+      const c = p.contact && p.contact.name ? p.contact : DEFAULT_CONTACT;
+      portal.contact = { ...c, hasTitle: !!c.title, hasEmail: !!c.email, hasPhone: !!c.phone, mailto: 'mailto:' + c.email, tel: 'tel:' + (c.phone || '').replace(/[^\d+]/g, '') };
+      const docs = (p.documents || []).slice().sort((a, b) => b.date.localeCompare(a.date));
+      portal.hasDocs = docs.length > 0;
+      portal.docs = docs.map((d, i) => ({
+        title: d.title, url: d.url || '', isFile: d.kind === 'file', isLink: d.kind !== 'file',
+        onDownload: () => this.downloadDoc(p, d),
+        meta: 'Uploaded ' + fmtDate(d.date) + (d.note ? ' · ' + d.note : '') + (d.kind === 'file' ? ' · ' + fmtSize(d.size) : ''),
+        style: { display: 'flex', alignItems: 'center', gap: '12px 18px', flexWrap: 'wrap', padding: '16px 22px', borderTop: i ? '1px solid var(--line)' : 'none' },
+        onOpen: () => this.logEvent('Opened file', p, d.title)
+      }));
+      portal.announcements = [
+        src.announcement && src.announcement.trim() ? { tone: 'blue', title: 'From AbleLiving:', text: src.announcement.trim() } : null,
+        p.announcement && p.announcement.trim() ? { tone: 'gold', title: 'For ' + p.name + ':', text: p.announcement.trim() } : null
+      ].filter(Boolean);
+    }
+    if (!portal.contact) portal.contact = { ...DEFAULT_CONTACT, hasTitle: true, hasEmail: true, hasPhone: false, mailto: 'mailto:' + DEFAULT_CONTACT.email, tel: '' };
+    if (!portal.announcements) portal.announcements = [];
+    const footC = s.view === 'portal' ? portal.contact : DEFAULT_CONTACT;
+
+    const allLog = (s.logRows || []).filter(r => !s.logFilter || r.partnerId === s.logFilter);
+    const logShownRows = allLog.slice(0, s.logShown).map((r, i) => ({
+      time: (() => { const d = new Date(r.t); return isNaN(d) ? String(r.t) : d.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }); })(),
+      partner: r.partner || r.partnerId,
+      action: r.event === 'Opened form' ? 'Opened ' + r.form : r.event === 'Opened file' ? 'Opened file: ' + r.form : r.event === 'Submitted form' ? 'Submitted ' + r.form : r.event === 'Initial attestation' ? 'Initial attestation: ' + (r.person || '') : r.event === 'CEU attestation' ? 'CEU attestation: ' + (r.person || '') + ' (' + r.form + ')' : (r.event === 'Sign in' ? 'Signed in' : r.event),
+      style: { display: 'flex', flexWrap: 'wrap', gap: '4px 16px', padding: '12px 16px', borderTop: i ? '1px solid var(--line)' : 'none', alignItems: 'baseline' }
+    }));
+    const logUrl = (s.draft && s.draft.logUrl) || '';
+    const logReady = !!logUrl && !!s.logKey;
+    const logStatus = s.logLoading ? 'Loading…' : s.logError ? s.logError
+      : s.logRows ? (allLog.length ? `Showing ${Math.min(s.logShown, allLog.length)} of ${allLog.length}${s.logTotal > s.logRows.length ? ' most recent (' + s.logTotal + ' total in the sheet)' : ''}` : 'No activity recorded yet.') : '';
+
+    const partners = draft.partners.slice().sort((a, b) => a.name.localeCompare(b.name));
+    const rows = partners.map((x, i) => {
+      const used = FORM_KEYS.filter(k => offers(x, k));
+      const overrides = used.filter(k => x[k + 'Url']).length;
+      return {
+        name: x.name, logo: x.logo, hasLogo: !!x.logo, noLogo: !x.logo,
+        initials: x.name.split(/\s+/).filter(w => /^[A-Za-z]/.test(w)).slice(0, 2).map(w => w[0].toUpperCase()).join(''),
+        status: x.active ? 'Active' : 'Paused', tone: x.active ? 'success' : 'neutral',
+        meta: `ID: ${x.id} · ${used.length} of ${FORM_KEYS.length} forms · ${overrides ? overrides + ' pre-filled link' + (overrides > 1 ? 's' : '') : 'Shared form links'}`,
+        rowStyle: { display: 'flex', alignItems: 'center', gap: '14px 18px', flexWrap: 'wrap', padding: '18px 22px', borderTop: i ? '1px solid var(--line)' : 'none' },
+        onEdit: () => this.openEditor(clone(x), false, x.id),
+        onDuplicate: () => this.duplicate(x),
+        onPreview: () => { this.setState({ view: 'portal', preview: true, portalId: x.id }); this.scrollTop(); },
+        onCopyLink: () => this.copyLink(x)
+      };
+    });
+    const active = draft.partners.filter(x => x.active).length;
+    const dirty = !!(s.pub && s.draft) && JSON.stringify(s.pub) !== JSON.stringify(s.draft);
+    const ed = s.ed || { name: '', id: '', logo: '', notes: '', assessmentUrl: '', visitUrl: '', safetyUrl: '', active: true, offers: {}, announcement: '', contact: { name: '', title: '', email: '', phone: '' } };
+
+    const bg = (url, extra) => ({ backgroundImage: url ? `url("${url}")` : 'none', backgroundRepeat: 'no-repeat', backgroundSize: 'contain', ...extra });
+    rows.forEach((r, i) => { r.logoStyle = bg(partners[i].logo, { width: 62, height: 42, backgroundPosition: 'center' }); });
+    const TABS = [['partners', 'Partners'], ['analytics', 'Analytics'], ['ceu', 'CEU library'], ['shared', 'Shared forms & message'], ['log', 'Access log'], ['settings', 'Settings']];
+    const tabs = TABS.map(([k, label]) => ({
+      label, onClick: () => this.setTab(k),
+      style: { fontFamily: 'var(--font-sans)', fontSize: 15, fontWeight: s.tab === k ? 800 : 500, color: 'var(--navy)', background: 'transparent', border: 'none', borderBottom: s.tab === k ? '3px solid var(--navy)' : '3px solid transparent', padding: '12px 14px', cursor: 'pointer', marginBottom: -1 }
+    }));
+    const dp = s.draft && s.draft.partners.find(x => x.id === s.docPartner);
+    const docRows = dp ? dp.documents.slice().sort((a, b) => b.date.localeCompare(a.date)).map((d, i) => ({
+      title: d.title, url: d.url || '', dateLabel: fmtDate(d.date),
+      note: [d.kind === 'file' ? `Locked file: ${d.fileName} (${fmtSize(d.size)}) → ${d.file}` : '', d.note].filter(Boolean).join(' · '),
+      isLink: d.kind !== 'file', canRedownload: d.kind === 'file' && !!s.pending[d.id],
+      onRedownload: () => { const pf = s.pending[d.id]; if (pf) saveBlob(pf.blob, pf.fname); },
+      style: { display: 'flex', alignItems: 'center', gap: '10px 18px', flexWrap: 'wrap', padding: '14px 20px', borderTop: i ? '1px solid var(--line)' : 'none' },
+      onRemove: () => this.removeDoc(d.id)
+    })) : [];
+    // analytics
+    const DAY = 86400000, now = Date.now();
+    const rangeDays = s.anRange;
+    const since = rangeDays ? now - rangeDays * DAY : 0;
+    const evs = (s.logRows || []).map(r => ({ ...r, ts: new Date(r.t).getTime() })).filter(r => !isNaN(r.ts));
+    const inRange = evs.filter(r => r.ts >= since);
+    const isSign = r => r.event === 'Sign in', isOpen = r => r.event === 'Opened form';
+    const isSub = r => r.event === 'Submitted form';
+    const signCount = inRange.filter(isSign).length, openCount = inRange.filter(isOpen).length, subCount = inRange.filter(isSub).length;
+    const activeIds = new Set(inRange.filter(isSign).map(r => r.partnerId));
+    const draftPartners = s.draft ? s.draft.partners : [];
+    const activePartners = draftPartners.filter(p => p.active);
+    const formCounts = FORM_KEYS.map(k => FORM_LABELS[k]).map(label => ({ label, count: inRange.filter(r => isOpen(r) && r.form === label).length, subs: inRange.filter(r => isSub(r) && String(r.form).toLowerCase() === label.toLowerCase()).length }));
+    const maxForm = Math.max(1, ...formCounts.map(f => Math.max(f.count, f.subs)));
+    const top = formCounts.slice().sort((a, b) => b.count - a.count)[0];
+    // buckets
+    let buckets = [];
+    const startOfDay = ts => { const d = new Date(ts); d.setHours(0, 0, 0, 0); return d.getTime(); };
+    if (rangeDays && rangeDays <= 30) {
+      const first = startOfDay(now) - (rangeDays - 1) * DAY;
+      for (let i = 0; i < rangeDays; i++) buckets.push({ start: first + i * DAY, end: first + (i + 1) * DAY, label: new Date(first + i * DAY).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) });
+    } else if (rangeDays) {
+      const weeks = Math.ceil(rangeDays / 7), first = startOfDay(now) - (weeks * 7 - 1) * DAY;
+      for (let i = 0; i < weeks; i++) buckets.push({ start: first + i * 7 * DAY, end: first + (i + 1) * 7 * DAY, label: 'Week of ' + new Date(first + i * 7 * DAY).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) });
+    } else {
+      const d = new Date(now); d.setDate(1); d.setHours(0, 0, 0, 0);
+      const oldest = evs.length ? Math.min(...evs.map(r => r.ts)) : now;
+      const months = [];
+      for (let m = new Date(d); m.getTime() >= oldest || months.length === 0; m.setMonth(m.getMonth() - 1)) { months.unshift(new Date(m)); if (months.length >= 24) break; }
+      buckets = months.map(m => { const e = new Date(m); e.setMonth(e.getMonth() + 1); return { start: m.getTime(), end: e.getTime(), label: m.toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) }; });
+    }
+    buckets.forEach(b => { const ev = evs.filter(r => r.ts >= b.start && r.ts < b.end); b.s = ev.filter(isSign).length; b.o = ev.filter(isOpen).length; });
+    const maxB = Math.max(1, ...buckets.map(b => b.s + b.o));
+    const anBars = buckets.map(b => ({
+      tip: `${b.label}: ${b.s} sign-in${b.s === 1 ? '' : 's'}, ${b.o} form open${b.o === 1 ? '' : 's'}`,
+      signins: { height: (b.s / maxB * 100) + '%', background: 'var(--navy)', borderRadius: b.o ? '0' : '3px 3px 0 0' },
+      opens: { height: (b.o / maxB * 100) + '%', background: 'var(--blue)', borderRadius: '3px 3px 0 0' }
+    }));
+    const lastSeen = id => { const l = evs.filter(r => r.partnerId === id && isSign(r)); return l.length ? Math.max(...l.map(r => r.ts)) : 0; };
+    const fmtSeen = ts => ts ? new Date(ts).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'Never';
+    const anPartners = draftPartners.map(p => ({ name: p.name, signins: inRange.filter(r => r.partnerId === p.id && isSign(r)).length, opens: inRange.filter(r => r.partnerId === p.id && isOpen(r)).length, submitted: inRange.filter(r => r.partnerId === p.id && isSub(r)).length,
+      attested: new Set(evs.filter(r => r.partnerId === p.id && r.event === 'Initial attestation' && r.ts >= now - 365 * DAY).map(r => String(r.person).toLowerCase())).size,
+      ceuCurrent: new Set(evs.filter(r => r.partnerId === p.id && r.event === 'CEU attestation' && String(r.form).includes(String(new Date().getFullYear()))).map(r => String(r.person).toLowerCase())).size,
+      lastTs: lastSeen(p.id) }))
+      .sort((a, b) => (b.signins + b.opens) - (a.signins + a.opens) || b.lastTs - a.lastTs)
+      .map(p => ({ ...p, last: fmtSeen(p.lastTs) }));
+    const anQuiet = activePartners.map(p => ({ name: p.name, ts: lastSeen(p.id) })).filter(p => p.ts < now - 30 * DAY).sort((a, b) => a.ts - b.ts).map(p => ({ name: p.name, last: p.ts ? 'Last in ' + fmtSeen(p.ts) : 'Never signed in' }));
+    const RANGES = [[7, 'Last 7 days'], [30, 'Last 30 days'], [90, 'Last 90 days'], [0, 'All time']];
+    const of = s.view === 'portal' && s.openFormKey ? (portal.forms || []).find(f => f.key === s.openFormKey && f.ready) : null;
+    const embedUrl = of ? (/forms\.(office\.com|microsoft\.com|cloud\.microsoft)/i.test(of.url) && !/[?&]embed=true/i.test(of.url) ? of.url + (of.url.includes('?') ? '&' : '?') + 'embed=true' : of.url) : '';
+    const ceuCourses = (s.draft && s.draft.ceu && s.draft.ceu.courses) || [];
+    // onboarding checklist
+    const srcP = (s.preview ? s.draft : s.pub);
+    const curP = srcP && s.portalId ? srcP.partners.find(x => x.id === s.portalId) : null;
+    const ob = s.onboard || {};
+    const STEPS = [
+      { k: 's1', title: 'Sign in to your partner portal', detail: 'Done. Bookmark this page so your team can find it.', auto: true },
+      { k: 's2', title: 'Complete the GUIDE and athenaOne training', detail: '16 modules, about 20 hours, for each care navigator.', href: nav.training, link: 'Open training' },
+      { k: 's3', title: 'Each clinician signs the initial attestation', detail: 'A five-minute form once training is finished.', href: nav.attest, link: 'Start attestation' },
+      { k: 's4', title: 'Submit your first Comprehensive Assessment', detail: 'Checked automatically the first time you open the form here.' },
+      { k: 's5', title: 'Plan at least 2 CE hours for the year', detail: 'Pick courses from the CEU library, then submit the CEU attestation.', href: nav.ceu, link: 'Open CEU library' }
+    ];
+    const isDone = st => st.auto || !!ob[st.k];
+    const doneN = STEPS.filter(isDone).length;
+    const checklist = STEPS.map((st, i) => {
+      const d = isDone(st);
+      return {
+        title: st.title, detail: st.detail, hasLink: !!st.href && !d, href: st.href || '', linkLabel: st.link || '',
+        canToggle: !st.auto, toggleLabel: d ? 'Undo' : 'Mark done',
+        onToggle: e => { e && e.preventDefault(); this.setOnboard({ [st.k]: !d }); },
+        mark: d ? '✓' : String(i + 1),
+        rowStyle: { display: 'flex', alignItems: 'center', gap: '10px 16px', flexWrap: 'wrap', padding: '12px 0', borderTop: i ? '1px solid var(--line)' : 'none' },
+        dotStyle: { width: 30, height: 30, flex: '0 0 30px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, fontWeight: 700, background: d ? 'var(--leaf)' : '#fff', color: d ? '#fff' : 'var(--navy)', border: d ? '1px solid var(--leaf)' : '1px solid var(--line)' },
+        titleStyle: { fontSize: 16, fontWeight: 700, color: d ? 'var(--sage)' : 'var(--navy)', textDecoration: d ? 'line-through' : 'none' }
+      };
+    });
+    // team status
+    const teamRowsRaw = s.team.rows || [];
+    const people = {};
+    teamRowsRaw.forEach(r => {
+      const key = String(r.person || '').trim().toLowerCase(); if (!key) return;
+      const ts = new Date(r.t).getTime();
+      const pp = people[key] || (people[key] = { name: String(r.person).trim(), role: r.role || '', initial: 0, ceuYear: 0 });
+      if (r.role) pp.role = r.role;
+      if (r.event === 'Initial attestation' && ts > pp.initial) pp.initial = ts;
+      if (r.event === 'CEU attestation') { const m = String(r.form).match(/(20\d\d)/); const yv = m ? Number(m[1]) : new Date(ts).getFullYear(); if (yv > pp.ceuYear) pp.ceuYear = yv; }
+    });
+    const nowTs = Date.now(), yr = new Date().getFullYear();
+    const teamRows = Object.values(people).sort((a, b) => a.name.localeCompare(b.name)).map(pp => {
+      const due = pp.initial ? pp.initial + 365 * 86400000 : 0;
+      let status = 'Not attested', tone = 'neutral';
+      if (pp.initial && nowTs > due) { status = 'Overdue'; tone = 'neutral'; }
+      else if (pp.initial && due - nowTs < 30 * 86400000) { status = 'Due soon'; tone = 'accent'; }
+      else if (pp.initial) { status = pp.ceuYear >= yr ? 'Current' : 'CEU due'; tone = pp.ceuYear >= yr ? 'success' : 'accent'; }
+      return { name: pp.name, role: pp.role, initial: pp.initial ? new Date(pp.initial).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—', ceu: pp.ceuYear ? String(pp.ceuYear) : 'Not yet', status, tone };
+    });
+    const teamConfigured = !!(srcP && srcP.teamUrl);
+    return {
+      checklistVisible: s.view === 'portal' && !s.openFormKey && !!curP && curP.showChecklist !== false && !ob.hidden,
+      checklistTitle: doneN === STEPS.length ? 'You\'re all set' : `${doneN} of ${STEPS.length} steps done`,
+      checklistBar: { width: (doneN / STEPS.length * 100) + '%', height: '100%', background: 'var(--leaf)', borderRadius: 999 },
+      checklist, hideChecklist: e => { e && e.preventDefault(); this.setOnboard({ hidden: true }); },
+      teamVisible: s.view === 'portal' && !s.openFormKey && (teamConfigured || s.preview),
+      teamRows, teamEmpty: teamRows.length === 0,
+      teamEmptyText: !teamConfigured ? 'Preview only: connect Flow 4 in Admin → Access log to show team status here.' : s.team.loading ? 'Loading your team…' : s.team.error || 'No attestations recorded for your practice yet.',
+      teamSummary: teamRows.length ? `${teamRows.filter(r => r.status === 'Current').length} of ${teamRows.length} current` : '',
+      teamUrl: (s.draft && s.draft.teamUrl) || '', onTeamUrl: this.onTeamUrl,
+      edShowChecklist: ed.showChecklist !== false,
+      tabCeu: s.tab === 'ceu',
+      ceuRequired: (s.draft && s.draft.ceu && s.draft.ceu.requiredHours) || '', onCeuRequired: this.onCeuRequired,
+      ceuForm: s.ceuForm, onCeuField: this.onCeuField, addCeu: this.addCeu, ceuError: s.ceuError,
+      ceuIsFile: s.ceuSource === 'file', ceuIsLink: s.ceuSource === 'link',
+      ceuSources: [['file', 'PowerPoint'], ['link', 'Link']].map(([k, label]) => ({
+        label, onClick: () => this.setState({ ceuSource: k, ceuError: '' }),
+        style: { fontFamily: 'var(--font-sans)', fontSize: 14, fontWeight: 700, padding: '9px 18px', borderRadius: 999, cursor: 'pointer', border: '1px solid var(--navy)', background: s.ceuSource === k ? 'var(--navy)' : 'transparent', color: s.ceuSource === k ? '#fff' : 'var(--navy)' }
+      })),
+      ceuRows: ceuCourses.map((c, i) => ({
+        title: c.title, meta: `${c.category ? c.category + ' · ' : ''}${c.file ? 'modules/' + c.file : c.url}`,
+        style: { display: 'flex', alignItems: 'center', gap: '10px 18px', flexWrap: 'wrap', padding: '14px 20px', borderTop: i ? '1px solid var(--line)' : 'none' },
+        hours: c.hours, onHours: e => { const d = clone(this.state.draft); d.ceu.courses[i].hours = Number(e.target.value) || 0; this.persist(d); },
+        onUp: () => this.moveCeu(i, -1), onDown: () => this.moveCeu(i, 1), onRemove: () => this.removeCeu(c.id)
+      })),
+      ceuEmpty: ceuCourses.length === 0,
+      formOpen: !!of, formClosed: !of,
+      openForm: of ? { ...of, embedUrl } : { label: '', kicker: '', url: '', embedUrl: '' },
+      closeForm: () => this.setState({ openFormKey: null }),
+      formFrame: of ? React.createElement('iframe', { key: embedUrl, src: embedUrl, title: of.label, allowFullScreen: true, style: { display: 'block', width: '100%', height: '80vh', minHeight: 640, border: 0 } }) : null,
+      tabAnalytics: s.tab === 'analytics',
+      anRanges: RANGES.map(([v, label]) => ({ label, onClick: () => this.setState({ anRange: v }), style: { fontFamily: 'var(--font-sans)', fontSize: 13, fontWeight: 700, padding: '8px 16px', borderRadius: 999, cursor: 'pointer', border: '1px solid var(--navy)', background: s.anRange === v ? 'var(--navy)' : 'transparent', color: s.anRange === v ? '#fff' : 'var(--navy)' } })),
+      anNeedsLog: !logReady, anReady: logReady && !!s.logRows,
+      anStatus: logReady ? (s.logLoading ? 'Loading activity…' : s.logError || '') : '',
+      anStats: [
+        { value: String(signCount), label: 'portal sign-ins' },
+        { value: String(openCount), label: 'form opens' },
+        { value: String(subCount), label: 'forms submitted' },
+        { value: `${activeIds.size} of ${activePartners.length}`, label: 'partners signed in' },
+        (() => {
+          const ties = formCounts.filter(f => top && f.count === top.count).length > 1;
+          if (!top || !top.count) return { value: '0', label: 'opens of top form' };
+          return { value: String(top.count), label: ties ? 'opens of top form (tied)' : 'opens of ' + top.label };
+        })()
+      ],
+      anBars, anFirstLabel: buckets.length ? buckets[0].label : '', anLastLabel: buckets.length ? buckets[buckets.length - 1].label : '',
+      anForms: formCounts.map(f => ({ ...f, summary: `${f.count} opened · ${f.subs} submitted`,
+        bar: { width: (f.count / maxForm * 100) + '%', height: '100%', background: 'var(--blue)', borderRadius: 999 },
+        subBar: { width: (f.subs / maxForm * 100) + '%', height: '100%', background: 'var(--leaf)', borderRadius: 999 } })),
+      logReadUrl: s.logReadUrl, onLogReadUrl: this.onLogReadUrl,
+      anQuiet, anNoQuiet: anQuiet.length === 0, anPartners,
+      tabs, tabPartners: s.tab === 'partners', tabDocs: s.tab === 'docs', tabShared: s.tab === 'shared', tabLog: s.tab === 'log', tabSettings: s.tab === 'settings',
+      docPartner: s.docPartner, onDocPartner: this.onDocPartner, docHasPartner: !!dp, docPartnerName: dp ? dp.name : '',
+      docIsLink: s.docSource === 'link', docIsUpload: s.docSource !== 'link',
+      docSources: [['upload', 'Select a file'], ['link', 'SharePoint / OneDrive link']].map(([k, label]) => ({
+        label, onClick: () => this.setState({ docSource: k, docError: '' }),
+        style: { fontFamily: 'var(--font-sans)', fontSize: 14, fontWeight: 700, padding: '9px 18px', borderRadius: 999, cursor: 'pointer', border: '1px solid var(--navy)', background: s.docSource === k ? 'var(--navy)' : 'transparent', color: s.docSource === k ? '#fff' : 'var(--navy)' }
+      })),
+      docFileLabel: s.docFile ? `${s.docFile.name} (${fmtSize(s.docFile.size)})` : 'No file selected',
+      docFileRef: this.docFileRef, pickDocFile: this.pickDocFile, onDocFile: this.onDocFile,
+      docForm: s.docForm, onDocField: this.onDocField, addDoc: this.addDoc, docError: s.docError, docRows, docEmpty: !!dp && docRows.length === 0,
+      footerMailto: 'mailto:' + (footC.email || DEFAULT_CONTACT.email), footerFirst: (footC.email ? footC.name : DEFAULT_CONTACT.name).split(' ')[0],
+      logOpen: s.logOpen, toggleLog: this.toggleLog, logToggleLabel: s.logOpen ? 'Hide' : 'Show',
+      logSummary: logUrl ? (s.logRows ? `${s.logTotal} entr${s.logTotal === 1 ? 'y' : 'ies'} recorded` : 'Sign-ins, form opens and submissions from every partner portal') : 'Not connected yet. Open to set up.',
+      logNeedsSetup: !logUrl, logUrl, logKey: s.logKey, onLogUrl: this.onLogUrl, onLogKey: this.onLogKey, logReady,
+      logFilter: s.logFilter, onLogFilter: this.onLogFilter, loadLog: this.loadLog, logStatus, logShownRows,
+      logHasMore: allLog.length > s.logShown, logMore: this.logMore, copyScript: this.copyScript,
+      logFilterOptions: (s.draft ? s.draft.partners : []).slice().sort((a, b) => a.name.localeCompare(b.name)).map(x => ({ id: x.id, name: x.name })),
+      selfStart: { alignSelf: 'flex-start' },
+      globalAnnouncement: (s.draft && s.draft.announcement) || '', onGlobalAnn: this.onGlobalAnn,
+      onEdContact: this.onEdContact, exportCsv: this.exportCsv,
+      portalLogoStyle: bg(portal.logo, { width: 240, height: 64, backgroundPosition: 'left center' }),
+      edLogoStyle: bg(ed.logo, { width: '100%', height: 64, backgroundPosition: 'center' }),
+      nav,
+      showSiteNav: s.view !== 'portal',
+      isLoading: s.view === 'loading', loadError: s.view === 'error',
+      isGate: s.view === 'gate', isAdminGate: s.view === 'adminGate', isPortal: s.view === 'portal', isAdmin: s.view === 'admin',
+      gate: s.gate, gateLocked: Date.now() < s.lockUntil,
+      gateOptions: s.pub ? s.pub.partners.filter(x => x.active).sort((a, b) => a.name.localeCompare(b.name)).map(x => ({ id: x.id, name: x.name })) : [],
+      onGateField: this.onGateField, onGateSubmit: this.onGateSubmit, goAdminGate: this.goAdminGate, backToGate: this.backToGate,
+      adminPin: s.adminPin, adminError: s.adminError, onAdminPin: this.onAdminPin, onAdminSubmit: this.onAdminSubmit,
+      portal, preview: s.preview, signOut: this.signOut, exitPreview: this.exitPreview,
+      adminCrumbs: `${draft.partners.length} partner${draft.partners.length === 1 ? '' : 's'} · ${active} active`,
+      dirty, clean: !dirty, download: this.download, discard: this.discard, pickImport: this.pickImport, onImport: this.onImport, importRef: this.importRef,
+      rows, noRows: rows.length === 0, addPartner: this.addPartner,
+      isEditing: !!s.ed, ed, edTitle: s.edIsNew ? (ed.name ? 'New partner: ' + ed.name : 'New partner') : 'Edit ' + ed.name,
+      edStatusLabel: ed.active ? 'Active' : 'Paused', edStatusTone: ed.active ? 'success' : 'neutral',
+      edIdLocked: !s.edIsNew, edHasLogo: !!ed.logo, edNoLogo: !ed.logo,
+      edShowPin: !!s.edNewPin, edPinHidden: !s.edNewPin, edNewPin: s.edNewPin,
+      edPinNote: ed.pinHash ? 'A PIN is set. Generate a new one if the partner lost theirs — the old PIN stops working once you publish.' : 'No PIN yet. Generate one to finish setting up this partner.',
+      edPinBtn: ed.pinHash ? 'Reset PIN' : 'Generate PIN',
+      edError: s.edError, edCanDelete: !s.edIsNew,
+      onEdField: this.onEdField, pickLogo: this.pickLogo, onLogo: this.onLogo, logoRef: this.logoRef, removeLogo: this.removeLogo,
+      genPin: this.genPin, copyPin: this.copyPin, saveEdit: this.saveEdit, cancelEdit: this.cancelEdit, deleteEdit: this.deleteEdit,
+      dangerStyle: { color: '#9A3B22' },
+      formUrls: { assessment: draft.forms.assessment.url || '', visit: draft.forms.visit.url || '', safety: (draft.forms.safety && draft.forms.safety.url) || '' }, onFormUrl: this.onFormUrl,
+      edOffers: FORM_KEYS.map(k => ({ key: k, label: FORM_LABELS[k], checked: offers(ed, k) })), onEdOffer: this.onEdOffer,
+      newAdminPin: s.newAdminPin, onNewAdminPin: this.onNewAdminPin, saveAdminPin: this.saveAdminPin, adminPinMsg: s.adminPinMsg, adminSignOut: this.adminSignOut,
+      toast: s.toast
+    };
+  }
+}
+</script>
+</body>
+</html>

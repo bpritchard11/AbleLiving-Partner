@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#122F52"/><g fill="#87AEDF"><circle cx="50" cy="38" r="10"/><circle cx="61" cy="46" r="10"/><circle cx="57" cy="59" r="10"/><circle cx="43" cy="59" r="10"/><circle cx="39" cy="46" r="10"/></g><circle cx="50" cy="50" r="5" fill="#F8CB27"/></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>How GUIDE partnerships work — AbleLiving</title>
+  <meta name="description" content="See how AbleLiving partners with practices to deliver Medicare's GUIDE dementia care at home: the program, the care team, the referral process, and what it's worth.">
+  <meta property="og:title" content="How a GUIDE partnership with AbleLiving works">
+  <meta property="og:description" content="The program, the care team, a referral start to finish, and a revenue estimate. About 5 minutes.">
+  <meta property="og:image" content="https://ablelivingtraining.com/assets/ableliving-logo.png">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="ds/tokens/colors.css">
+  <link rel="stylesheet" href="ds/tokens/fonts.css">
+  <link rel="stylesheet" href="ds/tokens/typography.css">
+  <link rel="stylesheet" href="ds/tokens/spacing.css">
+  <link rel="stylesheet" href="ds/tokens/base.css">
+  <link rel="stylesheet" href="ds/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
+  <script src="ds/_ds_bundle.js"></script>
+  <style>
+    :root { --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
+    body { margin: 0; background: var(--paper); }
+    * { font-variant-ligatures: no-common-ligatures no-discretionary-ligatures; font-feature-settings: 'liga' 0, 'dlig' 0; font-variation-settings: 'WONK' 0; }
+    a { color: var(--leaf); }
+    a:hover { color: var(--navy); }
+    @media (max-width: 760px) {
+      [data-flow] { flex-direction: column !important; } [data-flow-arrow] { transform: rotate(90deg); padding: 4px 0 !important; } [data-flow-arrow] span + span { display: none; }
+      [data-org-grid] { grid-template-columns: minmax(0, 1fr) !important; gap: 16px !important; }
+      [data-org-lines] { display: none !important; }
+    }
+  </style>
+</helmet>
+<div style="min-height: 100vh; background: var(--paper); font-family: var(--font-sans); color: var(--ink); display: flex; flex-direction: column;">
+  <header style="background: #fff; border-bottom: 1px solid var(--line);">
+    <div style="max-width: 980px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <a href="{{ homeHref }}" style="display: block;"><img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 160px; height: auto; display: block;"></a>
+      <a href="{{ backHref }}" style="font-size: 15px; font-weight: 700;">← Back to Become a partner</a>
+    </div>
+  </header>
+
+  <section style="background: var(--navy); color: #fff;">
+    <div style="max-width: 980px; margin: 0 auto; padding: 72px 24px 64px; display: flex; flex-direction: column; gap: 20px;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--blue-soft);">Partnership overview</span>
+      <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(34px, 4.8vw, 52px); line-height: 1.12; margin: 0; max-width: 18ch; text-wrap: pretty; color: #fff;">How a GUIDE partnership with AbleLiving <em style="font-style: italic; color: var(--blue);">works</em></h1>
+      <p style="margin: 0; font-size: 19px; line-height: 1.65; color: var(--blue-soft); max-width: 58ch; text-wrap: pretty;">Four parts: what the GUIDE program is, who is on the care team, what happens when your practice refers a patient, and what it’s worth.</p>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; padding-top: 8px;">
+        <a href="#guide" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 700; padding: 9px 18px; border: 1px solid rgba(255,255,255,.4); border-radius: 999px; white-space: nowrap;">1 · The GUIDE program</a>
+        <a href="#team" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 700; padding: 9px 18px; border: 1px solid rgba(255,255,255,.4); border-radius: 999px; white-space: nowrap;">2 · The care team</a>
+        <a href="#demo" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 700; padding: 9px 18px; border: 1px solid rgba(255,255,255,.4); border-radius: 999px; white-space: nowrap;">3 · A referral, start to finish</a>
+        <a href="#revenue" style="color: #fff; text-decoration: none; font-size: 15px; font-weight: 700; padding: 9px 18px; border: 1px solid rgba(255,255,255,.4); border-radius: 999px; white-space: nowrap;">4 · What it’s worth</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide" style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 28px; scroll-margin-top: 16px;">
+    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Part 1 · The GUIDE program</x-import>
+    <div ref="{{ guideRef }}" style="background: #fff; border: 1px solid var(--line); border-radius: 20px; overflow: hidden;">
+      <div style="min-height: 440px; padding: 48px 28px 36px; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">
+        <sc-if value="{{ gf.f0 }}" hint-placeholder-val="{{ true }}">
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px; width: 100%;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">What is GUIDE?</span>
+            <h3 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; color: var(--navy); margin: 0; text-wrap: pretty; transition: opacity 500ms ease, transform 500ms ease; max-width: 22ch; opacity: {{ gh.o }}; transform: {{ gh.tf }};">Medicare pays for dementia care at home.</h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+              <sc-for list="{{ g0 }}" as="x" hint-placeholder-count="3">
+                <span style="font-size: 16px; font-weight: 800; color: var(--navy); background: #C9DBF1; border-radius: 999px; padding: 10px 20px; opacity: {{ x.o }}; transform: {{ x.tf }}; transition: opacity 450ms ease, transform 450ms ease;">{{ x.t }}</span>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ gf.f1 }}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px; width: 100%;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">Who qualifies</span>
+            <h3 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; color: var(--navy); margin: 0; text-wrap: pretty; transition: opacity 500ms ease, transform 500ms ease; max-width: 22ch; opacity: {{ gh.o }}; transform: {{ gh.tf }};">Four boxes to check.</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 14px; width: 100%; max-width: 820px;">
+              <sc-for list="{{ g1 }}" as="x" hint-placeholder-count="4">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; opacity: {{ x.o }}; transform: {{ x.tf }}; transition: opacity 450ms ease, transform 450ms ease;">
+                  <span style="width: 64px; height: 64px; border-radius: 999px; background: var(--navy); color: #fff; display: grid; place-items: center; font-size: 28px; font-weight: 800;">✓</span>
+                  <span style="font-size: 17px; font-weight: 800; color: var(--navy); line-height: 1.3;">{{ x.t }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ gf.f2 }}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px; width: 100%;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">What patients get</span>
+            <h3 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; color: var(--navy); margin: 0; text-wrap: pretty; transition: opacity 500ms ease, transform 500ms ease; max-width: 22ch; opacity: {{ gh.o }}; transform: {{ gh.tf }};">Nine services, one care team.</h3>
+            <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; width: 100%; max-width: 640px;">
+              <sc-for list="{{ g2 }}" as="x" hint-placeholder-count="9">
+                <a href="{{ x.href }}" style="text-decoration: none; display: block; border-radius: 12px; padding: 14px 10px; font-size: 15px; font-weight: 800; line-height: 1.3; background: {{ x.bg }}; color: {{ x.fg }}; border: 1px solid var(--line); transition: background 400ms ease, color 400ms ease;" style-hover="border-color: var(--navy); opacity: .85;">{{ x.t }} <span style="font-weight: 700;">→</span></a>
+              </sc-for>
+            </div>
+            <span style="font-size: 14px; font-style: italic; color: var(--sage);">Tap any service to see the full experience.</span>
+          </div>
+        </sc-if>
+        <sc-if value="{{ gf.f3 }}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px; width: 100%;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">How the money moves</span>
+            <h3 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; color: var(--navy); margin: 0; text-wrap: pretty; transition: opacity 500ms ease, transform 500ms ease; max-width: 22ch; opacity: {{ gh.o }}; transform: {{ gh.tf }};">CMS pays us. We pay you. Families pay $0.</h3>
+            <div style="width: 100%; max-width: 720px; display: flex; flex-direction: column; gap: 14px;">
+              <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;">
+                <sc-for list="{{ g3 }}" as="x" hint-placeholder-count="3">
+                  <div style="border-radius: 14px; padding: 18px 10px; border: 1px solid var(--line); background: {{ x.bg }}; color: {{ x.fg }}; font-family: var(--font-serif); font-size: clamp(18px, 2.4vw, 24px); line-height: 1.2; opacity: {{ x.o }}; transform: {{ x.tf }}; transition: opacity 450ms ease, transform 450ms ease;">{{ x.t }}</div>
+                </sc-for>
+              </div>
+              <div style="position: relative; height: 10px; border-radius: 999px; background: var(--mist); margin: 0 16%;">
+                <span style="position: absolute; top: 50%; left: {{ g3dot }}; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 999px; background: #F8CB27; transition: left 900ms ease;"></span>
+              </div>
+              <span style="font-size: 16px; font-weight: 700; color: var(--navy); opacity: {{ g3note.o }}; transform: {{ g3note.tf }}; transition: opacity 450ms ease, transform 450ms ease;">Plus up to $2,625 a year for respite</span>
+            </div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ gf.f4 }}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px; width: 100%;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">Six tiers</span>
+            <h3 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; color: var(--navy); margin: 0; text-wrap: pretty; transition: opacity 500ms ease, transform 500ms ease; max-width: 22ch; opacity: {{ gh.o }}; transform: {{ gh.tf }};">More need means more support.</h3>
+            <div style="display: flex; align-items: flex-start; justify-content: center; gap: 14px; width: 100%; max-width: 640px;">
+              <sc-for list="{{ g4 }}" as="x" hint-placeholder-count="5">
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px; min-width: 0;">
+                  <div style="width: 100%; height: 160px; display: flex; align-items: flex-end; flex-shrink: 0;"><div style="width: 100%; flex-shrink: 0; border-radius: 10px 10px 4px 4px; box-sizing: border-box; border: 1px solid #C9DBF1; height: {{ x.h }}; background: {{ x.bg }}; transition: height 700ms ease;"></div></div>
+                  <span style="font-size: 13px; font-weight: 800; color: var(--navy); line-height: 1.25; min-height: 2.5em;">{{ x.t }}</span>
+                  <span style="font-size: 13px; font-style: italic; color: var(--sage); line-height: 1.25; min-height: 2.5em; opacity: {{ x.fo }}; transition: opacity 400ms ease;">{{ x.freq }}</span>
+                  <span style="display: flex; flex-direction: column; gap: 2px; opacity: {{ x.fo }}; transition: opacity 400ms ease;">
+                    <span style="font-family: var(--font-serif); font-size: 20px; line-height: 1.1; color: var(--navy);">{{ x.newRate }}</span>
+                    <span style="font-size: 12px; font-weight: 700; color: var(--sage);">then {{ x.estRate }}</span>
+                  </span>
+                </div>
+              </sc-for>
+            </div>
+            <span style="font-size: 15px; font-style: italic; color: var(--ink); opacity: {{ g4note.o }}; transition: opacity 400ms ease;">Minimum check-ins for ongoing monitoring and support, by tier. Monthly payment for the first 6 months, then the rate after.</span>
+            <span style="font-size: 14px; font-style: italic; color: var(--sage); opacity: {{ g4note.o }}; transition: opacity 400ms ease; max-width: 60ch;">* Eligible for GUIDE respite services. Patients living in a residential care community (RCC) don’t qualify for respite.</span>
+          </div>
+        </sc-if>
+        <sc-if value="{{ gf.f5 }}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px; width: 100%;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">The goal</span>
+            <h3 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; color: var(--navy); margin: 0; text-wrap: pretty; transition: opacity 500ms ease, transform 500ms ease; max-width: 22ch; opacity: {{ gh.o }}; transform: {{ gh.tf }};">Better days at home, for everyone.</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 20px; width: 100%; max-width: 760px;">
+              <sc-for list="{{ g5 }}" as="x" hint-placeholder-count="3">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; opacity: {{ x.o }}; transform: {{ x.tf }}; transition: opacity 450ms ease, transform 450ms ease;">
+                  <span style="width: 76px; height: 76px; border-radius: 999px; background: var(--navy); color: #fff; display: grid; place-items: center; font-size: 34px; font-weight: 800;">{{ x.g }}</span>
+                  <span style="font-size: 18px; font-weight: 800; color: var(--navy);">{{ x.t }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 22px; border-top: 1px solid var(--line); background: var(--mist);">
+        <div style="display: flex; gap: 6px; flex: 1; max-width: 420px;">
+          <sc-for list="{{ gdots }}" as="d" hint-placeholder-count="6">
+            <button onClick="{{ d.go }}" aria-label="{{ d.aria }}" style="flex: 1; height: 6px; padding: 0; border: 0; border-radius: 999px; background: var(--line); overflow: hidden; cursor: pointer;"><span style="display: block; height: 100%; width: {{ d.fill }}; background: var(--navy);"></span></button>
+          </sc-for>
+        </div>
+        <button onClick="{{ gToggle }}" style="height: 40px; padding: 0 20px; border-radius: 999px; border: 1px solid var(--navy); background: var(--navy); color: #fff; font-family: var(--font-sans); font-size: 14px; font-weight: 700; cursor: pointer; min-width: 92px;" style-hover="opacity: .85;">{{ gToggleLabel }}</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" style="background: var(--mist); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); scroll-margin-top: 16px;">
+    <div style="max-width: 980px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 36px;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Part 2 · The care team</x-import>
+        <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.2; color: var(--navy); margin: 0; max-width: 24ch; text-wrap: pretty;">Your team on the front line, the AbleLiving Clinical Team overseeing.</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: var(--ink); max-width: 62ch; text-wrap: pretty;">CMS requires a care navigator and a clinician with dementia expertise on every GUIDE care team. The AbleLiving Clinical Team supervises the team and signs off on every comprehensive assessment. In the Hybrid model, your practice fills both roles.</p>
+      </div>
+
+
+      <div style="background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 36px 24px 30px; display: flex; flex-direction: column; align-items: center;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <svg viewBox="0 0 60 100" width="66" height="110" aria-hidden="true" style="display: block; overflow: visible; fill: none; stroke: {{ sup.stroke }}; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round;"><circle cx="30" cy="14" r="10"></circle><line x1="30" y1="24" x2="30" y2="62"></line><line x1="30" y1="36" x2="12" y2="54"></line><line x1="30" y1="36" x2="48" y2="54"></line><line x1="30" y1="62" x2="16" y2="94"></line><line x1="30" y1="62" x2="44" y2="94"></line><rect x="44" y="44" width="16" height="20" rx="2" style="stroke-width: 3;"></rect><polyline points="48,54 51,58 57,49" style="stroke: #566B40; stroke-width: 3;"></polyline></svg>
+          <span style="font-size: 12px; font-weight: 800; color: var(--navy); background: #C9DBF1; padding: 4px 10px; border-radius: 999px;">AbleLiving</span>
+              <span style="font-family: var(--font-serif); font-size: 20px; line-height: 1.2; color: var(--navy); text-align: center; max-width: 22ch;">AbleLiving Clinical Team with Advanced Practitioners</span>
+              <span style="font-size: 14px; line-height: 1.5; color: var(--ink); text-align: center; max-width: 30ch;">{{ sup.short }}</span>
+        </div>
+        <div data-org-lines="" style="width: 100%; display: flex; flex-direction: column; align-items: center; padding-top: 14px;">
+          <span style="width: 2px; height: 26px; background: var(--line);"></span>
+          <span style="width: 50%; height: 2px; background: var(--line);"></span>
+        </div>
+        <div data-org-grid="" style="width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px;">
+          <sc-for list="{{ roles }}" as="r" hint-placeholder-count="2">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+              <span data-org-lines="" style="width: 2px; height: 26px; background: var(--line); margin-bottom: 6px;"></span>
+              <svg viewBox="0 0 60 100" width="58" height="97" aria-hidden="true" style="display: block; overflow: visible; fill: none; stroke: {{ r.stroke }}; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round;"><circle cx="30" cy="14" r="10"></circle><line x1="30" y1="24" x2="30" y2="62"></line><line x1="30" y1="36" x2="12" y2="54"></line><line x1="30" y1="36" x2="48" y2="54"></line><line x1="30" y1="62" x2="16" y2="94"></line><line x1="30" y1="62" x2="44" y2="94"></line></svg>
+              <span style="font-size: 12px; font-weight: 800; color: {{ r.tagFg }}; background: {{ r.tagBg }}; padding: 4px 10px; border-radius: 999px;">{{ r.who }}</span>
+              <span style="font-family: var(--font-serif); font-size: 20px; line-height: 1.2; color: var(--navy); text-align: center;">{{ r.title }}</span>
+              <span style="font-size: 14px; line-height: 1.5; color: var(--ink); text-align: center; max-width: 30ch;">{{ r.short }}</span>
+              <span data-org-lines="" style="width: 2px; height: 26px; background: var(--line); margin-top: 8px;"></span>
+            </div>
+          </sc-for>
+        </div>
+        <div data-org-lines="" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+          <span style="width: 50%; height: 2px; background: var(--line);"></span>
+          <span style="width: 2px; height: 26px; background: var(--line);"></span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; padding-top: 14px;">
+          <div style="display: flex; align-items: flex-end; gap: 4px;">
+            <svg viewBox="0 0 60 100" width="50" height="83" aria-hidden="true" style="display: block; overflow: visible; fill: none; stroke: {{ pair.caregiver }}; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round;"><circle cx="30" cy="14" r="10"></circle><line x1="30" y1="24" x2="30" y2="62"></line><line x1="30" y1="36" x2="12" y2="54"></line><line x1="30" y1="36" x2="48" y2="54"></line><line x1="30" y1="62" x2="16" y2="94"></line><line x1="30" y1="62" x2="44" y2="94"></line></svg>
+            <svg viewBox="0 0 60 100" width="46" height="77" aria-hidden="true" style="display: block; overflow: visible; fill: none; stroke: {{ pair.patient }}; stroke-width: 4.5; stroke-linecap: round; stroke-linejoin: round;"><circle cx="30" cy="14" r="10"></circle><line x1="30" y1="24" x2="30" y2="62"></line><line x1="30" y1="36" x2="12" y2="54"></line><line x1="30" y1="36" x2="48" y2="54"></line><line x1="30" y1="62" x2="16" y2="94"></line><line x1="30" y1="62" x2="44" y2="94"></line><line x1="48" y1="54" x2="52" y2="94" style="stroke-width: 3.5;"></line></svg>
+          </div>
+          <span style="font-family: var(--font-serif); font-size: 20px; line-height: 1.2; color: var(--navy);">Patient and caregiver</span>
+          <span style="font-size: 14px; line-height: 1.5; color: var(--ink); text-align: center; max-width: 52ch;">{{ modelNote }}</span>
+        </div>
+        <div style="display: flex; gap: 8px 22px; flex-wrap: wrap; justify-content: center; font-size: 13px; color: var(--ink); padding-top: 22px;">
+          <span style="display: flex; align-items: center; gap: 8px;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #C0601A;"></span>Your practice</span>
+          <span style="display: flex; align-items: center; gap: 8px;"><span style="width: 12px; height: 12px; border-radius: 999px; background: var(--blue);"></span>AbleLiving</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo" style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 80px 24px 40px; display: flex; flex-direction: column; gap: 32px; scroll-margin-top: 16px;">
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Part 3 · A referral, start to finish</x-import>
+      <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.2; color: var(--navy); margin: 0; max-width: 24ch; text-wrap: pretty;">Your team does four things. We handle the rest.</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.65; color: var(--ink); max-width: 62ch; text-wrap: pretty;">Press play to follow one patient from referral to ongoing care.</p>
+    </div>
+
+    <div style="background: #fff; border: 1px solid var(--line); border-radius: 18px; overflow: hidden;">
+      <div style="padding: 22px 26px 18px; display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid var(--line);">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+          <span style="font-family: var(--font-serif); font-size: 20px; color: var(--navy);">{{ cur.clock }}</span>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <button onClick="{{ prev }}" aria-label="Previous step" style="width: 42px; height: 42px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--navy); font-size: 16px; cursor: pointer;" style-hover="border-color: var(--navy);">←</button>
+            <button onClick="{{ toggle }}" style="height: 42px; padding: 0 22px; border-radius: 999px; border: 1px solid var(--navy); background: var(--navy); color: #fff; font-family: var(--font-sans); font-size: 15px; font-weight: 700; cursor: pointer; min-width: 104px;" style-hover="opacity: .85;">{{ toggleLabel }}</button>
+            <button onClick="{{ next }}" aria-label="Next step" style="width: 42px; height: 42px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--navy); font-size: 16px; cursor: pointer;" style-hover="border-color: var(--navy);">→</button>
+          </div>
+        </div>
+        <div style="display: flex; gap: 4px;">
+          <sc-for list="{{ segs }}" as="g" hint-placeholder-count="12">
+            <button onClick="{{ g.go }}" aria-label="{{ g.aria }}" style="flex: 1; height: 8px; padding: 0; border: 0; border-radius: 999px; background: var(--line); overflow: hidden; cursor: pointer;">
+              <span style="display: block; height: 100%; width: {{ g.fill }}; background: {{ g.color }};"></span>
+            </button>
+          </sc-for>
+        </div>
+        <div style="display: flex; gap: 6px 20px; flex-wrap: wrap; font-size: 13px; color: var(--ink);">
+          <span style="display: flex; align-items: center; gap: 8px;"><span style="width: 18px; height: 6px; border-radius: 999px; background: #C0601A;"></span>Your practice</span>
+          <span style="display: flex; align-items: center; gap: 8px;"><span style="width: 18px; height: 6px; border-radius: 999px; background: var(--navy);"></span>AbleLiving or family</span>
+          <span style="display: flex; align-items: center; gap: 8px;"><span style="width: 18px; height: 6px; border-radius: 999px; background: var(--blue);"></span>Runs automatically</span>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));">
+        <div style="padding: 34px 30px 36px; display: flex; flex-direction: column; gap: 16px; min-width: 0;">
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">Step {{ cur.pos }} of {{ total }}</span>
+            <span style="font-size: 13px; font-weight: 800; padding: 5px 12px; border-radius: 999px; background: {{ cur.tagBg }}; color: {{ cur.tagFg }};">{{ cur.who }}</span>
+          </div>
+          <h3 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(24px, 2.8vw, 32px); line-height: 1.2; color: var(--navy); margin: 0; text-wrap: pretty;">{{ cur.title }}</h3>
+          <p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--ink); max-width: 52ch; text-wrap: pretty; min-height: 5em;">{{ cur.body }}</p>
+          <div style="display: flex; align-items: baseline; gap: 10px; border-top: 1px solid var(--line); padding-top: 16px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">Where</span>
+            <span style="font-size: 16px; font-weight: 700; color: var(--navy);">{{ cur.tool }}</span>
+          </div>
+          <sc-if value="{{ cur.hasLink }}" hint-placeholder-val="{{ false }}">
+            <a href="{{ cur.href }}" target="_blank" rel="noopener" style="text-decoration: none; align-self: flex-start;">
+              <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="primary" hint-size="280px,48px">{{ cur.linkLabel }}</x-import>
+            </a>
+          </sc-if>
+        </div>
+        <div style="padding: 28px 26px 30px; background: var(--mist); border-left: 1px solid var(--line); display: flex; flex-direction: column; gap: 12px; min-width: 0;">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">Activity log</span>
+          <div style="display: flex; flex-direction: column; gap: 6px; max-height: 320px; overflow-y: auto;">
+            <sc-for list="{{ log }}" as="l" hint-placeholder-count="2">
+              <div style="display: grid; grid-template-columns: 10px minmax(0, 1fr); gap: 12px; align-items: start; padding: 8px 0; border-bottom: 1px solid var(--line);">
+                <span style="width: 10px; height: 10px; border-radius: 999px; margin-top: 6px; background: {{ l.dot }};"></span>
+                <span style="display: flex; flex-direction: column; gap: 2px;">
+                  <span style="font-size: 15px; line-height: 1.4; color: var(--navy); font-weight: 700;">{{ l.text }}</span>
+                  <span style="font-size: 13px; color: var(--sage);">{{ l.clock }}</span>
+                </span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 24px 90px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px;">
+      <sc-for list="{{ totals }}" as="t" hint-placeholder-count="3">
+        <div style="border-top: 2px solid var(--navy); padding: 18px 4px 0; display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-family: var(--font-serif); font-size: 44px; line-height: 1; color: var(--navy);">{{ t.n }}</span>
+          <span style="font-size: 16px; line-height: 1.5; color: var(--ink);">{{ t.label }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+  <section id="revenue" style="background: var(--mist); border-top: 1px solid var(--line); scroll-margin-top: 16px;">
+    <div style="max-width: 980px; margin: 0 auto; padding: 80px 24px 90px; display: flex; flex-direction: column; gap: 32px;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Part 4 · What it's worth</x-import>
+        <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.2; color: var(--navy); margin: 0; max-width: 24ch; text-wrap: pretty;">Estimate the monthly GUIDE payments for your patients.</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: var(--ink); max-width: 62ch; text-wrap: pretty;">Enter how many patients you expect in each tier. The estimate uses the CMS monthly rates. Your practice's share is set in your partnership agreement.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 16px; align-items: start;">
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; display: flex; flex-direction: column; gap: 4px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 12px;">
+            <div style="display: flex; flex-wrap: nowrap; width: max-content; max-width: 100%; gap: 6px; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px;">
+            <sc-for list="{{ rc.phases }}" as="ph" hint-placeholder-count="2">
+              <button onClick="{{ ph.go }}" style="border: 0; cursor: pointer; font-family: var(--font-sans); font-size: 14px; font-weight: 700; padding: 8px 16px; border-radius: 999px; white-space: nowrap; background: {{ ph.bg }}; color: {{ ph.fg }};">{{ ph.label }}</button>
+            </sc-for>
+          </div>
+            <button onClick="{{ rc.reset }}" style="height: 38px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--navy); font-family: var(--font-sans); font-size: 14px; font-weight: 700; cursor: pointer; white-space: nowrap;" style-hover="border-color: var(--navy);">Reset</button>
+          </div>
+          <sc-for list="{{ rc.rows }}" as="r" hint-placeholder-count="6">
+            <div style="display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line);">
+              <span style="display: flex; flex-direction: column; gap: 2px;">
+                <span style="font-size: 16px; font-weight: 800; color: var(--navy);">{{ r.label }}</span>
+                <span style="font-size: 13px; color: var(--sage);">{{ r.rate }} per patient per month</span>
+              </span>
+              <span style="display: flex; align-items: center; gap: 6px;">
+                <button onClick="{{ r.dec }}" aria-label="Fewer" style="width: 36px; height: 36px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--navy); font-size: 18px; cursor: pointer;">−</button>
+                <input type="number" min="0" value="{{ r.n }}" onChange="{{ r.set }}" aria-label="{{ r.aria }}" style="width: 64px; height: 36px; box-sizing: border-box; border: 1px solid var(--line); border-radius: 10px; text-align: center; font-family: var(--font-sans); font-size: 16px; font-weight: 700; color: var(--navy);">
+                <button onClick="{{ r.inc }}" aria-label="More" style="width: 36px; height: 36px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--navy); font-size: 18px; cursor: pointer;">+</button>
+              </span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="background: var(--navy); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 18px; color: #fff;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label for="share" style="font-size: 14px; font-weight: 700; color: #fff;">Your practice's share (%), from your agreement</label>
+            <input id="share" type="number" min="0" max="100" placeholder="e.g. per agreement" value="{{ rc.share }}" onChange="{{ rc.setShare }}" style="width: 160px; height: 40px; box-sizing: border-box; border: 0; border-radius: 10px; padding: 0 12px; font-family: var(--font-sans); font-size: 16px; font-weight: 700; color: var(--navy);">
+            <sc-if value="{{ rc.hasShare }}" hint-placeholder-val="{{ false }}">
+              <span style="display: flex; flex-direction: column; gap: 4px; padding-top: 6px;">
+                <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--blue-soft);">Estimated to your practice</span>
+                <span style="font-family: var(--font-serif); font-size: 48px; line-height: 1.05; color: #F8CB27;">{{ rc.partnerAnnual }}<span style="font-size: 20px; color: var(--blue-soft);"> / year</span></span>
+                <span style="font-size: 15px; color: var(--blue-soft);">about {{ rc.partnerMonthly }} per month</span>
+              </span>
+            </sc-if>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--border-on-dark); padding-top: 16px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--blue-soft);">Total program payments from CMS</span>
+            <span style="font-family: var(--font-serif); font-size: 26px; line-height: 1.1; color: #fff;">{{ rc.annual }}<span style="font-size: 15px; color: var(--blue-soft);"> / year</span></span>
+            <span style="font-size: 14px; color: var(--blue-soft);">about {{ rc.monthly }} per month · {{ rc.count }} patients</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--border-on-dark); padding-top: 16px;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--blue-soft);">Respite access for families</span>
+            <span style="font-family: var(--font-serif); font-size: 26px; line-height: 1.1; color: #fff;">up to {{ rc.respite }}<span style="font-size: 15px; color: var(--blue-soft);"> / year</span></span>
+            <span style="font-size: 14px; color: var(--blue-soft);">{{ rc.respiteCount }} eligible patients × $2,625 each (moderate and high tiers with a caregiver)</span>
+          </div>
+          <span style="font-size: 13px; line-height: 1.5; color: var(--blue-soft);">Estimate only. Actual payments depend on each patient's tier, enrollment month, quality adjustments, and your agreement. Respite is paid separately and used for families' care.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="margin-top: auto; background: var(--navy); font-family: var(--font-sans);">
+    <div style="max-width: 980px; margin: 0 auto; padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 10px; font-size: 13px; line-height: 1.6; color: var(--blue-soft);">
+      <div style="display: flex; flex-wrap: wrap; gap: 6px 20px; justify-content: space-between;"><span>© 2026 AbleLiving Memory Support, PLLC. Participant in the CMS GUIDE Model.</span><span style="display: flex; gap: 18px;"><a href="{{ privacyHref }}" style="color: #fff; font-weight: 700;">Privacy policy</a><a href="{{ contactHref }}" style="color: #fff; font-weight: 700;">Contact us</a></span></div>
+      <p style="margin: 0; max-width: 90ch;">This site provides training and partnership information for GUIDE Model partner practices. It is not medical advice and does not collect patient health information. AbleLiving Memory Support, PLLC participates in the CMS GUIDE Model; this site is not an official CMS website and is not endorsed by CMS. In an emergency, call 911.</p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;stepSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:5,&quot;min&quot;:2,&quot;max&quot;:12,&quot;step&quot;:1,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;}}">
+class Component extends DCLogic {
+  state = { i: 0, t: 0, playing: false, model: null, view: null, g: 0, gt: 0, gPlay: false, rcPhase: 'new', rcN: { rcc: 0, low: 4, lowInd: 2, mod: 6, modHigh: 2, high: 3 }, rcShare: '' };
+  guideRef = React.createRef();
+  gDur = 5200;
+  who = {
+    partner: { label: 'Your practice', bg: '#C0601A', fg: '#fff', person: true },
+    auto: { label: 'Automatic', bg: '#C9DBF1', fg: 'var(--navy)', person: false },
+    staff: { label: 'AbleLiving team', bg: 'var(--navy)', fg: '#fff', person: true },
+    family: { label: 'Patient and family', bg: 'var(--navy)', fg: '#fff', person: true }
+  };
+  steps = [
+    ['partner', 'Refer a patient', 'Your staff sends the patient\u2019s referral to AbleLiving Memory Support. It\u2019s the only data entry your team does up front.', 'Referral form (Microsoft Forms)', 'Referral', 'Referral received', 'https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=1yQs6x3pgE-5t3WuLp39OaFeqKWlitZAoZsTwd2SOJ5URDlBS1BFTlJQWjhYM0NRMUo4NkU4QkxERC4u', 'Open the referral form'],
+    ['staff', 'We gather the details and send the consents', 'Our intake team collects everything needed for enrollment, including insurance, then emails the family the new patient packet with the consents ready to sign. Reminders go out until it\u2019s done.', 'AbleLiving intake and DocuSign', 'Intake', 'New patient packet sent'],
+    ['family', 'The family signs the consents', 'The patient or their caregiver signs the consents in a few minutes, on a phone or computer.', 'DocuSign', 'Consent', 'Consents signed'],
+    ['staff', 'We create the chart and notify you', 'With consents signed, AbleLiving opens the patient\u2019s chart in our health record. You get an email, and the patient appears on your SharePoint list as needing an initial comprehensive assessment.', 'AbleLiving EHR, email, and your SharePoint list', 'Chart and notice', 'Chart created; partner notified'],
+    ['partner', 'Complete the comprehensive assessment', 'Your staff visits the patient and completes the comprehensive assessment using the Microsoft Form.', 'Comprehensive Assessment (Microsoft Forms)', 'Assessment', 'Assessment submitted', 'https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=1yQs6x3pgE-5t3WuLp39OaFeqKWlitZAoZsTwd2SOJ5UQUZCVlpHMDI4R05WS0ZDNFQwN1REN0xNTy4u', 'Open the Comprehensive Assessment'],
+    ['staff', 'The provider verifies and signs off', 'The completed form goes through DocuSign to the assigned AbleLiving GUIDE advanced provider, who reviews the assessment, confirms it, and signs.', 'DocuSign', 'Sign-off', 'Assessment signed off by GUIDE provider'],
+    ['auto', 'Copies go to you and the chart', 'Your practice receives a signed copy, and another copy is uploaded to the patient\u2019s chart.', 'Email and AbleLiving EHR', 'Records', 'Signed copy shared and filed'],
+    ['staff', 'Enrolled and aligned to your panel', 'AbleLiving submits the patient to CMS for program eligibility and aligns them to your practice\u2019s panel. GUIDE care begins.', 'CMS GUIDE portal', 'Enrollment', 'Submitted to CMS and aligned to your panel'],
+    ['staff', 'We bill CMS and pay you', 'Our medical coders vet your team\u2019s work, then AbleLiving submits the claims. We pay your practice through Bill.com and send you a copy of the official CMS payment file for your records.', 'Medical coding, Bill.com, and CMS payment file', 'Billing · monthly', 'Claims submitted; practice paid via Bill.com'],
+    ['partner', 'Ongoing monitoring and support', 'Your care navigator checks in with the patient and caregiver at the frequency their tier requires, and logs each check-in on the Care Navigator Visit Microsoft Form.', 'Care Navigator Visit (Microsoft Forms)', 'Ongoing', 'Check-in logged', 'https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=1yQs6x3pgE-5t3WuLp39OaFeqKWlitZAoZsTwd2SOJ5UOTBNTjRRMlFNQVBPSUdTMUlRRFhPSFBBNi4u', 'Open the Care Navigator form'],
+    ['partner', 'Complete the home safety assessment', 'Within 60 days of enrollment, your staff completes a one-time home safety assessment to spot fall risks and other safety concerns in the home.', 'Home Safety Assessment (Microsoft Forms)', 'Within 60 days', 'Home safety assessment submitted', 'https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=1yQs6x3pgE-5t3WuLp39OaFeqKWlitZAoZsTwd2SOJ5URDRSSE1ZUEZPM1FQM1ZGNkU4R0owRjNWUi4u', 'Open the Home Safety Assessment']
+  ].map(s => ({ lane: s[0], title: s[1], body: s[2], tool: s[3], clock: s[4], log: s[5], href: s[6] || '', linkLabel: s[7] || '' }));
+  componentDidMount() {
+    const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) this.setState({ gt: 99999 });
+    else if (this.guideRef.current && 'IntersectionObserver' in window) {
+      this.io = new IntersectionObserver(es => { if (es[0].isIntersecting && !this.gStarted) { this.gStarted = true; this.setState({ gPlay: true, gt: 0 }); } }, { threshold: 0.4 });
+      this.io.observe(this.guideRef.current);
+    } else this.setState({ gPlay: true });
+    this.gTimer = setInterval(() => {
+      if (!this.state.gPlay) return;
+      const gt = this.state.gt + 100;
+      if (gt < this.gDur) return this.setState({ gt });
+      this.setState({ g: (this.state.g + 1) % 6, gt: 0 });
+    }, 100);
+    this.timer = setInterval(() => {
+      if (!this.state.playing) return;
+      const t = this.state.t + 100 / ((this.props.stepSeconds ?? 5) * 1000);
+      if (t < 1) return this.setState({ t });
+      const last = this.state.i === this.steps.length - 1;
+      this.setState(last ? { t: 1, playing: false } : { i: this.state.i + 1, t: 0 });
+    }, 100);
+  }
+  componentWillUnmount() { clearInterval(this.timer); clearInterval(this.gTimer); this.io && this.io.disconnect(); }
+  go = i => this.setState({ i, t: 0 });
+  renderVals() {
+    const dev = /\.dc\.html/.test(decodeURIComponent(location.pathname));
+    const { i, t, playing } = this.state;
+    const S = this.steps;
+    const cur = S[i], w = this.who[cur.lane];
+    const colorOf = s => s.lane === 'partner' ? '#C0601A' : this.who[s.lane].person ? 'var(--navy)' : 'var(--blue)';
+    const model = 'hybrid';
+    const hy = model === 'hybrid';
+    const view = this.state.view ?? this.props.defaultView ?? 'cards';
+    const P = { who: 'Your practice', stroke: '#C0601A', fig: '#C0601A', tagBg: '#C0601A', tagFg: '#fff', border: '#C0601A' };
+    const A = { who: 'AbleLiving', stroke: '#87AEDF', fig: 'var(--blue)', tagBg: '#C9DBF1', tagFg: 'var(--navy)', border: 'var(--line)' };
+    const roles = [
+      { ...(hy ? P : A), title: 'Clinician with dementia expertise', short: hy ? 'Completes the assessment and care plan' : 'AbleLiving completes the assessment and care plan', duties: hy
+        ? ['Completes the initial, reassessment, and annual comprehensive assessments', 'Builds the care plan with the family', 'Sends the assessment to the AbleLiving Clinical Team for sign-off']
+        : ['AbleLiving\u2019s clinician completes the comprehensive assessment', 'Builds the care plan with the family', 'Repeats the assessment at least once a year'] },
+      { ...P, title: 'Care navigator', short: 'The family\u2019s main contact for check-ins and coordination', duties: hy
+        ? ['The family\u2019s main point of contact', 'Ongoing check-ins and monitoring', 'Connects the family to services and supports']
+        : ['The family\u2019s main point of contact', 'Leads day-to-day monitoring and check-ins', 'Coordinates services, supports, and referrals'] }
+    ];
+    const sup = { fig: 'var(--blue)', stroke: '#87AEDF', short: hy ? 'Reviews and signs off on every assessment' : 'Completes and signs every assessment', body: hy
+      ? 'Reviews and signs off on every comprehensive assessment your clinician completes, and oversees the quality of care.'
+      : 'Completes and signs every comprehensive assessment, and oversees the quality of care your navigator delivers.' };
+    const models = [['hybrid', 'Hybrid'], ['navigator', 'Care Navigator only']].map(([k, label]) => ({
+      label, bg: model === k ? 'var(--navy)' : 'transparent', fg: model === k ? '#fff' : 'var(--navy)', go: () => this.setState({ model: k })
+    }));
+    const modelNote = hy
+      ? 'AbleLiving adds the 24/7 line, respite, medication management, and caregiver education for every patient.'
+      : 'AbleLiving handles assessments, the 24/7 line, respite, medication management, and caregiver education.';
+    const { g, gt, gPlay } = this.state;
+    const ap = (k, step = 320, base = 500) => gt >= base + k * step ? { o: 1, tf: 'none' } : { o: 0, tf: 'translateY(14px)' };
+    const items = (arr, step, base) => arr.map((t, k) => ({ t, ...ap(k, step, base) }));
+    const gf = {}; for (let k = 0; k < 6; k++) gf['f' + k] = g === k;
+    const lit = k => gt >= 600 + k * 260;
+    const flowStage = gt < 1500 ? 0 : gt < 2600 ? 1 : 2;
+    const tierH = ['14%', '28%', '45%', '62%', '79%', '96%'];
+    const guideVals = {
+      guideRef: this.guideRef, gf, gh: gt >= 0 ? { o: 1, tf: 'none' } : {},
+      g0: items(['Run by CMS', 'Nationwide, 2024 to 2032', 'Covers patient and caregiver'], 380, 700),
+      g1: items(['Dementia diagnosis', 'Original Medicare', 'No Medicare Advantage or hospice', 'Lives at home'], 420, 600),
+      g2: [['Assessment', 'assessment'], ['Care plan', 'careplan'], ['Monitoring', 'monitoring'], ['Medications', 'medications'], ['24/7 line', 'access'], ['Care transitions', 'transitions'], ['Referrals', 'referrals'], ['Caregiver training', 'caregiver'], ['Respite', 'respite']].map(([t, key], k) => ({ t, href: (/\.dc\.html/.test(decodeURIComponent(location.pathname)) ? 'GUIDE%20Service.dc.html' : 'guide-service.html') + '?d=' + key, bg: lit(k) ? 'var(--navy)' : '#fff', fg: lit(k) ? '#fff' : 'var(--sage)' })),
+      g3: [['CMS', 'var(--mist)', 'var(--navy)'], ['AbleLiving', 'var(--navy)', '#fff'], ['Your practice', '#C9DBF1', 'var(--navy)']].map(([t, bg, fg], k) => ({ t, bg, fg, ...ap(k, 250, 200) })),
+      g3dot: ['0%', '50%', '100%'][flowStage],
+      g3note: ap(0, 0, 3200),
+      g4: [['RCC', 'Every 2 months', '$180', '$70'], ['Low', 'Quarterly', '$157', '$68'], ['Low (no caregiver)', 'Monthly', '$241', '$126'], ['Moderate', 'Monthly', '$288*', '$126*'], ['Moderate to high', 'Twice a month', '$409', '$225'], ['High', 'Monthly', '$377*', '$231*']].map(([t, freq, newRate, estRate], k) => ({ t, freq, newRate, estRate, fo: gt >= 900 + k * 250 ? 1 : 0, h: gt >= 500 + k * 250 ? tierH[k] : '4%', bg: k === 0 ? '#E4EDF8' : k < 3 ? '#C9DBF1' : k < 5 ? '#87AEDF' : 'var(--navy)' })),
+      g4note: ap(0, 0, 2400),
+      g5: [['↑', 'Quality of life'], ['↓', 'Caregiver strain'], ['⌂', 'Time at home']].map(([gl, t], k) => ({ g: gl, t, ...ap(k, 450, 700) })),
+      gdots: [0, 1, 2, 3, 4, 5].map(k => ({ fill: k < g ? '100%' : k === g ? Math.min(100, gt / this.gDur * 100).toFixed(1) + '%' : '0%', aria: 'Slide ' + (k + 1), go: () => this.setState({ g: k, gt: 0 }) })),
+      gToggle: () => this.setState(st => ({ gPlay: !st.gPlay })),
+      gToggleLabel: gPlay ? 'Pause' : 'Play'
+    };
+    const RT = { rcc: ['RCC', 180, 70], low: ['Low (with caregiver)', 157, 68], lowInd: ['Low (no caregiver)', 241, 126], mod: ['Moderate', 288, 126], modHigh: ['Moderate to high (no caregiver)', 409, 225], high: ['High', 377, 231] };
+    const usd = v => '$' + Math.round(v).toLocaleString('en-US');
+    const ph = this.state.rcPhase, N = this.state.rcN;
+    const setN = (k, v) => this.setState(st => ({ rcN: { ...st.rcN, [k]: Math.max(0, Math.min(999, parseInt(v, 10) || 0)) } }));
+    let rcTotal = 0, count = 0;
+    const rows = Object.keys(RT).map(k => { const rate = ph === 'new' ? RT[k][1] : RT[k][2]; rcTotal += rate * N[k]; count += N[k]; return { label: RT[k][0], rate: usd(rate), n: N[k], aria: RT[k][0] + ' patients', set: e => setN(k, e.target.value), inc: () => setN(k, N[k] + 1), dec: () => setN(k, N[k] - 1) }; });
+    const share = parseFloat(this.state.rcShare);
+    const hasShare = !isNaN(share) && share > 0;
+    const rc = {
+      rows, count: String(count), monthly: usd(rcTotal), annual: usd(rcTotal * 12),
+      phases: [['new', 'First 6 months'], ['est', 'After 6 months']].map(([k, label]) => ({ label, bg: ph === k ? 'var(--navy)' : 'transparent', fg: ph === k ? '#fff' : 'var(--navy)', go: () => this.setState({ rcPhase: k }) })),
+      share: this.state.rcShare, setShare: e => this.setState({ rcShare: e.target.value }),
+      reset: () => this.setState({ rcN: { rcc: 0, low: 0, lowInd: 0, mod: 0, modHigh: 0, high: 0 }, rcShare: '' }),
+      respite: usd((N.mod + N.high) * 2625), respiteCount: String(N.mod + N.high),
+      hasShare, partnerMonthly: hasShare ? usd(rcTotal * share / 100) : '', partnerAnnual: hasShare ? usd(rcTotal * share / 100 * 12) : ''
+    };
+    return {
+      rc,
+      ...guideVals,
+      homeHref: dev ? 'Home.dc.html' : './',
+      contactHref: dev ? 'Contact.dc.html' : 'contact.html',
+      privacyHref: dev ? 'Privacy%20Policy.dc.html' : 'privacy-policy.html',
+      backHref: dev ? 'Become%20a%20Partner.dc.html' : 'become-a-partner.html',
+      services: ['Comprehensive assessment', 'Care plan', '24/7 access', 'Ongoing monitoring', 'Medication management', 'Referrals and community services', 'Care transitions', 'Caregiver education', 'Respite'],
+      roles, sup, models, modelNote,
+      isCards: view === 'cards', isFigures: view === 'figures',
+      pair: { caregiver: '#566B40', patient: '#47533C' },
+      views: [['cards', 'Org chart'], ['figures', 'Stick figures']].map(([k, label]) => ({ label, bg: view === k ? 'var(--navy)' : 'transparent', fg: view === k ? '#fff' : 'var(--navy)', go: () => this.setState({ view: k }) })),
+      segs: S.map((s, k) => ({ fill: k < i ? '100%' : k === i ? (t * 100).toFixed(1) + '%' : '0%', color: colorOf(s), aria: 'Step ' + (k + 1) + ': ' + s.title, go: () => this.go(k) })),
+      cur: { ...cur, pos: i + 1, who: w.label, tagBg: w.bg, tagFg: w.fg, hasLink: !!cur.href },
+      total: S.length,
+      log: S.slice(0, i + 1).map(s => ({ clock: s.clock, text: s.log, dot: colorOf(s) })).reverse(),
+      totals: [
+        { n: String(S.filter(s => s.lane === 'partner').length), label: 'steps your practice does: refer, assess, check the home, and check in' },
+        { n: String(S.filter(s => s.lane === 'auto').length), label: 'steps that run automatically, with nothing retyped or chased' },
+        { n: '0', label: 'consent packets, charts, CMS submissions, or claims your team handles' }
+      ],
+      toggle: () => this.setState(s => (s.i === S.length - 1 && s.t >= 1) ? { i: 0, t: 0, playing: true } : { playing: !s.playing }),
+      toggleLabel: playing ? 'Pause' : (i === S.length - 1 && t >= 1 ? 'Replay' : 'Play'),
+      prev: () => this.go(Math.max(0, i - 1)),
+      next: () => this.go(Math.min(S.length - 1, i + 1))
+    };
+  }
+}
+</script>
+</body>
+</html>
