@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#122F52"/><g fill="#87AEDF"><circle cx="50" cy="38" r="10"/><circle cx="61" cy="46" r="10"/><circle cx="57" cy="59" r="10"/><circle cx="43" cy="59" r="10"/><circle cx="39" cy="46" r="10"/></g><circle cx="50" cy="50" r="5" fill="#F8CB27"/></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>GUIDE service — AbleLiving</title>
+  <link rel="stylesheet" href="ds/tokens/colors.css">
+  <link rel="stylesheet" href="ds/tokens/fonts.css">
+  <link rel="stylesheet" href="ds/tokens/typography.css">
+  <link rel="stylesheet" href="ds/tokens/spacing.css">
+  <link rel="stylesheet" href="ds/tokens/base.css">
+  <link rel="stylesheet" href="ds/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&amp;display=swap">
+  <script src="ds/_ds_bundle.js"></script>
+  <meta name="robots" content="noindex">
+  <style>
+    :root { --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
+    body { margin: 0; background: var(--paper); }
+    * { font-variant-ligatures: no-common-ligatures no-discretionary-ligatures; font-feature-settings: 'liga' 0, 'dlig' 0; }
+    a { color: var(--leaf); }
+    a:hover { color: var(--navy); }
+  </style>
+</helmet>
+<div style="min-height: 100vh; background: var(--paper); font-family: var(--font-sans); color: var(--ink); display: flex; flex-direction: column;">
+  <header style="background: #fff; border-bottom: 1px solid var(--line);">
+    <div style="max-width: 980px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <a href="{{ homeHref }}" style="display: block;"><img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 160px; height: auto; display: block;"></a>
+      <a href="{{ backHref }}" style="font-size: 15px; font-weight: 700;">← Back to the GUIDE overview</a>
+    </div>
+  </header>
+
+  <section style="background: var(--navy); color: #fff;">
+    <div style="max-width: 980px; margin: 0 auto; padding: 56px 24px 52px; display: flex; flex-direction: column; gap: 18px;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--blue-soft);">GUIDE service {{ d.num }} of 9</span>
+      <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <span style="flex: none; width: 72px; height: 72px; border-radius: 999px; background: #C9DBF1; color: var(--navy); display: grid; place-items: center; font-family: var(--font-serif); font-size: 32px;">{{ d.num }}</span>
+        <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(32px, 4.6vw, 48px); line-height: 1.12; margin: 0; color: #fff; text-wrap: pretty;">{{ d.title }}</h1>
+      </div>
+      <p style="margin: 0; font-size: 20px; line-height: 1.6; color: var(--blue-soft); max-width: 54ch; text-wrap: pretty;">{{ d.lead }}</p>
+    </div>
+  </section>
+
+  <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 56px 24px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 14px;">
+    <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 10px;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">Who does it</span>
+      <span style="font-size: 14px; font-weight: 800; padding: 6px 14px; border-radius: 999px; align-self: flex-start; background: {{ d.whoBg }}; color: {{ d.whoFg }};">{{ d.who }}</span>
+    </div>
+    <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 10px;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">How often</span>
+      <span style="font-family: var(--font-serif); font-size: 22px; line-height: 1.25; color: var(--navy);">{{ d.when }}</span>
+    </div>
+    <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 10px;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">Where it's recorded</span>
+      <span style="font-family: var(--font-serif); font-size: 22px; line-height: 1.25; color: var(--navy);">{{ d.where }}</span>
+    </div>
+  </section>
+
+  <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 56px 24px 0; display: flex; flex-direction: column; gap: 22px;">
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">The experience</span>
+      <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(26px, 3vw, 32px); line-height: 1.2; color: var(--navy); margin: 0;">What the family sees</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 14px;">
+      <sc-for list="{{ d.steps }}" as="st" hint-placeholder-count="3">
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 12px;">
+          <span style="width: 40px; height: 40px; border-radius: 999px; background: var(--navy); color: #fff; display: grid; place-items: center; font-size: 16px; font-weight: 800;">{{ st.n }}</span>
+          <span style="font-size: 18px; font-weight: 800; line-height: 1.3; color: var(--navy);">{{ st.t }}</span>
+          <span style="font-size: 15px; line-height: 1.6; color: var(--ink);">{{ st.d }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 56px 24px 0;">
+    <div style="background: var(--mist); border: 1px solid var(--line); border-radius: 16px; padding: 28px 30px; display: flex; flex-direction: column; gap: 14px;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">What CMS requires</span>
+      <sc-for list="{{ d.req }}" as="r" hint-placeholder-count="2">
+        <div style="display: flex; gap: 12px; font-size: 16px; line-height: 1.55; color: var(--ink);"><span style="color: var(--leaf); font-weight: 800;">✓</span><span>{{ r }}</span></div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 56px 24px 80px; display: flex; flex-direction: column; gap: 20px;">
+    <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--sage);">All nine services</span>
+    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+      <sc-for list="{{ all }}" as="a" hint-placeholder-count="9">
+        <a href="{{ a.href }}" style="text-decoration: none; font-size: 14px; font-weight: 700; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: {{ a.bg }}; color: {{ a.fg }};">{{ a.t }}</a>
+      </sc-for>
+    </div>
+    <div style="display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 22px;">
+      <a href="{{ prev.href }}" style="font-size: 16px; font-weight: 700;">← {{ prev.t }}</a>
+      <a href="{{ next.href }}" style="font-size: 16px; font-weight: 700;">{{ next.t }} →</a>
+    </div>
+  </section>
+  <footer style="margin-top: auto; background: var(--navy); font-family: var(--font-sans);">
+    <div style="max-width: 980px; margin: 0 auto; padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 10px; font-size: 13px; line-height: 1.6; color: var(--blue-soft);">
+      <div style="display: flex; flex-wrap: wrap; gap: 6px 20px; justify-content: space-between;"><span>© 2026 AbleLiving Memory Support, PLLC. Participant in the CMS GUIDE Model.</span><span style="display: flex; gap: 18px;"><a href="{{ privacyHref }}" style="color: #fff; font-weight: 700;">Privacy policy</a><a href="{{ contactHref }}" style="color: #fff; font-weight: 700;">Contact us</a></span></div>
+      <p style="margin: 0; max-width: 90ch;">This site provides training and partnership information for GUIDE Model partner practices. It is not medical advice and does not collect patient health information. AbleLiving Memory Support, PLLC participates in the CMS GUIDE Model; this site is not an official CMS website and is not endorsed by CMS. In an emergency, call 911.</p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  data = [
+    ['assessment', 'Comprehensive assessment', 'A full picture of the patient and caregiver, done at home, that everything else is built on.', 'partner',
+      'Initial, reassessment as needs change, and annually', 'Comprehensive Assessment form',
+      [['A home visit', 'A clinician comes to the home and spends time with the patient and their caregiver.'], ['The full picture', 'Memory, health, behavior, safety, goals, and wishes for future care, plus what the caregiver needs.'], ['Signed off and repeated', 'The AbleLiving Clinical Team signs each assessment, which sets the tier. It\u2019s repeated when needs change and at least once a year.']],
+      ['Initial assessment covering clinical, behavioral and psychosocial, and advance care planning needs', 'Includes the caregiver\u2019s needs and abilities, and a home visit', 'Reassess the patient and caregiver at least once a year']],
+    ['careplan', 'Care plan', 'A written plan, led by the patient, that says what care they get and who provides it.', 'ableliving',
+      'After the assessment, updated as needs change', 'AbleLiving EHR',
+      [['Built together', 'The plan is shaped around the patient\u2019s own goals, strengths, and preferences.'], ['Everyone on the same page', 'It names the primary care provider, specialists, and community services involved.'], ['Shared', 'The primary care provider gets a copy so care stays connected.']],
+      ['A person-centered care plan that covers every area from the assessment', 'Led by the patient', 'If the program isn\u2019t the patient\u2019s primary care practice, the primary care provider has access to the plan']],
+    ['monitoring', 'Ongoing monitoring and support', 'Regular check-ins from a care navigator who knows the family and is their main point of contact.', 'partner',
+      'Quarterly to twice a month, by tier', 'Care Navigator Visit form',
+      [['One familiar person', 'The family has a care navigator they know by name.'], ['Regular check-ins', 'Calls or visits on a schedule set by the patient\u2019s tier.'], ['Early warning', 'Changes are caught early and shared with the care team.']],
+      ['The care navigator is the main point of contact', 'Low complexity with caregiver: at least quarterly', 'Moderate and high complexity with caregiver: at least monthly', 'Low complexity without caregiver: at least monthly', 'Moderate to high complexity without caregiver: at least twice a month']],
+    ['medications', 'Medication management', 'A prescribing clinician reviews every medication to keep the patient safe.', 'ableliving',
+      'At assessment and when medications change', 'AbleLiving EHR',
+      [['Full review', 'Every prescription and over-the-counter medication is reviewed.'], ['Fewer risks', 'Risky or duplicate medications are flagged and adjusted.'], ['Confirmed with doctors', 'Any change is shared and confirmed with the primary care provider and specialists.']],
+      ['A clinician with prescribing authority reviews the patient\u2019s medications', 'Changes are shared and confirmed with the primary care provider and relevant specialists']],
+    ['access', '24/7 help line', 'Someone on the care team can be reached any time, day or night.', 'ableliving',
+      'Any time, 24 hours a day, 7 days a week', 'AbleLiving help line',
+      [['Always a call away', 'The family has one number to call, any hour.'], ['Real help', 'A care team member answers and helps with what\u2019s happening right now.'], ['Fewer ER trips', 'Many problems are solved by phone before they become emergencies.']],
+      ['24/7 access to a care team member or help line', 'The help line takes one-on-one support calls from the caregiver']],
+    ['transitions', 'Care coordination and transitions', 'Keeps care connected with doctors and specialists, and supports moves between home, hospital, and care settings.', 'ableliving',
+      'As needed', 'AbleLiving EHR',
+      [['Connected doctors', 'We coordinate with the primary care provider and specialists.'], ['Specialist referrals', 'Referrals for other conditions, with results added back into the care plan.'], ['Safe transitions', 'Support when the patient moves between home, hospital, or a care setting.']],
+      ['Coordinate with the patient\u2019s primary care provider', 'Refer to specialists for other conditions as needed, and add their findings to the care plan', 'Support the patient in transitions between home and care settings']],
+    ['referrals', 'Referrals to community services', 'Connects the family to local help like meals, transportation, and in-home care.', 'partner',
+      'As needed', 'Care Navigator Visit form',
+      [['Find the need', 'The care navigator spots where the family needs extra help.'], ['Make the connection', 'They refer the family to local services, such as meals, rides, or home care.'], ['Follow through', 'They check that the help arrived and is working.']],
+      ['Keep a list of local and community services', 'Refer and connect patients to community-based services and supports', 'For patients with Medicaid, coordinate with their Medicaid case manager']],
+    ['caregiver', 'Caregiver education and support', 'Training and support so the family member giving care isn\u2019t doing it alone.', 'ableliving',
+      'Ongoing, based on the caregiver\u2019s needs', 'AbleLiving EHR',
+      [['Understand the diagnosis', 'Clear information about dementia and what to expect.'], ['Learn new skills', 'Practical training for everyday care and hard moments.'], ['Someone to talk to', 'One-on-one support calls and connection to support groups.']],
+      ['A caregiver support program with skills training, dementia information, and support groups', 'One-on-one support calls with a member of the care team']],
+    ['respite', 'Respite', 'A break for the caregiver, while the patient is cared for at home or at a day center.', 'ableliving',
+      'Up to $2,625 per patient per year', 'AbleLiving EHR',
+      [['Time to rest', 'The caregiver gets time for themselves, an appointment, or sleep.'], ['Trusted care', 'A respite provider cares for the patient at home or at an adult day center.'], ['Arranged for you', 'AbleLiving sets it up and coordinates it.']],
+      ['Refer to and coordinate in-home respite care', 'Option to use adult day centers or facility-based respite', 'Available to patients in moderate and high complexity tiers with a caregiver; not available to patients living in a residential care community']]
+  ];
+  renderVals() {
+    const dev = /\.dc\.html/.test(decodeURIComponent(location.pathname));
+    const base = dev ? 'GUIDE%20Service.dc.html' : 'guide-service.html';
+    const key = new URLSearchParams(location.search).get('d') || 'assessment';
+    let i = this.data.findIndex(x => x[0] === key); if (i < 0) i = 0;
+    const [k, title, lead, who, when, where, steps, req] = this.data[i];
+    const mine = who === 'partner';
+    const href = j => base + '?d=' + this.data[(j + 9) % 9][0];
+    if (typeof document !== 'undefined') document.title = title + ' — AbleLiving';
+    return {
+      homeHref: dev ? 'Home.dc.html' : './',
+      contactHref: dev ? 'Contact.dc.html' : 'contact.html',
+      privacyHref: dev ? 'Privacy%20Policy.dc.html' : 'privacy-policy.html',
+      backHref: (dev ? 'Partnership%20Demo.dc.html' : 'partnership-demo.html') + '#guide',
+      d: { num: String(i + 1), title, lead, when, where, who: mine ? 'Your practice' : 'AbleLiving', whoBg: mine ? '#C0601A' : '#C9DBF1', whoFg: mine ? '#fff' : 'var(--navy)', steps: steps.map((s, n) => ({ n: n + 1, t: s[0], d: s[1] })), req },
+      all: this.data.map((x, j) => ({ t: x[1], href: href(j), bg: j === i ? 'var(--navy)' : '#fff', fg: j === i ? '#fff' : 'var(--navy)' })),
+      prev: { t: this.data[(i + 8) % 9][1], href: href(i - 1) },
+      next: { t: this.data[(i + 1) % 9][1], href: href(i + 1) }
+    };
+  }
+}
+</script>
+</body>
+</html>

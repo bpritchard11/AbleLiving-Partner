@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#122F52"/><g fill="#87AEDF"><circle cx="50" cy="38" r="10"/><circle cx="61" cy="46" r="10"/><circle cx="57" cy="59" r="10"/><circle cx="43" cy="59" r="10"/><circle cx="39" cy="46" r="10"/></g><circle cx="50" cy="50" r="5" fill="#F8CB27"/></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Partner onboarding checklist — AbleLiving</title>
+  <link rel="stylesheet" href="ds/tokens/colors.css">
+  <link rel="stylesheet" href="ds/tokens/fonts.css">
+  <link rel="stylesheet" href="ds/tokens/typography.css">
+  <link rel="stylesheet" href="ds/tokens/spacing.css">
+  <link rel="stylesheet" href="ds/tokens/base.css">
+  <link rel="stylesheet" href="ds/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
+  <script src="ds/_ds_bundle.js"></script>
+  <style>
+    :root { --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
+    body { margin: 0; background: var(--paper); }
+    * { font-variant-ligatures: no-common-ligatures no-discretionary-ligatures; font-feature-settings: 'liga' 0, 'dlig' 0; font-variation-settings: 'WONK' 0; }
+    a { color: var(--leaf); }
+    a:hover { color: var(--navy); }
+  </style>
+  <style>summary::-webkit-details-marker { display: none; }</style>
+  <script>document.addEventListener('click', function (e) { document.querySelectorAll('details[data-nav][open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); }); });</script>
+  <style>@media print { nav, footer, [data-noprint] { display: none !important; } body { background: #fff !important; } }</style>
+  <style>@media (max-width: 760px) { [data-nav-full] { display: none !important; } [data-nav-mobile] { display: block !important; } }</style>
+</helmet>
+<div style="min-height: 100vh; background: var(--paper); font-family: var(--font-sans); color: var(--ink); display: flex; flex-direction: column;">
+  <nav style="background: #fff; border-bottom: 1px solid var(--line); font-family: var(--font-sans); position: relative; z-index: 20;">
+    <div style="max-width: 980px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px 28px; flex-wrap: wrap;">
+      <a href="{{ nav.home }}" style="display: block;"><img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 170px; height: auto; display: block;"></a>
+      <div data-nav-full="" style="display: flex; align-items: center; justify-content: flex-end; gap: 8px 26px; flex-wrap: wrap; flex: 1 1 auto;">
+        <details data-nav="1" style="position: relative;">
+          <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 800; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Partnership<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
+          <div style="position: absolute; top: 100%; left: -12px; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; min-width: 230px; display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+            <a href="{{ nav.partnership }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How we partner</a>
+            <a href="{{ nav.demo }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partnership overview</a>
+            <a href="{{ nav.become }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Become a partner</a>
+            <a href="{{ nav.onboard }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 800; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Onboarding checklist</a>
+            <a href="{{ nav.become }}#faq" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partner FAQ</a>
+          </div>
+        </details>
+        <details data-nav="1" style="position: relative;">
+          <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Training<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
+          <div style="position: absolute; top: 100%; left: -12px; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; min-width: 250px; display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+            <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Learn</span>
+            <a href="{{ nav.training }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Training modules</a>
+            <a href="{{ nav.topics }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Required topics</a>
+            <a href="{{ nav.ceu }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU library</a>
+            <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Attest</span>
+            <a href="{{ nav.howto }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How to attest</a>
+            <a href="{{ nav.attest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Start initial attestation</a>
+            <a href="{{ nav.ceuAttest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU attestation</a>
+          </div>
+        </details>
+        <a href="{{ nav.forms }}" style="font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none; padding: 8px 0;" style-hover="color: var(--leaf);">Forms</a>
+        <a href="{{ nav.contact }}" style="font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none; padding: 8px 0;" style-hover="color: var(--leaf);">Contact</a>
+        <a href="{{ nav.become }}" style="text-decoration: none; flex: none;">
+          <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" hint-size="140px,38px"><span style="white-space: nowrap;">Become a partner</span></x-import>
+        </a>
+      </div>
+      <details data-nav="1" data-nav-mobile="" style="display: none; position: relative;">
+        <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 700; color: var(--navy); padding: 9px 16px; border: 1px solid var(--navy); border-radius: 999px; display: flex; align-items: center; gap: 8px;">Menu<span style="font-size: 11px;">▾</span></summary>
+        <div style="position: absolute; top: 100%; right: 0; margin-top: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 6px; width: min(280px, calc(100vw - 48px)); display: flex; flex-direction: column; box-shadow: 0 8px 24px rgba(18, 47, 82, 0.08); z-index: 30;">
+          <a href="{{ nav.home }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Home</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Partnership</span>
+          <a href="{{ nav.partnership }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How we partner</a>
+          <a href="{{ nav.demo }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partnership overview</a>
+          <a href="{{ nav.onboard }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Onboarding checklist</a>
+          <a href="{{ nav.become }}#faq" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Partner FAQ</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">Training</span>
+          <a href="{{ nav.training }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Training modules</a>
+          <a href="{{ nav.topics }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Required topics</a>
+          <a href="{{ nav.ceu }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU library</a>
+          <a href="{{ nav.howto }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">How to attest</a>
+          <a href="{{ nav.attest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Start initial attestation</a>
+          <a href="{{ nav.ceuAttest }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">CEU attestation</a>
+          <span style="padding: 10px 12px 4px; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">More</span>
+          <a href="{{ nav.forms }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Forms</a>
+          <a href="{{ nav.contact }}" style="padding: 10px 12px; border-radius: 8px; font-size: 15px; font-weight: 500; color: var(--navy); text-decoration: none;" style-hover="background: var(--mist);">Contact</a>
+          <div style="border-top: 1px solid var(--line); margin: 6px 0 0; padding: 10px 6px 4px;">
+            <a href="{{ nav.become }}" style="display: block; text-align: center; padding: 10px 12px; border: 1px solid var(--navy); border-radius: 999px; font-size: 15px; font-weight: 700; color: var(--navy); text-decoration: none;">Become a partner</a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </nav>
+
+  <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 72px 24px 32px; display: flex; flex-direction: column; gap: 20px;">
+    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Partner onboarding</x-import>
+    <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(34px, 4.6vw, 50px); line-height: 1.14; color: var(--navy); margin: 0; max-width: 20ch; text-wrap: pretty;">Your checklist, from signed agreement to first patient.</h1>
+    <p style="margin: 0; font-size: 19px; line-height: 1.65; color: var(--ink); max-width: 60ch; text-wrap: pretty;">Check items off as you go. Your progress saves on this device, and you can print the list for your team.</p>
+    <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 18px 22px; display: flex; align-items: center; gap: 16px 24px; flex-wrap: wrap;">
+      <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 8px;">
+        <span style="font-size: 15px; font-weight: 800; color: var(--navy);">{{ doneCount }} of {{ totalCount }} done</span>
+        <div style="height: 10px; border-radius: 999px; background: var(--mist); overflow: hidden;"><div style="height: 100%; width: {{ pct }}; background: var(--leaf); transition: width 300ms ease;"></div></div>
+      </div>
+      <div data-noprint="" style="display: flex; gap: 8px;">
+        <button onClick="{{ printIt }}" style="height: 40px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--navy); background: var(--navy); color: #fff; font-family: var(--font-sans); font-size: 14px; font-weight: 700; cursor: pointer;" style-hover="opacity: .85;">Print checklist</button>
+        <button onClick="{{ reset }}" style="height: 40px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--navy); font-family: var(--font-sans); font-size: 14px; font-weight: 700; cursor: pointer;" style-hover="border-color: var(--navy);">Reset</button>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 24px 90px; display: flex; flex-direction: column; gap: 20px;">
+    <sc-for list="{{ phases }}" as="ph" hint-placeholder-count="5">
+      <div style="background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; break-inside: avoid;">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 18px 24px; background: var(--mist); border-bottom: 1px solid var(--line);">
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <span style="width: 36px; height: 36px; border-radius: 999px; display: grid; place-items: center; font-size: 15px; font-weight: 800; background: {{ ph.badgeBg }}; color: {{ ph.badgeFg }};">{{ ph.mark }}</span>
+            <span style="display: flex; flex-direction: column; gap: 2px;">
+              <span style="font-family: var(--font-serif); font-size: 22px; line-height: 1.2; color: var(--navy);">{{ ph.title }}</span>
+              <span style="font-size: 14px; color: var(--sage);">{{ ph.who }}</span>
+            </span>
+          </div>
+          <span style="font-size: 14px; font-weight: 700; color: var(--navy);">{{ ph.progress }}</span>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <sc-for list="{{ ph.items }}" as="it" hint-placeholder-count="4">
+            <div style="display: flex; align-items: flex-start; gap: 14px; padding: 16px 24px; border-top: 1px solid var(--line);">
+              <button onClick="{{ it.toggle }}" role="checkbox" aria-checked="{{ it.aria }}" aria-label="{{ it.t }}" style="flex: none; width: 28px; height: 28px; margin-top: 1px; border-radius: 8px; border: 2px solid {{ it.border }}; background: {{ it.bg }}; color: #fff; font-size: 16px; font-weight: 800; display: grid; place-items: center; cursor: pointer; padding: 0;">{{ it.check }}</button>
+              <span style="flex: 1; display: flex; flex-direction: column; gap: 4px; min-width: 0;">
+                <span style="font-size: 17px; font-weight: 700; line-height: 1.4; color: var(--navy); text-decoration: {{ it.strike }}; opacity: {{ it.op }};">{{ it.t }}</span>
+                <span style="font-size: 15px; line-height: 1.5; color: var(--ink);">{{ it.d }}</span>
+              </span>
+              <sc-if value="{{ it.hasLink }}" hint-placeholder-val="{{ false }}">
+                <a data-noprint="" href="{{ it.href }}" target="{{ it.target }}" rel="noopener" style="flex: none; font-size: 15px; font-weight: 700; padding-top: 3px; white-space: nowrap;">{{ it.linkLabel }} →</a>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-for>
+  </section>
+
+  <div style="margin-top: auto;"><footer style="background: var(--navy); color: #fff; font-family: var(--font-sans);">
+  <div style="max-width: 980px; margin: 0 auto; padding: 56px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px;">
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="background: #fff; border-radius: 12px; padding: 12px 16px; align-self: flex-start;">
+        <img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 160px; height: auto; display: block;">
+      </div>
+      <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--blue-soft); max-width: 36ch;">Care navigator training and attestation for GUIDE Model partner practices in Florida and Ohio.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: var(--blue-soft);">Partner contact</span>
+      <span style="font-family: var(--font-serif); font-size: 20px;">Bryson Pritchard</span>
+      <span style="font-size: 15px; color: var(--blue-soft);">Vice President of Growth</span>
+      <a href="mailto:bpritchard@ableliving-mail.com" style="font-size: 15px; color: #fff; font-weight: 700; word-break: break-all;">bpritchard@ableliving-mail.com</a>
+    </div>
+  </div>
+  <div style="border-top: 1px solid var(--border-on-dark);">
+    <div style="max-width: 980px; margin: 0 auto; padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 10px; font-size: 13px; line-height: 1.6; color: var(--blue-soft);">
+      <div style="display: flex; flex-wrap: wrap; gap: 6px 20px; justify-content: space-between;"><span>© 2026 AbleLiving Memory Support, PLLC. Participant in the CMS GUIDE Model.</span><span style="display: flex; gap: 18px;"><a href="{{ nav.privacy }}" style="color: #fff; font-weight: 700;">Privacy policy</a><a href="{{ nav.contact }}" style="color: #fff; font-weight: 700;">Contact us</a></span></div>
+      <p style="margin: 0; max-width: 90ch;">This site provides training and partnership information for GUIDE Model partner practices. It is not medical advice and does not collect patient health information. AbleLiving Memory Support, PLLC participates in the CMS GUIDE Model; this site is not an official CMS website and is not endorsed by CMS. In an emergency, call 911.</p>
+    </div>
+  </div>
+</footer></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  key = 'al-onboarding-checklist-v1';
+  state = { done: {} };
+  componentDidMount() { try { const v = JSON.parse(localStorage.getItem(this.key) || '{}'); this.setState({ done: v }); } catch (e) {} }
+  save(done) { this.setState({ done }); try { localStorage.setItem(this.key, JSON.stringify(done)); } catch (e) {} }
+  phases(L) {
+    const F = 'https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=';
+    return [
+      ['Partnership', 'Your practice and AbleLiving', [
+        ['intro', 'Introduction call', 'Meet with our team to talk through the partnership and your questions.'],
+        ['info', 'Submit your practice information', 'Practice details and leadership, through the partner form.', L.become, 'Open'],
+        ['agreement', 'Sign the partnership agreement', 'Confirms the services your practice delivers and your main contact.'],
+        ['contacts', 'Name your team', 'Your care navigator, clinician, and a practice admin who will receive notices.']]],
+      ['Systems and payment', 'AbleLiving sets up, your team confirms', [
+        ['m365', 'Microsoft access confirmed', 'Your team can open the forms and your practice\u2019s SharePoint patient list.'],
+        ['email', 'Notice emails confirmed', 'The address that receives new-patient notices and signed assessment copies.'],
+        ['docusign', 'DocuSign tested', 'Your clinician can receive and open a DocuSign envelope.'],
+        ['billcom', 'Bill.com payment setup', 'Your practice is set up to receive monthly payments.']]],
+      ['Training and attestation', 'Each care navigator and clinician', [
+        ['modules', 'Complete the 16 training modules', 'About 20 hours, on this site. Print a certificate for each module.', L.training, 'Training'],
+        ['topics', 'Review the required CMS topics', 'The 13 topics the attestation confirms.', L.topics, 'Topics'],
+        ['attest', 'Sign the initial attestation', 'A five-minute form for each team member.', L.attest, 'Attest']]],
+      ['First patient', 'Your practice', [
+        ['forms', 'Bookmark the Forms page', 'Every form your team uses, in one place.', L.forms, 'Forms'],
+        ['referral', 'Send your first referral', 'AbleLiving handles consents, the chart, and enrollment.', F + '1yQs6x3pgE-5t3WuLp39OaFeqKWlitZAoZsTwd2SOJ5URDlBS1BFTlJQWjhYM0NRMUo4NkU4QkxERC4u', 'Refer', true],
+        ['assessment', 'Complete the first comprehensive assessment', 'After you\u2019re notified the patient is ready. AbleLiving signs off.', F + '1yQs6x3pgE-5t3WuLp39OaFeqKWlitZAoZsTwd2SOJ5UQUZCVlpHMDI4R05WS0ZDNFQwN1REN0xNTy4u', 'Assess', true],
+        ['visit', 'Log the first care navigator check-in', 'At the frequency the patient\u2019s tier requires.', F + '1yQs6x3pgE-5t3WuLp39OaFeqKWlitZAoZsTwd2SOJ5UOTBNTjRRMlFNQVBPSUdTMUlRRFhPSFBBNi4u', 'Log', true],
+        ['safety', 'Complete the home safety assessment', 'Once, within 60 days of enrollment.', F + '1yQs6x3pgE-5t3WuLp39OaFeqKWlitZAoZsTwd2SOJ5URDRSSE1ZUEZPM1FQM1ZGNkU4R0owRjNWUi4u', 'Open', true]]],
+      ['Every year', 'Each care navigator and clinician', [
+        ['ceu', 'Complete continuing education', 'Choose courses from the CEU library.', L.ceu, 'CEU library'],
+        ['ceuAttest', 'Sign the CEU attestation', 'Records your yearly continuing education.', L.ceuAttest, 'Attest']]]
+    ];
+  }
+  renderVals() {
+    const dev = /\.dc\.html/.test(decodeURIComponent(location.pathname));
+    const nav = dev
+      ? { home: 'Home.dc.html', partnership: 'Partnership.dc.html', become: 'Become%20a%20Partner.dc.html', forms: 'Forms.dc.html', contact: 'Contact.dc.html', privacy: 'Privacy%20Policy.dc.html', demo: 'Partnership%20Demo.dc.html', onboard: 'Onboarding%20Checklist.dc.html', training: 'Training.dc.html', topics: 'Required%20Topics.dc.html', howto: 'How%20to%20Attest.dc.html', attest: 'Clinician%20Attestation.dc.html', portal: 'Partner%20Portal.dc.html', ceu: 'CEU%20Library.dc.html', ceuAttest: 'CEU%20Attestation.dc.html' }
+      : { home: './', partnership: 'partnership.html', become: 'become-a-partner.html', forms: 'forms.html', contact: 'contact.html', privacy: 'privacy-policy.html', demo: 'partnership-demo.html', onboard: 'onboarding-checklist.html', training: 'training.html', topics: 'required-topics.html', howto: 'how-to-attest.html', attest: 'attestation.html', portal: 'partner-portal.html', ceu: 'ceu-library.html', ceuAttest: 'ceu-attestation.html' };
+    const done = this.state.done;
+    let dc = 0, tc = 0;
+    const phases = this.phases(nav).map(([title, who, items], pi) => {
+      const its = items.map(([k, t, d, href, linkLabel, ext]) => {
+        const on = !!done[k]; tc++; if (on) dc++;
+        return { t, d, hasLink: !!href, href: href || '', linkLabel: linkLabel || '', target: ext ? '_blank' : '_self', aria: on ? 'true' : 'false', check: on ? '✓' : '', bg: on ? 'var(--leaf)' : '#fff', border: on ? 'var(--leaf)' : 'var(--sage)', strike: on ? 'line-through' : 'none', op: on ? 0.6 : 1, toggle: () => this.save({ ...this.state.done, [k]: !on }) };
+      });
+      const n = its.filter(x => x.check).length, all = n === its.length;
+      return { title, who, items: its, progress: n + ' of ' + its.length, mark: all ? '✓' : String(pi + 1), badgeBg: all ? 'var(--leaf)' : 'var(--navy)', badgeFg: '#fff' };
+    });
+    return {
+      nav, phases, doneCount: String(dc), totalCount: String(tc), pct: (tc ? dc / tc * 100 : 0).toFixed(0) + '%',
+      printIt: () => window.print(),
+      reset: () => this.save({})
+    };
+  }
+}
+</script>
+</body>
+</html>
