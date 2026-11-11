@@ -10,14 +10,14 @@
 <x-dc>
 <helmet>
   <title>Training modules — AbleLiving</title>
-  <link rel="stylesheet" href="ds/tokens/colors.css">
-  <link rel="stylesheet" href="ds/tokens/fonts.css">
-  <link rel="stylesheet" href="ds/tokens/typography.css">
-  <link rel="stylesheet" href="ds/tokens/spacing.css">
-  <link rel="stylesheet" href="ds/tokens/base.css">
-  <link rel="stylesheet" href="ds/styles.css">
+  <link rel="stylesheet" href="ds-colors.css">
+  <link rel="stylesheet" href="ds-fonts.css">
+  <link rel="stylesheet" href="ds-typography.css">
+  <link rel="stylesheet" href="ds-spacing.css">
+  <link rel="stylesheet" href="ds-base.css">
+  <link rel="stylesheet" href="ds-styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
-  <script src="ds/_ds_bundle.js"></script>
+  <script src="ds-bundle.js"></script>
   <style>
     :root { --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
     body { margin: 0; background: var(--paper); }
@@ -32,7 +32,7 @@
 <div style="min-height: 100vh; background: var(--paper); font-family: var(--font-sans); color: var(--ink); display: flex; flex-direction: column;">
   <nav style="background: #fff; border-bottom: 1px solid var(--line); font-family: var(--font-sans); position: relative; z-index: 20;">
     <div style="max-width: 980px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px 28px; flex-wrap: wrap;">
-      <a href="{{ nav.home }}" style="display: block;"><img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 170px; height: auto; display: block;"></a>
+      <a href="{{ nav.home }}" style="display: block;"><img src="ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 170px; height: auto; display: block;"></a>
       <div data-nav-full="" style="display: flex; align-items: center; justify-content: flex-end; gap: 8px 26px; flex-wrap: wrap; flex: 1 1 auto;">
         <details data-nav="1" style="position: relative;">
           <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Partnership<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
@@ -97,7 +97,7 @@
   </section>
 
   <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 40px 24px 24px; display: flex; flex-direction: column; gap: 24px;">
-    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.SectionHeader" icon-src="assets/bloom.svg" eyebrow="The curriculum" title="GUIDE curriculum" hint-size="100%,90px"></x-import>
+    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.SectionHeader" icon-src="bloom.svg" eyebrow="The curriculum" title="GUIDE curriculum" hint-size="100%,90px"></x-import>
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
       <sc-for list="{{ modules }}" as="m" hint-placeholder-count="7">
         <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 26px 24px; display: flex; flex-direction: column; gap: 14px;">
@@ -125,7 +125,7 @@
   </section>
 
   <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 56px 24px 24px; display: flex; flex-direction: column; gap: 24px;">
-    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.SectionHeader" icon-src="assets/bloom.svg" eyebrow="EHR training" title="Athena training" hint-size="100%,90px"></x-import>
+    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.SectionHeader" icon-src="bloom.svg" eyebrow="EHR training" title="Athena training" hint-size="100%,90px"></x-import>
     <p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--ink); max-width: 64ch; text-wrap: pretty;">A 10-module series on athenaOne, the electronic health record we use for every GUIDE patient. Each module takes about 60 minutes.</p>
     <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg); display: flex; flex-direction: column;">
       <sc-for list="{{ athena }}" as="a" hint-placeholder-count="10">
@@ -162,7 +162,7 @@
   <div style="max-width: 980px; margin: 0 auto; padding: 56px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px;">
     <div style="display: flex; flex-direction: column; gap: 16px;">
       <div style="background: #fff; border-radius: 12px; padding: 12px 16px; align-self: flex-start;">
-        <img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 160px; height: auto; display: block;">
+        <img src="ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 160px; height: auto; display: block;">
       </div>
       <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--blue-soft); max-width: 36ch;">Care navigator training and attestation for GUIDE Model partner practices in Florida and Ohio.</p>
     </div>
@@ -214,9 +214,9 @@ class Component extends DCLogic {
         ["Care gaps, quality measures & worklists","Using quality tools and worklists to prioritize outreach, close gaps, and keep every enrolled patient on cadence.","AbleLiving_athenaOne_Module08_Care_Gaps_Worklists.pptx"],
         ["Patient & caregiver engagement","The patient portal, automated outreach, documenting contact attempts, and communicating in ways that work for families living with dementia.","AbleLiving_athenaOne_Module09_Engagement.pptx"],
         ["Compliance, privacy & quality assurance","HIPAA in daily practice, minimum necessary, the audit trail, documentation integrity, and audit readiness.","AbleLiving_athenaOne_Module10_Compliance_QA.pptx"]
-      ].map((a, i) => ({ num: String(i + 1).padStart(2, '0'), title: a[0], detail: a[1], file: 'modules/' + a[2], play: player + '?m=a' + (i + 1), cta: cta('a' + (i + 1)), divider: i === 0 ? 'none' : '1px solid var(--line)' })),
+      ].map((a, i) => ({ num: String(i + 1).padStart(2, '0'), title: a[0], detail: a[1], file: '' + a[2], play: player + '?m=a' + (i + 1), cta: cta('a' + (i + 1)), divider: i === 0 ? 'none' : '1px solid var(--line)' })),
       athenaRemaining: 'All 10 modules · about 10 hours total',
-      modules: mods.map((m, i) => ({ num: String(i + 1).padStart(2, '0'), title: m[0], topics: m[1], file: m[2] ? 'modules/' + m[2] : '', play: player + '?m=g' + (i + 1), cta: cta('g' + (i + 1)), hasFile: !!m[2], noFile: !m[2] })),
+      modules: mods.map((m, i) => ({ num: String(i + 1).padStart(2, '0'), title: m[0], topics: m[1], file: m[2] ? '' + m[2] : '', play: player + '?m=g' + (i + 1), cta: cta('g' + (i + 1)), hasFile: !!m[2], noFile: !m[2] })),
       links: dev
         ? { howto: 'How%20to%20Attest.dc.html', attest: 'Clinician%20Attestation.dc.html', portal: 'Partner%20Portal.dc.html', ceu: 'CEU%20Library.dc.html', ceuAttest: 'CEU%20Attestation.dc.html' }
         : { howto: 'how-to-attest.html', attest: 'attestation.html', portal: 'partner-portal.html', ceu: 'ceu-library.html', ceuAttest: 'ceu-attestation.html' }

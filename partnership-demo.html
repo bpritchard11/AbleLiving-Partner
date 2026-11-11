@@ -13,16 +13,16 @@
   <meta name="description" content="See how AbleLiving partners with practices to deliver Medicare's GUIDE dementia care at home: the program, the care team, the referral process, and what it's worth.">
   <meta property="og:title" content="How a GUIDE partnership with AbleLiving works">
   <meta property="og:description" content="The program, the care team, a referral start to finish, and a revenue estimate. About 5 minutes.">
-  <meta property="og:image" content="https://ablelivingtraining.com/assets/ableliving-logo.png">
+  <meta property="og:image" content="https://ablelivingtraining.com/ableliving-logo.png">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="ds/tokens/colors.css">
-  <link rel="stylesheet" href="ds/tokens/fonts.css">
-  <link rel="stylesheet" href="ds/tokens/typography.css">
-  <link rel="stylesheet" href="ds/tokens/spacing.css">
-  <link rel="stylesheet" href="ds/tokens/base.css">
-  <link rel="stylesheet" href="ds/styles.css">
+  <link rel="stylesheet" href="ds-colors.css">
+  <link rel="stylesheet" href="ds-fonts.css">
+  <link rel="stylesheet" href="ds-typography.css">
+  <link rel="stylesheet" href="ds-spacing.css">
+  <link rel="stylesheet" href="ds-base.css">
+  <link rel="stylesheet" href="ds-styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
-  <script src="ds/_ds_bundle.js"></script>
+  <script src="ds-bundle.js"></script>
   <style>
     :root { --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
     body { margin: 0; background: var(--paper); }
@@ -39,7 +39,7 @@
 <div style="min-height: 100vh; background: var(--paper); font-family: var(--font-sans); color: var(--ink); display: flex; flex-direction: column;">
   <header style="background: #fff; border-bottom: 1px solid var(--line);">
     <div style="max-width: 980px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
-      <a href="{{ homeHref }}" style="display: block;"><img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 160px; height: auto; display: block;"></a>
+      <a href="{{ homeHref }}" style="display: block;"><img src="ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 160px; height: auto; display: block;"></a>
       <a href="{{ backHref }}" style="font-size: 15px; font-weight: 700;">← Back to Become a partner</a>
     </div>
   </header>
@@ -59,7 +59,7 @@
   </section>
 
   <section id="guide" style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 28px; scroll-margin-top: 16px;">
-    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Part 1 · The GUIDE program</x-import>
+    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="bloom.svg" hint-size="100%,20px">Part 1 · The GUIDE program</x-import>
     <div ref="{{ guideRef }}" style="background: #fff; border: 1px solid var(--line); border-radius: 20px; overflow: hidden;">
       <div style="min-height: 440px; padding: 48px 28px 36px; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">
         <sc-if value="{{ gf.f0 }}" hint-placeholder-val="{{ true }}">
@@ -166,7 +166,7 @@
   <section id="team" style="background: var(--mist); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); scroll-margin-top: 16px;">
     <div style="max-width: 980px; margin: 0 auto; padding: 80px 24px; display: flex; flex-direction: column; gap: 36px;">
       <div style="display: flex; flex-direction: column; gap: 16px;">
-        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Part 2 · The care team</x-import>
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="bloom.svg" hint-size="100%,20px">Part 2 · The care team</x-import>
         <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.2; color: var(--navy); margin: 0; max-width: 24ch; text-wrap: pretty;">Your team on the front line, the AbleLiving Clinical Team overseeing.</h2>
         <p style="margin: 0; font-size: 18px; line-height: 1.65; color: var(--ink); max-width: 62ch; text-wrap: pretty;">CMS requires a care navigator and a clinician with dementia expertise on every GUIDE care team. The AbleLiving Clinical Team supervises the team and signs off on every comprehensive assessment. In the Hybrid model, your practice fills both roles.</p>
       </div>
@@ -217,7 +217,7 @@
 
   <section id="demo" style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 80px 24px 40px; display: flex; flex-direction: column; gap: 32px; scroll-margin-top: 16px;">
     <div style="display: flex; flex-direction: column; gap: 16px;">
-      <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Part 3 · A referral, start to finish</x-import>
+      <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="bloom.svg" hint-size="100%,20px">Part 3 · A referral, start to finish</x-import>
       <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.2; color: var(--navy); margin: 0; max-width: 24ch; text-wrap: pretty;">Your team does four things. We handle the rest.</h2>
       <p style="margin: 0; font-size: 18px; line-height: 1.65; color: var(--ink); max-width: 62ch; text-wrap: pretty;">Press play to follow one patient from referral to ongoing care.</p>
     </div>
@@ -295,7 +295,7 @@
   <section id="revenue" style="background: var(--mist); border-top: 1px solid var(--line); scroll-margin-top: 16px;">
     <div style="max-width: 980px; margin: 0 auto; padding: 80px 24px 90px; display: flex; flex-direction: column; gap: 32px;">
       <div style="display: flex; flex-direction: column; gap: 16px;">
-        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Part 4 · What it's worth</x-import>
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="bloom.svg" hint-size="100%,20px">Part 4 · What it's worth</x-import>
         <h2 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.2; color: var(--navy); margin: 0; max-width: 24ch; text-wrap: pretty;">Estimate the monthly GUIDE payments for your patients.</h2>
         <p style="margin: 0; font-size: 18px; line-height: 1.65; color: var(--ink); max-width: 62ch; text-wrap: pretty;">Enter how many patients you expect in each tier. The estimate uses the CMS monthly rates. Your practice's share is set in your partnership agreement.</p>
       </div>

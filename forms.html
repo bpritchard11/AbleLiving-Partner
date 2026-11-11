@@ -10,14 +10,14 @@
 <x-dc>
 <helmet>
   <title>Forms — AbleLiving</title>
-  <link rel="stylesheet" href="ds/tokens/colors.css">
-  <link rel="stylesheet" href="ds/tokens/fonts.css">
-  <link rel="stylesheet" href="ds/tokens/typography.css">
-  <link rel="stylesheet" href="ds/tokens/spacing.css">
-  <link rel="stylesheet" href="ds/tokens/base.css">
-  <link rel="stylesheet" href="ds/styles.css">
+  <link rel="stylesheet" href="ds-colors.css">
+  <link rel="stylesheet" href="ds-fonts.css">
+  <link rel="stylesheet" href="ds-typography.css">
+  <link rel="stylesheet" href="ds-spacing.css">
+  <link rel="stylesheet" href="ds-base.css">
+  <link rel="stylesheet" href="ds-styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
-  <script src="ds/_ds_bundle.js"></script>
+  <script src="ds-bundle.js"></script>
   <style>
     :root { --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
     body { margin: 0; background: var(--paper); }
@@ -32,7 +32,7 @@
 <div style="min-height: 100vh; background: var(--paper); font-family: var(--font-sans); color: var(--ink); display: flex; flex-direction: column;">
   <nav style="background: #fff; border-bottom: 1px solid var(--line); font-family: var(--font-sans); position: relative; z-index: 20;">
     <div style="max-width: 980px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px 28px; flex-wrap: wrap;">
-      <a href="{{ nav.home }}" style="display: block;"><img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 170px; height: auto; display: block;"></a>
+      <a href="{{ nav.home }}" style="display: block;"><img src="ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 170px; height: auto; display: block;"></a>
       <div data-nav-full="" style="display: flex; align-items: center; justify-content: flex-end; gap: 8px 26px; flex-wrap: wrap; flex: 1 1 auto;">
         <details data-nav="1" style="position: relative;">
           <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Partnership<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
@@ -91,7 +91,7 @@
   </nav>
 
   <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 72px 24px 32px; display: flex; flex-direction: column; gap: 22px;">
-    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Visit forms</x-import>
+    <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="bloom.svg" hint-size="100%,20px">Visit forms</x-import>
     <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(34px, 4.6vw, 50px); line-height: 1.14; color: var(--navy); margin: 0; max-width: 20ch; text-wrap: pretty;">The forms your team uses at every visit</h1>
     <p style="margin: 0; font-size: 19px; line-height: 1.65; color: var(--ink); max-width: 60ch; text-wrap: pretty;">Every partner practice uses the same forms. Each one opens in Microsoft 365, where patient information stays protected. Sign in with your work account if asked.</p>
   </section>
@@ -118,7 +118,7 @@
   <div style="max-width: 980px; margin: 0 auto; padding: 56px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px;">
     <div style="display: flex; flex-direction: column; gap: 16px;">
       <div style="background: #fff; border-radius: 12px; padding: 12px 16px; align-self: flex-start;">
-        <img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 160px; height: auto; display: block;">
+        <img src="ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 160px; height: auto; display: block;">
       </div>
       <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--blue-soft); max-width: 36ch;">Care navigator training and attestation for GUIDE Model partner practices in Florida and Ohio.</p>
     </div>

@@ -10,14 +10,14 @@
 <x-dc>
 <helmet>
   <title>Partner Portal — AbleLiving</title>
-  <link rel="stylesheet" href="ds/tokens/colors.css">
-  <link rel="stylesheet" href="ds/tokens/fonts.css">
-  <link rel="stylesheet" href="ds/tokens/typography.css">
-  <link rel="stylesheet" href="ds/tokens/spacing.css">
-  <link rel="stylesheet" href="ds/tokens/base.css">
-  <link rel="stylesheet" href="ds/styles.css">
+  <link rel="stylesheet" href="ds-colors.css">
+  <link rel="stylesheet" href="ds-fonts.css">
+  <link rel="stylesheet" href="ds-typography.css">
+  <link rel="stylesheet" href="ds-spacing.css">
+  <link rel="stylesheet" href="ds-base.css">
+  <link rel="stylesheet" href="ds-styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
-  <script src="ds/_ds_bundle.js"></script>
+  <script src="ds-bundle.js"></script>
   <style>
     :root { --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
     body { margin: 0; background: var(--paper); }
@@ -34,7 +34,7 @@
   <sc-if value="{{ showSiteNav }}" hint-placeholder-val="{{ true }}">
     <nav style="background: #fff; border-bottom: 1px solid var(--line); font-family: var(--font-sans); position: relative; z-index: 20;">
     <div style="max-width: 980px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px 28px; flex-wrap: wrap;">
-      <a href="{{ nav.home }}" style="display: block;"><img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 170px; height: auto; display: block;"></a>
+      <a href="{{ nav.home }}" style="display: block;"><img src="ableliving-logo.png" alt="AbleLiving Memory Support — home" style="width: 170px; height: auto; display: block;"></a>
       <div data-nav-full="" style="display: flex; align-items: center; justify-content: flex-end; gap: 8px 26px; flex-wrap: wrap; flex: 1 1 auto;">
         <details data-nav="1" style="position: relative;">
           <summary style="list-style: none; cursor: pointer; font-size: 15px; font-weight: 500; color: var(--navy); padding: 8px 0; display: flex; align-items: center; gap: 6px;">Partnership<span style="font-size: 11px; color: var(--sage);">▾</span></summary>
@@ -109,7 +109,7 @@
     <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.PageHeaderBar" kicker="Partner practices" title="Partner Portal" crumbs="Choose your organization and enter the PIN AbleLiving gave you." hint-size="100%,140px"></x-import>
     <section style="max-width: 980px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 64px 24px 90px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: start;">
       <div style="display: flex; flex-direction: column; gap: 18px;">
-        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Sign in</x-import>
+        <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="bloom.svg" hint-size="100%,20px">Sign in</x-import>
         <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(30px, 4vw, 42px); line-height: 1.15; color: var(--navy); margin: 0; text-wrap: pretty;">Your practice's forms, in one place.</h1>
         <p style="margin: 0; font-size: 18px; line-height: 1.65; max-width: 44ch; text-wrap: pretty;">Each partner practice has its own portal with the GUIDE forms your team uses on every visit.</p>
         <p style="margin: 0; font-size: 16px; line-height: 1.65; color: var(--sage);">Need a PIN? Email <a href="mailto:bpritchard@ableliving-mail.com" style="font-weight: 700;">Bryson Pritchard</a>.</p>
@@ -181,7 +181,7 @@
           <div style="width: 1px; align-self: stretch; min-height: 44px; background: var(--line);"></div>
           <div style="display: flex; flex-direction: column; gap: 4px;">
             <span style="font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--sage);">In partnership with</span>
-            <img src="assets/ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 130px; height: auto; display: block;">
+            <img src="ableliving-logo.png" alt="AbleLiving Memory Support" style="width: 130px; height: auto; display: block;">
           </div>
         </div>
         <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Button" variant="secondary" size="sm" onClick="{{ signOut }}" hint-size="100px,38px">Sign out</x-import>
@@ -191,7 +191,7 @@
       <sc-for list="{{ portal.announcements }}" as="ann" hint-placeholder-count="0">
         <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Callout" tone="{{ ann.tone }}" hint-size="100%,70px"><span style="font-size: 16px; line-height: 1.6; color: var(--navy);"><strong>{{ ann.title }}</strong> {{ ann.text }}</span></x-import>
       </sc-for>
-      <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="assets/bloom.svg" hint-size="100%,20px">Partner portal</x-import>
+      <x-import component-from-global-scope="AbleLivingDesignSystem_39ee0d.Eyebrow" icon-src="bloom.svg" hint-size="100%,20px">Partner portal</x-import>
       <h1 style="font-family: var(--font-serif); font-weight: 500; font-size: clamp(32px, 4.5vw, 46px); line-height: 1.15; color: var(--navy); margin: 0; text-wrap: pretty;">Welcome, {{ portal.name }}.</h1>
       <p style="margin: 0; font-size: 18px; line-height: 1.65; max-width: 58ch; text-wrap: pretty;">Open the form that matches the visit you're documenting. It opens right here and is already set up for your practice.</p>
     </section>
@@ -1451,7 +1451,7 @@ class Component extends DCLogic {
         style: { fontFamily: 'var(--font-sans)', fontSize: 14, fontWeight: 700, padding: '9px 18px', borderRadius: 999, cursor: 'pointer', border: '1px solid var(--navy)', background: s.ceuSource === k ? 'var(--navy)' : 'transparent', color: s.ceuSource === k ? '#fff' : 'var(--navy)' }
       })),
       ceuRows: ceuCourses.map((c, i) => ({
-        title: c.title, meta: `${c.category ? c.category + ' · ' : ''}${c.file ? 'modules/' + c.file : c.url}`,
+        title: c.title, meta: `${c.category ? c.category + ' · ' : ''}${c.file ? '' + c.file : c.url}`,
         style: { display: 'flex', alignItems: 'center', gap: '10px 18px', flexWrap: 'wrap', padding: '14px 20px', borderTop: i ? '1px solid var(--line)' : 'none' },
         hours: c.hours, onHours: e => { const d = clone(this.state.draft); d.ceu.courses[i].hours = Number(e.target.value) || 0; this.persist(d); },
         onUp: () => this.moveCeu(i, -1), onDown: () => this.moveCeu(i, 1), onRemove: () => this.removeCeu(c.id)
